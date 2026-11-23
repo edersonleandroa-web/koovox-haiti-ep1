@@ -1,0 +1,50 @@
+{
+  "name": "koovox-haiti-ep1",
+  "version": "1.0.0",
+  "description": "HAITI (KOOVOX, episódio 1) — documentário editado em Remotion e renderizado no GitHub Actions",
+  "repository": {},
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "private": true,
+  "dependencies": {
+    "@remotion/bundler": "4.0.546",
+    "@remotion/cli": "4.0.546",
+    "@remotion/google-fonts": "4.0.546",
+    "@remotion/layout-utils": "4.0.546",
+    "@remotion/media": "4.0.546",
+    "@remotion/noise": "4.0.546",
+    "@remotion/paths": "4.0.546",
+    "@remotion/renderer": "4.0.546",
+    "@remotion/transitions": "4.0.546",
+    "d3-geo": "3.1.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.546",
+    "topojson-client": "3.1.0",
+    "world-atlas": "2.0.2"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.546",
+    "@types/d3-geo": "3.1.1",
+    "@types/react": "19.3.0",
+    "@types/topojson-client": "3.1.5",
+    "@types/web": "0.0.166",
+    "eslint": "10.15.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "lint": "eslint src && tsc",
+    "info": "node scripts/render.mjs info",
+    "stills": "node scripts/render.mjs stills",
+    "render:audio": "node scripts/render.mjs audio",
+    "upgrade": "remotion upgrade"
+  },
+  "allowScripts": {
+    "esbuild": false
+  }
+}

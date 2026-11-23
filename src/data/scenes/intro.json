@@ -1,0 +1,177 @@
+{
+  "chapter": "intro",
+  "audio": "audio/intro.mp3",
+  "duration": 53.002,
+  "scenes": [
+    {
+      "id": "intro-01",
+      "start": 0,
+      "end": 6.88,
+      "type": "map",
+      "transition": "fade",
+      "view": "americas",
+      "pins": [
+        { "name": "EL SALVADOR", "lon": -89.19, "lat": 13.69, "at": 1.38 },
+        { "name": "HAITI", "lon": -72.335, "lat": 18.539, "at": 3.8 }
+      ],
+      "route": { "from": [-89.19, 13.69], "to": [-72.335, 18.539], "at": 4.1, "label": "SOLDADOS" },
+      "note": "Narração: 'Nos últimos dias, El Salvador travou combates muito duros no Haiti para tentar trazer de volta seus soldados.' Abertura do vídeo. Mapa das Américas: alfinete EL SALVADOR quando ele diz 'El Salvador', alfinete HAITI em 'Haiti', depois a rota tracejada vermelha El Salvador -> Haiti com 'SOLDADOS' durante 'para tentar trazer de volta seus soldados'."
+    },
+    {
+      "id": "intro-02",
+      "start": 6.88,
+      "end": 12.44,
+      "type": "full",
+      "transition": "whip",
+      "media": {
+        "src": null,
+        "kind": "video",
+        "want": "VIDEO: armed gang members (masked or unidentifiable) walking or patrolling a street in Port-au-Prince, Haiti, carrying assault rifles, with barricades or burned cars around, 2022-2025; news b-roll (VOA public domain or Wikimedia Commons); no bodies, no blood | keywords: Haiti gang members armed video, Port-au-Prince gangs street, VOA Haiti gangs, Viv Ansanm gang, G9 gang Haiti, Haiti armed men barricade"
+      },
+      "move": "in",
+      "note": "'Há zonas do país que ficaram nas mãos de gangues violentas e muito bem armadas.' Primeiro b-roll real em tela cheia: homens armados controlando uma rua de Porto Príncipe. Sem texto."
+    },
+    {
+      "id": "intro-03",
+      "start": 12.44,
+      "end": 17.8,
+      "type": "photo",
+      "transition": "whip",
+      "frame": "tv",
+      "media": {
+        "src": null,
+        "kind": "video",
+        "want": "VIDEO: Salvadoran soldiers deployed to Haiti (2025-2026): troops of the Armed Forces of El Salvador arriving in Port-au-Prince or patrolling in armored vehicles; fallback: troops of the UN-backed multinational force in Haiti (Multinational Security Support mission / Gang Suppression Force) patrolling Port-au-Prince (DVIDS, VOA, Commons) | keywords: El Salvador soldiers Haiti, Salvadoran troops Haiti, Fuerza Armada de El Salvador Haiti, Gang Suppression Force Haiti, Multinational Security Support mission Haiti, MSS Haiti patrol"
+      },
+      "note": "'Vou fazer uma série aqui no canal sobre essa operação, mas neste primeiro capítulo queria falar...' TV antiga presa no mural passando imagens da operação (soldados no Haiti). Sem texto."
+    },
+    {
+      "id": "intro-04",
+      "start": 17.8,
+      "end": 22.0,
+      "type": "map",
+      "transition": "whip",
+      "view": "haiti",
+      "pins": [],
+      "label": { "text": "HAITI", "at": 0.4, "kind": "place" },
+      "note": "'...do Haiti, do país em si, para que entendamos como ele chegou a este ponto...' Mapa do país inteiro (departamentos), sem alfinetes; rótulo HAITI quando ele diz 'Haiti'. O corte cai logo antes de 'do Haiti' (fala contínua, sem respiro)."
+    },
+    {
+      "id": "intro-05",
+      "start": 22.0,
+      "end": 26.08,
+      "type": "photo",
+      "transition": "whip",
+      "frame": "polaroid",
+      "media": {
+        "src": null,
+        "kind": "image",
+        "want": "photo of a Haitian gang leader surrounded by his armed men, e.g. Jimmy 'Barbecue' Cherizier (G9 / Viv Ansanm, sanctioned by the UN and the US) with armed members in Port-au-Prince, 2021-2024; or heavily armed gang members posing with rifles; no bodies, no blood | keywords: Jimmy Cherizier Barbecue, G9 an fanmi gang, Viv Ansanm leader, Haiti gang leader armed men, Haiti gang members rifles"
+      },
+      "note": "'...e como essas gangues se tornaram tão poderosas.' Polaroid de um líder de gangue cercado de homens armados (o poder das gangues). Sem nome e sem legenda: ninguém é nomeado nesta narração."
+    },
+    {
+      "id": "intro-06",
+      "start": 26.08,
+      "end": 30.8,
+      "type": "duo",
+      "transition": "whip",
+      "items": [
+        {
+          "name": "ONU",
+          "at": 3.46,
+          "media": {
+            "src": null,
+            "kind": "image",
+            "want": "photo of the United Nations: UN flag flying at UN Headquarters in New York, or the UN Security Council chamber during a vote on Haiti (2023 or 2025) | keywords: United Nations flag headquarters, UN Security Council chamber, UN Security Council vote Haiti"
+          }
+        },
+        {
+          "name": "EL SALVADOR",
+          "at": 3.96,
+          "media": {
+            "src": null,
+            "kind": "image",
+            "want": "photo of soldiers of the Armed Forces of El Salvador in uniform, with the Salvadoran flag, 2020s (DVIDS joint exercises or Commons); a different shot from intro-03 | keywords: Salvadoran soldiers, Fuerza Armada de El Salvador, El Salvador army soldiers flag, Salvadoran troops DVIDS"
+          }
+        }
+      ],
+      "note": "'Mais adiante, aí sim, vou falar do que a ONU e El Salvador estão fazendo.' Duas fotos ligadas pelo fio vermelho. As duas fotos entram presas no mural já no início da cena (os nomes só chegam no fim da frase); o 'at' de cada item é quando o NOME é escrito: ONU em 'ONU', EL SALVADOR em 'El Salvador'."
+    },
+    {
+      "id": "intro-07",
+      "start": 30.8,
+      "end": 34.95,
+      "type": "full",
+      "transition": "cut",
+      "media": {
+        "src": null,
+        "kind": "video",
+        "want": "VIDEO: armored police vehicle (MRAP/APC of the Haitian National Police or of the multinational mission) advancing slowly through a Port-au-Prince street blocked by barricades, debris or burned cars, 2023-2025; camera behind or beside the vehicle | keywords: Haiti police armored vehicle, Port-au-Prince barricades armored car, Kenyan police Haiti armored vehicle, Haitian National Police operation, MSS Haiti MRAP"
+      },
+      "move": "in",
+      "note": "'Quero mostrar a vocês que não é nada fácil entrar em um lugar assim. Eu até diria que...' Blindado avançando entre barricadas. Sem texto. 'Eu até diria que' entra sobre este plano; o corte cai logo antes de 'há zonas do Haiti'."
+    },
+    {
+      "id": "intro-08",
+      "start": 34.95,
+      "end": 40.48,
+      "type": "duo",
+      "transition": "whip",
+      "items": [
+        {
+          "name": "HAITI",
+          "at": 0.69,
+          "media": {
+            "src": null,
+            "kind": "image",
+            "want": "photo of a hostile, gang-controlled street in Port-au-Prince: barricade of burned cars and debris, deserted street, 2023-2025; no people identifiable | keywords: Port-au-Prince barricade burned cars, Haiti gang controlled neighborhood, Haiti street barricade 2024"
+          }
+        },
+        {
+          "name": "ORIENTE MÉDIO",
+          "at": 3.11,
+          "media": {
+            "src": null,
+            "kind": "image",
+            "want": "photo of a war-destroyed street in a Middle East city that was held by a terrorist group: Old City of Mosul (Iraq) after ISIS, 2017, or Raqqa (Syria), 2017; US DoD public domain (DVIDS) or Commons | keywords: Mosul old city destruction 2017, Raqqa ruins 2017, ISIS destroyed city DVIDS"
+          }
+        }
+      ],
+      "note": "'...há zonas do Haiti tão hostis quanto algumas regiões do Oriente Médio onde operam grupos terroristas.' Comparação lado a lado ligada pelo fio: rua hostil de Porto Príncipe x cidade destruída do Oriente Médio. Não existe vista de mapa para o Oriente Médio, por isso duo de fotos. Mesmo esquema da intro-06: fotos no início, nomes nos 'at' (HAITI em 'Haiti', ORIENTE MÉDIO em 'Oriente Médio')."
+    },
+    {
+      "id": "intro-09",
+      "start": 40.48,
+      "end": 46.62,
+      "type": "full",
+      "transition": "cut",
+      "media": {
+        "src": null,
+        "kind": "image",
+        "want": "PHOTO (Ken Burns): armed gang members (masked or unidentifiable) with assault rifles on a Port-au-Prince street, smoke or a burning barricade behind them, 2023-2025; menacing, no bodies, no blood | keywords: Haiti gang gunmen, Haiti masked gang members rifles, Port-au-Prince gangs burning barricade, Viv Ansanm gunmen"
+      },
+      "move": "in",
+      "label": { "text": "TERRORISTAS?", "at": 4.98, "kind": "info" },
+      "sfx": [{ "name": "boom", "at": 4.98 }],
+      "note": "'E, bom, vendo como as gangues atuam, esses caras também podem ser chamados de terroristas?' Foto em tela cheia com aproximação lenta nos homens armados; a pergunta-chave aparece quando ele diz 'terroristas'."
+    },
+    {
+      "id": "intro-10",
+      "start": 46.62,
+      "end": 53.002,
+      "type": "doc",
+      "transition": "whip",
+      "title": "HAITI",
+      "stamp": "KOOVOX",
+      "stampAt": 4.38,
+      "media": {
+        "src": null,
+        "kind": "image",
+        "want": "photo to clip on the case file: wide view of Port-au-Prince, Haiti (hillside neighborhoods or downtown), 2010s-2020s | keywords: Port-au-Prince aerial view, Port-au-Prince panorama, Port-au-Prince city"
+      },
+      "sfx": [{ "name": "stamp", "at": 4.38 }],
+      "note": "'Espero que goste. Levei tempo investigando o tema e editando este vídeo. Sou KOOVOX, vamos ao vídeo.' Pasta de arquivo kraft 'HAITI' (a investigação do narrador) com foto clipada; o carimbo KOOVOX bate quando ele diz 'KOOVOX' (stampAt). Em seguida o código mostra o título do episódio."
+    }
+  ]
+}
