@@ -165,11 +165,11 @@ const ALL: Ev[] = (() => {
         list.push(...evs);
       });
     } else if (seg.kind === "card") {
-      list.push({ f: seg.from + 6, file: "sfx/boom-1.mp3", v: 0.5, len: sec(4) });
-      list.push({ f: seg.from + 2, file: "sfx/glitch-2.mp3", v: 0.12, len: sec(2) });
+      list.push({ f: seg.from + 6, file: "sfx/boom-1.mp3", v: 0.3, len: sec(4) });
+      list.push({ f: seg.from + 2, file: "sfx/glitch-2.mp3", v: 0.07, len: sec(2) });
     } else if (seg.kind === "title") {
       list.push({ f: seg.from - sec(2.2), file: "sfx/riser-2.mp3", v: 0.24, len: sec(2.6) });
-      list.push({ f: seg.from + 6, file: "sfx/boom-2.mp3", v: 0.6, len: sec(4) });
+      list.push({ f: seg.from + 6, file: "sfx/boom-2.mp3", v: 0.42, len: sec(4) });
     } else if (seg.kind === "outro") {
       list.push({ f: seg.from + 8, file: "sfx/boom-2.mp3", v: 0.35, len: sec(4) });
     }

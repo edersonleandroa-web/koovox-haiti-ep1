@@ -6,7 +6,7 @@ import { IS_CARD, SPEAKING, TIMELINE, TOTAL_FRAMES } from "../timeline";
 // Narração ~ -21,6 dB médio; trilhas ~ -14,3 dB médio.
 const UNDER_VOICE = 0.085; // ~14 dB abaixo da voz
 const IN_PAUSE = 0.16;
-const ON_CARD = 0.42;
+const ON_CARD = 0.3;
 const RAMP = 10; // quadros para subir/descer
 
 /** Ganho da música por quadro global: abaixa sob a voz, sobe nas pausas e nos cartões. */
