@@ -12,10 +12,11 @@ export const OUTRO_DUR = sec(4);
 const CARD_IN = 10; // o cartão entra por cima do fim do capítulo (fade)
 const CH_IN = 18; // o capítulo entra por cima do fim do cartão (fade da 1ª cena)
 
+// Textos de tela em ESPANHOL (a narração é em espanhol)
 export const EPISODE = {
-  kicker: "KOOVOX APRESENTA",
-  title: "HAITI",
-  sub: "Como as gangues chegaram ao poder",
+  kicker: "KOOVOX PRESENTA",
+  title: "HAITÍ",
+  sub: "Cómo las pandillas llegaron al poder",
 };
 
 type ChapterDef = { key: string; raw: unknown; number?: string; title?: string; music: { src: string; at: number }[] };
@@ -23,10 +24,10 @@ type ChapterDef = { key: string; raw: unknown; number?: string; title?: string; 
 // Títulos curtos e factuais dos capítulos (cartões entre os áudios)
 const DEFS: ChapterDef[] = [
   { key: "intro", raw: SCENES.intro, music: [{ src: "music/intro.mp3", at: 0 }] },
-  { key: "c1", raw: SCENES.c1, number: "CAPÍTULO 1", title: "As raízes das gangues", music: [{ src: "music/c1.mp3", at: 0 }] },
-  { key: "c2", raw: SCENES.c2, number: "CAPÍTULO 2", title: "Política, armas e caos", music: [{ src: "music/c2a.mp3", at: 0 }, { src: "music/c2b.mp3", at: 164 }] },
-  { key: "c3", raw: SCENES.c3, number: "CAPÍTULO 3", title: "O dinheiro das gangues", music: [{ src: "music/c3a.mp3", at: 0 }, { src: "music/c3b.mp3", at: 146 }] },
-  { key: "final", raw: SCENES.final, number: "CAPÍTULO FINAL", title: "O preço da violência", music: [{ src: "music/final.mp3", at: 0 }] },
+  { key: "c1", raw: SCENES.c1, number: "CAPÍTULO 1", title: "Las raíces de las pandillas", music: [{ src: "music/c1.mp3", at: 0 }] },
+  { key: "c2", raw: SCENES.c2, number: "CAPÍTULO 2", title: "Política, armas y caos", music: [{ src: "music/c2a.mp3", at: 0 }, { src: "music/c2b.mp3", at: 164 }] },
+  { key: "c3", raw: SCENES.c3, number: "CAPÍTULO 3", title: "El dinero de las pandillas", music: [{ src: "music/c3a.mp3", at: 0 }, { src: "music/c3b.mp3", at: 146 }] },
+  { key: "final", raw: SCENES.final, number: "CAPÍTULO FINAL", title: "El precio de la violencia", music: [{ src: "music/final.mp3", at: 0 }] },
 ];
 
 export type Segment =

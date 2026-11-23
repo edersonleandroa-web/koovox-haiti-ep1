@@ -135,17 +135,7 @@ export const PersonView: React.FC<{ s: PersonScene }> = ({ s }) => {
         <div style={{ fontFamily: FONT.type, fontSize: 56, letterSpacing: "0.06em", lineHeight: 1.1, color: C.white, textShadow: GLOW_WHITE, textTransform: "uppercase" }}>
           <TypeText text={s.name} at={nameAt} />
         </div>
-        <div
-          style={{
-            width: 130,
-            height: 3,
-            margin: "16px 0 14px",
-            backgroundColor: C.redBright,
-            boxShadow: "0 0 6px rgba(255,60,40,0.45)",
-            transform: `scaleX(${prog(frame, nameAt + 4, nameAt + 18, EASE_OUT)})`,
-            transformOrigin: "0% 50%",
-          }}
-        />
+        <div style={{ height: 18 }} />
         {s.role ? (
           <div style={{ fontFamily: FONT.type, fontSize: 28, letterSpacing: "0.22em", color: C.white, opacity: 0.82 * roleP, textShadow: GLOW_WHITE, textTransform: "uppercase" }}>
             {s.role}
@@ -378,7 +368,6 @@ export const DocView: React.FC<{ s: DocScene }> = ({ s }) => {
               <div style={{ position: "absolute", left: 60, top: 70, right: 60, fontFamily: FONT.type, fontSize: 40, letterSpacing: "0.12em", color: C.ink, textTransform: "uppercase", lineHeight: 1.2 }}>
                 <TypeText text={s.title} at={10} />
               </div>
-              <div style={{ position: "absolute", left: 60, right: 60, top: 150, height: 2, backgroundColor: "rgba(40,30,20,0.35)" }} />
               {s.media && s.media.src ? (
                 <div style={{ position: "absolute", left: 60, top: 190, width: 330, height: 250, transform: "rotate(-3deg)", boxShadow: "0 8px 18px rgba(0,0,0,0.45)", border: "10px solid #f1eee6", overflow: "hidden", backgroundColor: "#111" }}>
                   <MediaView media={{ ...s.media, grade: s.media.grade ?? "bw" }} scale={1.03 + 0.05 * kb} />
@@ -429,7 +418,7 @@ export const HeadlineView: React.FC<{ s: HeadlineScene }> = ({ s }) => {
                   {s.date}
                 </div>
               ) : null}
-              <div style={{ height: 2, backgroundColor: "rgba(30,28,24,0.6)", marginBottom: 18 }} />
+              <div style={{ height: 10 }} />
               <div
                 style={{
                   fontFamily: FONT.cond,

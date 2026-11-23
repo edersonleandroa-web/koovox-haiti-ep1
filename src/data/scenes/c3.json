@@ -10,9 +10,14 @@
       "type": "full",
       "transition": "fade",
       "media": {
-        "src": null,
+        "src": "media/c3/gourdes-notas.jpg",
         "kind": "image",
-        "want": "Close de cédulas de gourde haitiano (HTG), várias notas, idealmente sendo contadas ou seguradas à mão; qualquer ano recente | keywords: Haitian gourde banknotes, gourdes Haiti money, Haitian currency cash, HTG notes"
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "grade": "warm",
+        "credit": "c3-gourdes-notas"
       },
       "move": "in",
       "note": "Abertura: 'E de onde tiram o dinheiro essas gangues? Segundo o Banco Mundial,' — o tema do capítulo é o dinheiro; close do dinheiro haitiano."
@@ -54,9 +59,15 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/c3/terminal-onibus-2024.mp4",
         "kind": "video",
-        "want": "VIDEO: rua movimentada de um bairro popular de Porto Príncipe com vendedores ambulantes, bancas e pequenas lojas, gente passando (ex.: centro, Croix-des-Bossales, Delmas), anos recentes; sem violência explícita | keywords: Port-au-Prince street market video, Haiti street vendors b-roll, Croix-des-Bossales market, Port-au-Prince downtown street"
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.55
+        ],
+        "grade": "warm",
+        "credit": "c3-terminal-onibus-2024"
       },
       "note": "'Nas áreas que controlam, as gangues cobram de quem vive e trabalha ali. Os comerciantes começaram a pagar para poder trabalhar.' Extorsão do dia a dia: o comércio de rua."
     },
@@ -68,9 +79,14 @@
       "transition": "whip",
       "frame": "print",
       "media": {
-        "src": null,
+        "src": "media/c3/taptap-porto-principe.jpg",
         "kind": "image",
-        "want": "Tap-tap colorido (transporte coletivo haitiano) e/ou caminhão de carga numa rua ou estrada de Porto Príncipe; idealmente os dois no mesmo quadro | keywords: tap tap Port-au-Prince, Haiti tap-tap bus, Haiti cargo truck road, camion Route Nationale 1 Haiti"
+        "focus": [
+          0.45,
+          0.6
+        ],
+        "grade": "warm",
+        "credit": "c3-taptap-porto-principe"
       },
       "note": "'Os transportadores de carga e os motoristas do transporte público, para poder circular.'"
     },
@@ -83,23 +99,33 @@
       "items": [
         {
           "media": {
-            "src": null,
+            "src": "media/c3/cherizier-g9-2024.jpg",
             "kind": "image",
-            "want": "Jimmy 'Barbecue' Chérizier com membros armados da coalizão G9 em Porto Príncipe (2020–2024), foto VOA (domínio público) | keywords: Jimmy Cherizier G9 VOA, Barbecue gang leader Haiti, G9 an Fanmi gang members Delmas"
+            "focus": [
+              0.5,
+              0.55
+            ],
+            "grade": "warm",
+            "credit": "c3-cherizier-g9-2024"
           },
           "name": "GANGUES"
         },
         {
           "media": {
-            "src": null,
+            "src": "media/c3/palacio-nacional-2009.jpg",
             "kind": "image",
-            "want": "Políticos haitianos: sessão do Parlamento/Senado do Haiti ou o Palácio Legislativo em Porto Príncipe (anos 2000–2010) | keywords: Haitian Senate session, Parlement haïtien, Haitian parliament building, Chambre des députés Haïti"
+            "focus": [
+              0.5,
+              0.45
+            ],
+            "grade": "warm",
+            "credit": "c3-palacio-nacional-2009"
           },
           "name": "PADRINHOS POLÍTICOS"
         }
       ],
       "link": "MENOS DEPENDÊNCIA",
-      "note": "'Segundo algumas fontes, essas cobranças permitiram às gangues depender menos de seus padrinhos políticos.' Fio vermelho gangues ↔ políticos. Corte em 27,02 (no respiro após 'políticos') para a cena seguinte ter 3,5 s."
+      "note": "'Segundo algumas fontes, essas cobranças permitiram às gangues depender menos de seus padrinhos políticos.' Fio vermelho gangues ↔ políticos. Corte em 27,02 (no respiro após 'políticos') para a cena seguinte ter 3,5 s. [Mídia: G9/Chérizier em quadro de vídeo da VOA Kreyòl (mar/2024); sem foto livre do Parlamento haitiano, o nó PADRINHOS POLÍTICOS usa o Palácio Nacional (2009).]"
     },
     {
       "id": "c3-06",
@@ -109,9 +135,14 @@
       "transition": "whip",
       "frame": "polaroid",
       "media": {
-        "src": null,
+        "src": "media/c3/fbi-procurado-innocent.jpg",
         "kind": "image",
-        "want": "Cartaz 'WANTED' do FBI (ou de recompensa do Departamento de Estado) de um líder de gangue haitiano acusado de sequestro para resgate — ex.: Vitel'Homme Innocent (Kraze Baryè) ou Joseph Wilson 'Lanmò Sanjou' (400 Mawozo); obra do governo dos EUA = domínio público. Pôster vertical: focus no topo (cabeçalho + rosto). Alternativa: protesto contra sequestros em Porto Príncipe (multidão com cartazes) | keywords: FBI wanted Vitel'Homme Innocent, FBI wanted Joseph Wilson Lanmo Sanjou, 400 Mawozo kidnapping, Haiti kidnapping protest"
+        "focus": [
+          0.5,
+          0.05
+        ],
+        "grade": "none",
+        "credit": "c3-fbi-procurado-innocent"
       },
       "note": "'Outra fonte de renda são os sequestros para pedir resgate.'"
     },
@@ -122,9 +153,14 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/c3/bandeira-onu.jpg",
         "kind": "image",
-        "want": "Bandeira das Nações Unidas tremulando num mastro (idealmente no Haiti ou na sede da ONU em Nova York); um vídeo curto da bandeira também serve | keywords: United Nations flag, UN flag waving, flag of the United Nations pole"
+        "focus": [
+          0.45,
+          0.4
+        ],
+        "grade": "cold",
+        "credit": "c3-bandeira-onu"
       },
       "move": "in",
       "label": {
@@ -152,9 +188,14 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/c3/gangue-armada-rua-2024.jpg",
         "kind": "image",
-        "want": "Membros armados de gangue (mascarados, com fuzis) numa rua de Porto Príncipe, 2021–2025, foto VOA ou CC — diferente das fotos de c3-05 e c3-13 | keywords: Haiti gang members rifles street, Port-au-Prince armed gang VOA, Viv Ansanm gang, masked gunmen Haiti"
+        "focus": [
+          0.5,
+          0.45
+        ],
+        "grade": "warm",
+        "credit": "c3-gangue-armada-rua-2024"
       },
       "move": "left",
       "note": "'Com o que arrecada, uma gangue pode continuar funcionando mesmo que seu antigo padrinho perca o cargo ou mude de lado.'"
@@ -166,9 +207,14 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/c3/multidao-porto-principe.jpg",
         "kind": "image",
-        "want": "Multidão de pessoas comuns (pedestres, passageiros) numa rua movimentada do centro de Porto Príncipe, plano aberto, sem retratos em close; anos recentes | keywords: Port-au-Prince crowd street, Haiti pedestrians downtown, busy street Port-au-Prince people"
+        "focus": [
+          0.5,
+          0.55
+        ],
+        "grade": "warm",
+        "credit": "c3-multidao-porto-principe"
       },
       "move": "right",
       "note": "'E o custo é pago até por quem nunca teve que se ver com uma gangue.'"
@@ -181,9 +227,14 @@
       "transition": "whip",
       "frame": "polaroid",
       "media": {
-        "src": null,
+        "src": "media/c3/mercado-petion-ville.jpg",
         "kind": "image",
-        "want": "Banca de mercado no Haiti com arroz, feijão, banana-da-terra e legumes, vendedoras e compradores (ex.: Marché en Fer / Mercado de Ferro ou Croix-des-Bossales, Porto Príncipe), plano médio ou aberto, sem retrato em close | keywords: Haiti market vegetables, Marche en Fer Port-au-Prince, Iron Market Haiti, Haitian market vendor produce"
+        "focus": [
+          0.62,
+          0.7
+        ],
+        "grade": "warm",
+        "credit": "c3-mercado-petion-ville"
       },
       "note": "'Se levar os produtos ao mercado custa mais, quem vai comprar também acaba pagando mais.'"
     },
@@ -206,17 +257,27 @@
       "items": [
         {
           "media": {
-            "src": null,
+            "src": "media/c3/cite-soleil.jpg",
             "kind": "image",
-            "want": "Encosta com casas precárias e densas em Porto Príncipe (ex.: Cité Soleil, Jalousie, Canaan), plano aberto, sem pessoas em close | keywords: Cite Soleil aerial, Port-au-Prince slum hillside, Jalousie Petion-Ville, Haiti poverty houses"
+            "focus": [
+              0.4,
+              0.5
+            ],
+            "grade": "warm",
+            "credit": "c3-cite-soleil"
           },
           "name": "PAÍS MUITO POBRE"
         },
         {
           "media": {
-            "src": null,
+            "src": "media/c3/g9-fuzis-2024.jpg",
             "kind": "image",
-            "want": "Membros de gangue haitiana mascarados exibindo fuzis de assalto/armamento pesado, 2022–2024, VOA ou CC — diferente de c3-05 e c3-09 | keywords: Haiti gang assault rifles, heavily armed gang Haiti VOA, Haiti gang weapons display"
+            "focus": [
+              0.5,
+              0.5
+            ],
+            "grade": "warm",
+            "credit": "c3-g9-fuzis-2024"
           },
           "name": "GANGUES PODEROSAS"
         }
@@ -230,9 +291,14 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/c3/dolares-apreendidos.jpg",
         "kind": "image",
-        "want": "Maços/pilha de notas de dólar americano (US$ 100), close — foto de domínio público do governo dos EUA (BEP/Tesouro/CBP) | keywords: US dollar bills stack, hundred dollar bills cash, BEP currency, cash bundles"
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "grade": "cold",
+        "credit": "c3-dolares-apreendidos"
       },
       "move": "in",
       "note": "'Parte desse dinheiro bem poderia vir de outro lado. Mas, bom, melhor me limitar a contar essa versão.' Corte em 68,42, no início da pausa depois de 'versão' (a cena seguinte precisa de 3,5 s)."
@@ -255,31 +321,46 @@
       "items": [
         {
           "media": {
-            "src": null,
+            "src": "media/c3/porto-principe-porto-2010.jpg",
             "kind": "image",
-            "want": "Símbolo do setor empresarial haitiano: terminal portuário com contêineres ou armazéns em Porto Príncipe (ex.: terminal de Varreux), sem pessoas identificáveis | keywords: Port-au-Prince port containers, Varreux terminal Haiti, Haiti warehouses commerce"
+            "focus": [
+              0.5,
+              0.62
+            ],
+            "grade": "warm",
+            "credit": "c3-porto-principe-porto-2010"
           },
           "name": "EMPRESÁRIOS"
         },
         {
           "media": {
-            "src": null,
+            "src": "media/c3/palacio-nacional-2009.jpg",
             "kind": "image",
-            "want": "Palácio Legislativo / Parlamento haitiano (pode reutilizar a imagem de c3-05) | keywords: Haitian parliament, Palais Legislatif Port-au-Prince, Haitian Senate"
+            "focus": [
+              0.5,
+              0.45
+            ],
+            "grade": "warm",
+            "credit": "c3-palacio-nacional-2009"
           },
           "name": "POLÍTICOS"
         },
         {
           "media": {
-            "src": null,
+            "src": "media/c3/pnh-patrulha-2024.jpg",
             "kind": "image",
-            "want": "Agentes da Polícia Nacional do Haiti (PNH) fardados, em serviço, Porto Príncipe, anos 2020 — VOA/DVIDS/Departamento de Estado | keywords: Haitian National Police officers, PNH police Haiti, Haiti police patrol VOA"
+            "focus": [
+              0.4,
+              0.55
+            ],
+            "grade": "warm",
+            "credit": "c3-pnh-patrulha-2024"
           },
           "name": "FORÇAS DE SEGURANÇA"
         }
       ],
       "center": "GANGUES",
-      "note": "'...políticos e membros das forças de segurança que apoiavam distintas facções em benefício próprio.' Os nós entram em 0,5/0,9/1,3 s (código): POLÍTICOS ~ 'membros' e FORÇAS DE SEGURANÇA ~ 'forças' (1,5 s). Corte na micro-pausa antes de 'políticos'."
+      "note": "'...políticos e membros das forças de segurança que apoiavam distintas facções em benefício próprio.' Os nós entram em 0,5/0,9/1,3 s (código): POLÍTICOS ~ 'membros' e FORÇAS DE SEGURANÇA ~ 'forças' (1,5 s). Corte na micro-pausa antes de 'políticos'. [Mídia: porto de Porto Príncipe (US Navy, 2010); Palácio Nacional (2009); agentes da PNH em operação de rua (VOA, nov/2024).]"
     },
     {
       "id": "c3-17",
@@ -308,9 +389,14 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/c3/conselho-seguranca-onu.jpg",
         "kind": "image",
-        "want": "Sala do Conselho de Segurança da ONU em sessão (mesa em ferradura, mural de Per Krohg), Nova York — CC BY/BY-SA no Commons ou foto da Missão dos EUA na ONU (domínio público) | keywords: United Nations Security Council chamber, UN Security Council meeting, Security Council session Haiti"
+        "focus": [
+          0.5,
+          0.55
+        ],
+        "grade": "cold",
+        "credit": "c3-conselho-seguranca-onu"
       },
       "move": "out",
       "label": {
@@ -327,14 +413,10 @@
       "end": 92.9,
       "type": "person",
       "transition": "whip",
-      "media": {
-        "src": null,
-        "kind": "image",
-        "want": "Retrato de Prophane Victor, político haitiano, ex-deputado de Petite-Rivière de l'Artibonite (sancionado pelo Conselho de Segurança da ONU em 27/09/2024), qualquer ano — só licença livre; se não existir, deixar null (silhueta) | keywords: Prophane Victor, Prophane Victor député, Victor Prophane Haiti"
-      },
+      "media": null,
       "name": "PROPHANE VICTOR",
       "role": "EX-DEPUTADO HAITIANO",
-      "note": "'o político Prophane Victor armou um grupo de jovens para que o ajudassem a ser eleito deputado em 2016.' O nome digita em 0,55 s = 'Prophane' (87,12). Grafia confirmada na lista de sanções da ONU (set/2024)."
+      "note": "'o político Prophane Victor armou um grupo de jovens para que o ajudassem a ser eleito deputado em 2016.' O nome digita em 0,55 s = 'Prophane' (87,12). Grafia confirmada na lista de sanções da ONU (set/2024). [Sem retrato com licença livre de Prophane Victor: silhueta.]"
     },
     {
       "id": "c3-20",
@@ -344,24 +426,16 @@
       "transition": "zoom",
       "items": [
         {
-          "media": {
-            "src": null,
-            "kind": "image",
-            "want": "MESMO retrato de c3-19 (reutilizar o arquivo de Prophane Victor)"
-          },
+          "media": null,
           "name": "PROPHANE VICTOR"
         },
         {
-          "media": {
-            "src": null,
-            "kind": "image",
-            "want": "Gangue Gran Grif ou seu líder Luckson Elan (sancionado pela ONU em 2024) — só licença livre; se não houver, deixar null (silhueta) | keywords: Gran Grif gang, Luckson Elan, Gran Grif Artibonite"
-          },
+          "media": null,
           "name": "GRAN GRIF"
         }
       ],
       "link": "JOVENS ARMADOS",
-      "note": "'Alguns desses jovens formaram a Gran Grif. Mais adiante, Victor começou a apoiar grupos rivais. A Gran Grif continuou de pé.'"
+      "note": "'Alguns desses jovens formaram a Gran Grif. Mais adiante, Victor começou a apoiar grupos rivais. A Gran Grif continuou de pé.' [Sem imagens livres de Prophane Victor nem da Gran Grif/Luckson Elan: silhuetas.]"
     },
     {
       "id": "c3-21",
@@ -409,16 +483,22 @@
       "type": "full",
       "transition": "cut",
       "media": {
-        "src": null,
+        "src": "media/c3/arrozal-artibonite-2018.mp4",
         "kind": "video",
-        "want": "VIDEO: arrozais do Vale do Artibonite (plano aberto/aéreo de campos de arroz alagados, agricultores trabalhando ao longe), anos recentes — USAID/Feed the Future, VOA ou Commons | keywords: Artibonite rice fields video, Artibonite Valley rice paddies, Haiti rice farming b-roll, USAID Haiti rice"
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.6
+        ],
+        "grade": "warm",
+        "credit": "c3-arrozal-artibonite-2018"
       },
       "label": {
         "text": "ARTIBONITE",
         "at": 0.2,
         "kind": "place"
       },
-      "note": "'O Artibonite é uma das regiões arrozeiras do Haiti. Ali, a violência se sente até na colheita seguinte.' Corte seco depois do massacre."
+      "note": "'O Artibonite é uma das regiões arrozeiras do Haiti. Ali, a violência se sente até na colheita seguinte.' Corte seco depois do massacre. [Mídia: arrozal do Vale do Artibonite, reportagem da VOA Kreyòl (2018), vídeo SD.]"
     },
     {
       "id": "c3-24",
@@ -428,9 +508,15 @@
       "transition": "whip",
       "frame": "clipping",
       "media": {
-        "src": null,
-        "kind": "image",
-        "want": "Agricultores haitianos trabalhando num arrozal do Vale do Artibonite (plantio ou colheita), plano aberto/médio, sem retratos em close — USAID (domínio público) ou CC | keywords: Artibonite rice farmers, Haiti rice harvest USAID, Haitian farmers rice paddy, riziculture Artibonite"
+        "src": "media/c3/colheita-arroz-2021.mp4",
+        "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.6
+        ],
+        "grade": "warm",
+        "credit": "c3-colheita-arroz-2021"
       },
       "label": {
         "text": "OUTUBRO DE 2025",
@@ -438,7 +524,7 @@
         "at": 1.01,
         "kind": "date"
       },
-      "note": "'Numa reportagem de outubro de 2025, o veículo haitiano AyiboPost' — recorte de jornal com a foto; data no 'outubro' (118,80), a fonte na linha pequena."
+      "note": "'Numa reportagem de outubro de 2025, o veículo haitiano AyiboPost' — recorte de jornal com a foto; data no 'outubro' (118,80), a fonte na linha pequena. [Mídia: agricultores debulhando arroz na Plaine des Cayes, VOA Kreyòl (2021).]"
     },
     {
       "id": "c3-25",
@@ -448,11 +534,17 @@
       "transition": "zoom",
       "frame": "polaroid",
       "media": {
-        "src": null,
-        "kind": "image",
-        "want": "Sacos de arroz/grãos armazenados num depósito ou pequeno moinho de arroz (décortiqueuse) no Haiti, de preferência no Artibonite | keywords: Haiti rice mill, rice sacks Haiti depot, Artibonite rice storage, moulin riz Haiti"
+        "src": "media/c3/sacos-graos-mercado-2010.mp4",
+        "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.62
+        ],
+        "grade": "warm",
+        "credit": "c3-sacos-graos-mercado-2010"
       },
-      "note": "'falou com produtores que tinham perdido plantações, reservas de grãos e moinhos.'"
+      "note": "'falou com produtores que tinham perdido plantações, reservas de grãos e moinhos.' [Mídia: sacos de grãos (arroz, feijão, milho) num mercado de Pétion-Ville, vídeo DVIDS (2010).]"
     },
     {
       "id": "c3-26",
@@ -479,9 +571,15 @@
       "transition": "whip",
       "frame": "polaroid",
       "media": {
-        "src": null,
-        "kind": "image",
-        "want": "Close de pés de arroz num arrozal alagado no Haiti (Artibonite), sem pessoas | keywords: rice plants Haiti, Artibonite rice paddy close-up, rizière Haïti, rice crop Haiti"
+        "src": "media/c3/pes-de-arroz-artibonite.mp4",
+        "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "grade": "warm",
+        "credit": "c3-pes-de-arroz-artibonite"
       },
       "label": {
         "text": "VALDO JEAN",
@@ -489,7 +587,7 @@
         "at": 0.2,
         "kind": "name"
       },
-      "note": "'Valdo Jean, técnico agrícola e jornalista da região, contou que ele também tinha perdido sua plantação de arroz.' Grafia confirmada na AyiboPost. Pessoa privada: sem retrato, só o arrozal."
+      "note": "'Valdo Jean, técnico agrícola e jornalista da região, contou que ele também tinha perdido sua plantação de arroz.' Grafia confirmada na AyiboPost. Pessoa privada: sem retrato, só o arrozal. [Mídia: close de pés de arroz no Vale do Artibonite, VOA Kreyòl (2018).]"
     },
     {
       "id": "c3-28",
@@ -498,12 +596,17 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/c3/mudas-viveiro.jpg",
         "kind": "image",
-        "want": "Mudas de arroz no viveiro ou sendo transplantadas à mão num arrozal (Haiti, de preferência Artibonite); um vídeo curto também serve | keywords: rice seedlings transplanting Haiti, rice nursery Artibonite, planting rice Haiti USAID"
+        "focus": [
+          0.55,
+          0.72
+        ],
+        "grade": "warm",
+        "credit": "c3-mudas-viveiro"
       },
       "move": "left",
-      "note": "'Quando um agricultor tem que fugir depois de semear, as mudas e o adubo já estão pagos. Esse dinheiro também se perde.'"
+      "note": "'Quando um agricultor tem que fugir depois de semear, as mudas e o adubo já estão pagos. Esse dinheiro também se perde.' [Mídia: mudas num viveiro da SOIL no Haiti (sorgo), foto CC BY.]"
     },
     {
       "id": "c3-29",
@@ -541,17 +644,22 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/c3/mirebalais-aerea-2010.jpg",
         "kind": "image",
-        "want": "Fachada do Hôpital Universitaire de Mirebalais (HUM), o grande hospital-escola com painéis solares no teto, em Mirebalais, departamento do Centro (inaugurado em 2013) | keywords: Hopital Universitaire de Mirebalais, Mirebalais University Hospital, HUM Haiti, Partners In Health Mirebalais"
+        "focus": [
+          0.55,
+          0.45
+        ],
+        "grade": "warm",
+        "credit": "c3-mirebalais-aerea-2010"
       },
       "move": "in",
       "label": {
-        "text": "HOSPITAL DE MIREBALAIS",
+        "text": "MIREBALAIS",
         "at": 2.67,
         "kind": "place"
       },
-      "note": "'começou a evacuar os pacientes e o pessoal do Hospital Universitário de Mirebalais.' Rótulo no 'Hospital' (160,84)."
+      "note": "'começou a evacuar os pacientes e o pessoal do Hospital Universitário de Mirebalais.' Rótulo no 'Hospital' (160,84). [Sem foto livre do HUM: vista aérea de Mirebalais (USAF, jan/2010); rótulo trocado para MIREBALAIS.]"
     },
     {
       "id": "c3-32",
@@ -561,25 +669,36 @@
       "transition": "whip",
       "title": "COMUNICADO DE ZANMI LASANTE",
       "media": {
-        "src": null,
+        "src": "media/c3/mirebalais-aerea-2010.jpg",
         "kind": "image",
-        "want": "Reutilizar a foto do HUM de c3-31, ou outra vista do mesmo hospital (corredor/enfermaria vazia)"
+        "focus": [
+          0.55,
+          0.45
+        ],
+        "grade": "warm",
+        "credit": "c3-mirebalais-aerea-2010"
       },
-      "note": "'A equipe explicou num comunicado que, durante esses dias, o hospital tinha escapado de um ataque direto.'"
+      "note": "'A equipe explicou num comunicado que, durante esses dias, o hospital tinha escapado de um ataque direto.' [Mídia: reutiliza a vista aérea de Mirebalais de c3-31.]"
     },
     {
       "id": "c3-33",
       "start": 169.07,
       "end": 172.97,
-      "type": "full",
+      "type": "photo",
       "transition": "whip",
+      "frame": "tv",
       "media": {
-        "src": null,
-        "kind": "image",
-        "want": "Rua de Mirebalais (cidade do departamento do Centro, Haiti), via principal ou mercado; ou patrulha policial em Mirebalais em 2025, se houver licença livre | keywords: Mirebalais Haiti street, Mirebalais town, Mirebalais ville Haïti"
+        "src": "media/c3/mirebalais-rua-2018.mp4",
+        "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "grade": "warm",
+        "credit": "c3-mirebalais-rua-2018"
       },
-      "move": "right",
-      "note": "'A violência na cidade tornava perigoso demais continuar atendendo.'"
+      "note": "'A violência na cidade tornava perigoso demais continuar atendendo.' [Mídia: rua de Mirebalais com mototáxis, VOA Kreyòl (2018), vídeo SD apresentado como TV no mural (antes 'full').]"
     },
     {
       "id": "c3-34",
@@ -589,11 +708,16 @@
       "transition": "whip",
       "frame": "print",
       "media": {
-        "src": null,
+        "src": "media/c3/zanmi-lasante-cange.jpg",
         "kind": "image",
-        "want": "Ambulância em serviço no Haiti (exterior do veículo, sem pacientes identificáveis) OU fachada de outro centro de saúde da rede Zanmi Lasante / Partners In Health (ex.: Cange, Hinche, Saint-Marc) | keywords: ambulance Haiti, Haiti ambulance Port-au-Prince, Zanmi Lasante Cange, Partners In Health Haiti clinic, Hopital Saint-Nicolas Saint-Marc"
+        "focus": [
+          0.45,
+          0.45
+        ],
+        "grade": "warm",
+        "credit": "c3-zanmi-lasante-cange"
       },
-      "note": "'A rede transferiu os pacientes e realocou o pessoal em outros centros.'"
+      "note": "'A rede transferiu os pacientes e realocou o pessoal em outros centros.' [Mídia: centro da Zanmi Lasante em Cange.]"
     },
     {
       "id": "c3-35",
@@ -602,11 +726,17 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/c3/porto-conteineres-guindaste.mp4",
         "kind": "video",
-        "want": "VIDEO: navio porta-contêineres / contêineres movimentados por guindastes num porto (Porto Príncipe ou Miami/Flórida), anos recentes — DVIDS/Commons | keywords: container ship port video, Port-au-Prince port containers, Port of Miami cargo b-roll, DVIDS port containers crane"
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "grade": "cold",
+        "credit": "c3-porto-conteineres-guindaste"
       },
-      "note": "'Há outra parte desta história que cruza fronteiras. O grupo de especialistas da ONU' — entrada do tráfico de armas."
+      "note": "'Há outra parte desta história que cruza fronteiras. O grupo de especialistas da ONU' — entrada do tráfico de armas. [Mídia: guindaste movimentando contêiner no Porto de Savannah (CBP/DVIDS, 2023).]"
     },
     {
       "id": "c3-36",
@@ -616,16 +746,21 @@
       "transition": "whip",
       "frame": "print",
       "media": {
-        "src": null,
+        "src": "media/c3/armas-apreendidas-cbp.jpg",
         "kind": "image",
-        "want": "Armas de fogo e munição apreendidas nos EUA com destino ao Haiti, dispostas sobre uma mesa (CBP/HSI/ATF, Miami ou Flórida), domínio público | keywords: CBP seizure firearms Haiti, HSI Miami weapons bound for Haiti, ATF guns Haiti smuggling, firearms seized Port of Miami Haiti"
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "grade": "cold",
+        "credit": "c3-armas-apreendidas-cbp"
       },
       "label": {
         "text": "ESTADOS UNIDOS",
         "at": 2.71,
         "kind": "place"
       },
-      "note": "'documentou envios ilegais de armas e munições a partir dos Estados Unidos.' Rótulo no 'desde Estados Unidos' (184,70). (Mapa com rota EUA→Haiti descartado: nas views 'caribbean'/'americas' a Flórida fica colada na borda superior e o rótulo da rota sairia fora da folha.)"
+      "note": "'documentou envios ilegais de armas e munições a partir dos Estados Unidos.' Rótulo no 'desde Estados Unidos' (184,70). (Mapa com rota EUA→Haiti descartado: nas views 'caribbean'/'americas' a Flórida fica colada na borda superior e o rótulo da rota sairia fora da folha.) [Mídia: armas e munição apreendidas pela CBP em operação de saída em Del Rio, Texas (2025); não há foto livre ≥900 px de apreensão com destino ao Haiti.]"
     },
     {
       "id": "c3-37",
@@ -635,11 +770,16 @@
       "transition": "whip",
       "frame": "polaroid",
       "media": {
-        "src": null,
+        "src": "media/c3/deposito-municao.jpg",
         "kind": "image",
-        "want": "Caixas de munição e fuzis apreendidos ou num depósito de armas, de preferência ligados à Polícia Nacional do Haiti/Estado haitiano; foto livre (domínio público dos EUA ou CC) — diferente de c3-36 | keywords: ammunition boxes seized Haiti, Haitian National Police weapons, rifles ammunition seizure Haiti, PNH armory"
+        "focus": [
+          0.5,
+          0.55
+        ],
+        "grade": "cold",
+        "credit": "c3-deposito-municao"
       },
-      "note": "'Dentro do Haiti, também encontrou material desviado dos arsenais do país.'"
+      "note": "'Dentro do Haiti, também encontrou material desviado dos arsenais do país.' [Mídia: depósito de munição do Exército dos EUA (ilustrativa); sem foto livre de arsenais haitianos.]"
     },
     {
       "id": "c3-38",
@@ -648,11 +788,17 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/c3/g9-fuzis-video-2024.mp4",
         "kind": "video",
-        "want": "VIDEO: membros armados de gangues (G9/Viv Ansanm), mascarados, desfilando ou patrulhando com fuzis em Porto Príncipe, 2021–2025 — só VOA (domínio público) ou CC; sem feridos/cadáveres | keywords: VOA Haiti gang video, G9 gang march Port-au-Prince, Barbecue Cherizier march video, Haiti armed gang b-roll"
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.45
+        ],
+        "grade": "warm",
+        "credit": "c3-g9-fuzis-video-2024"
       },
-      "note": "'Por isso digo que o poder dessas gangues vai além do Haiti. E eu me pergunto se parte do dinheiro também vem de fora.'"
+      "note": "'Por isso digo que o poder dessas gangues vai além do Haiti. E eu me pergunto se parte do dinheiro também vem de fora.' [Mídia: membros mascarados do G9 erguendo fuzis, VOA Kreyòl (mar/2024).]"
     },
     {
       "id": "c3-39",
@@ -672,9 +818,14 @@
       "transition": "whip",
       "frame": "print",
       "media": {
-        "src": null,
+        "src": "media/c3/banco-republica-haiti.jpg",
         "kind": "image",
-        "want": "Fachada de agência bancária em Porto Príncipe ou Pétion-Ville (ex.: Sogebank, Unibank, BNC, Capital Bank) ou o prédio do Banque de la République d'Haïti | keywords: bank Port-au-Prince, Sogebank Haiti, Unibank Haiti, Banque de la Republique d'Haiti building"
+        "focus": [
+          0.55,
+          0.5
+        ],
+        "grade": "warm",
+        "credit": "c3-banco-republica-haiti"
       },
       "note": "'Também consultaram os bancos haitianos. Segundo as respostas que receberam, só puderam confirmar o congelamento de fundos em contas'"
     },
@@ -695,11 +846,17 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/c3/porto-principe-aereo-2010.mp4",
         "kind": "video",
-        "want": "VIDEO: plano aéreo/panorâmico lento sobre Porto Príncipe e as colinas de Pétion-Ville (cidade densa, casas nas encostas), fim de tarde ou dia — plano de encerramento | keywords: Port-au-Prince aerial video, Haiti drone footage, Petion-Ville aerial, Port-au-Prince panorama, DVIDS Port-au-Prince aerial"
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "grade": "warm",
+        "credit": "c3-porto-principe-aereo-2010"
       },
-      "note": "Fecho do capítulo: 'Aí se vê a distância entre sancionar quem põe o dinheiro e tocar o patrimônio que lhe permite manter a sua influência.'"
+      "note": "Fecho do capítulo: 'Aí se vê a distância entre sancionar quem põe o dinheiro e tocar o patrimônio que lhe permite manter a sua influência.' [Mídia: voo de helicóptero sobre bairros nas encostas de Porto Príncipe (Exército dos EUA/DVIDS, mar/2010).]"
     }
   ]
 }

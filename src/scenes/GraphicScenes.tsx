@@ -10,6 +10,7 @@ import { EASE_OUT, H, W, fmtNum, prog, rand, sec } from "../lib/util";
 import { C, FONT, GLOW_RED, GLOW_WHITE } from "../theme";
 import type { DateScene, FullScene, MediaRef, StatScene, TimelineScene } from "../types";
 import { Cam, TextShade } from "./common";
+import { CircleMark, Highlight } from "../components/Emphasis";
 
 /** Fundo de cena gráfica: o mural, ou uma foto/vídeo real escurecida e em P&B. */
 const GraphicBg: React.FC<{ media?: MediaRef | null }> = ({ media }) => {
@@ -88,11 +89,13 @@ export const StatView: React.FC<{ s: StatScene }> = ({ s }) => {
               transform: `scale(${interpolate(prog(frame, at, at + 10, EASE_OUT), [0, 1], [1.1, 1])})`,
             }}
           >
-            {s.value >= 10 ? (
-              <CountUp value={s.value} at={at} dur={34} decimals={s.decimals ?? 0} prefix={s.prefix ?? ""} suffix={s.suffix ?? ""} />
-            ) : (
-              full
-            )}
+            <CircleMark at={s.value >= 10 ? at + 38 : at + 12} seed={Math.round(s.value) + 7} padX={full.length > 6 ? 6 : 14} padY={14} width={5}>
+              {s.value >= 10 ? (
+                <CountUp value={s.value} at={at} dur={34} decimals={s.decimals ?? 0} prefix={s.prefix ?? ""} suffix={s.suffix ?? ""} />
+              ) : (
+                full
+              )}
+            </CircleMark>
           </div>
           {s.text ? (
             <div
@@ -144,18 +147,10 @@ export const DateView: React.FC<{ s: DateScene }> = ({ s }) => {
               maxWidth: 1500,
             }}
           >
-            {s.text}
+            <Highlight at={at + 8} dur={12}>
+              <span style={{ padding: "0 0.06em" }}>{s.text}</span>
+            </Highlight>
           </div>
-          <div
-            style={{
-              marginTop: 18,
-              width: 180,
-              height: 4,
-              backgroundColor: C.redBright,
-              boxShadow: "0 0 8px rgba(255,60,40,0.5)",
-              transform: `scaleX(${prog(frame, at + 6, at + 20, EASE_OUT)})`,
-            }}
-          />
           {s.sub ? (
             <div style={{ marginTop: 22, fontFamily: FONT.type, fontSize: 40, letterSpacing: "0.18em", color: C.white, textShadow: GLOW_WHITE, textTransform: "uppercase", textAlign: "center", maxWidth: 1200 }}>
               <TypeText text={s.sub} at={at + 16} />

@@ -1,0 +1,29 @@
+[   0.00-   5.88] En septiembre de 2022, el Servicio Nacional de Ambulancias apenas podía sacar tres vehículos
+[   5.88-  11.26] a las calles de Puerto Príncipe. Faltaba combustible. El G9, una coalición de pandillas,
+[  11.48-  16.58] tenía bloqueada la principal terminal de combustible de Haití. Los principales hospitales del país
+[  16.58-  21.50] dependían de sus generadores cada vez que se iba a la luz, y la escasez ya afectaba a unos
+[  21.50-  27.10] tres de cada cuatro. Con ese bloqueo, unos hombres armados en la capital acabaron decidiendo si una
+[  27.10-  32.04] ambulancia llegaba a tiempo y si una maternidad podía seguir atendiendo. Cuatro años después,
+[  32.42-  38.44] en noviembre de 2026, las pandillas todavía controlaban más del 80% del área metropolitana
+[  38.44-  43.22] de Puerto Príncipe. Esa era la estimación que publicó Reuters. En el interior del país,
+[  43.40-  48.64] la situación cambia de una ciudad a otra. Hubo que evacuar hospitales. Algunos agricultores los
+[  48.64-  54.20] expulsaron de sus tierras. También hubo comunidades que lograron restablecer servicios aún en medio
+[  54.20-  58.94] de la violencia. Para entender cómo llegó Haití a este punto, hay que volver a la época en que
+[  58.94-  62.74] los hombres armados dependían mucho más de los políticos que los financiaban.
+[  63.10-  69.40] François Duvalier, conocido como Papa Doc, llegó a la presidencia en 1957. Al año siguiente,
+[  69.64-  74.98] tras un intento de golpe de estado, creó su propia milicia para hacerle contrapeso al ejército. A sus
+[  74.98-  80.50] integrantes los llamaban Tonton Macouts. Perseguían a los opositores del régimen e intimidaban a la
+[  80.50-  86.62] población en nombre del presidente. Cuando Duvalier murió en 1971, su hijo Jean-Claude heredó la
+[  86.62-  93.44] presidencia. Mantuvo ese aparato de represión hasta que cayó la dictadura, en 1986. ¿Y qué tiene
+[  93.44-  98.28] que ver aquella milicia con las pandillas de hoy? Después de los Duvalier, quienes se disputaban el
+[  98.28- 103.26] poder todavía podían recurrir a hombres armados para conseguir lo que difícilmente lograrían en
+[ 103.26- 109.40] las urnas. En 1991, los militares derrocaron al presidente electo Jean-Bertrand Aristide.
+[ 109.64- 114.76] Después surgió el FRAP, una organización paramilitar aliada de los golpistas. Entre sus
+[ 114.76- 120.60] integrantes había antiguos Macouts. Organizaciones de derechos humanos documentaron asesinatos políticos
+[ 120.60- 125.02] y persecuciones contra personas señaladas como simpatizantes del presidente derrocado.
+[ 125.24- 131.94] Aristide regresó al país en 1994. Al año siguiente, disolvió el ejército y la nueva policía
+[ 131.94- 137.10] nacional de Haití quedó a cargo de la seguridad interna. Algunos exsoldados se quedaron sin
+[ 137.10- 142.66] opciones para volver a la vida civil y se unieron a grupos armados. Para entonces, los vecinos
+[ 142.66- 147.70] de los barrios populares de Puerto Príncipe ya habían formado sus propios grupos de defensa
+[ 147.70- 154.04] y movilización. En criollo haitiano los llamaban BAS, es decir, bases. El rumbo de cada grupo
+[ 154.04- 157.84] dependió de quién lo apoyaba y de las disputas políticas de su barrio.

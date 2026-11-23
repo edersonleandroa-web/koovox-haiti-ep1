@@ -40,6 +40,6 @@ export const EASE_IN = Easing.in(Easing.cubic);
 export const EASE_IO = Easing.inOut(Easing.cubic);
 export const EASE_BACK = Easing.out(Easing.back(1.6));
 
-/** Formata número no padrão brasileiro. */
+/** Formata número para o público hispano-americano (es-MX: 5,940,000 · 1.5). */
 export const fmtNum = (v: number, decimals = 0) =>
-  v.toLocaleString("pt-BR", { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+  v.toLocaleString("es-MX", { minimumFractionDigits: decimals, maximumFractionDigits: decimals });

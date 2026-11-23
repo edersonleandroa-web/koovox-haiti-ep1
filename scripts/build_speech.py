@@ -6,7 +6,7 @@ import json
 import os
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-TR = os.path.join(ROOT, "data", "transcripts")
+TR = os.path.join(ROOT, "data", "transcripts-es")  # narração em espanhol
 MAP = {"intro": "Intro", "c1": "1", "c2": "2", "c3": "3", "final": "Final"}
 GAP = 0.45  # pausas menores que isso contam como fala contínua
 

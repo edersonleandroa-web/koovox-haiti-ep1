@@ -20,6 +20,7 @@ export type LabelSpec = {
   sub?: string;
   at?: number;
   kind?: LabelKind;
+  mark?: "marker" | "circle" | "none"; // destaque: marca-texto ou círculo (nunca linha embaixo)
 };
 
 export type SfxSpec = { name: string; at?: number; volume?: number };

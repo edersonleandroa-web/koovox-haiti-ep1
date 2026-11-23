@@ -62,23 +62,23 @@ const VIEWS: Record<MapView, [number, number, number, number]> = {
 const COUNTRY_LABELS: Record<MapView, { t: string; lon: number; lat: number; big?: boolean; faint?: boolean }[]> = {
   americas: [
     { t: "EL SALVADOR", lon: -88.9, lat: 14.55 },
-    { t: "HAITI", lon: -72.7, lat: 19.45, big: true },
-    { t: "MAR DO CARIBE", lon: -77.5, lat: 14.6, faint: true },
-    { t: "OCEANO PACÍFICO", lon: -89.5, lat: 9.6, faint: true },
+    { t: "HAITÍ", lon: -72.7, lat: 19.45, big: true },
+    { t: "MAR CARIBE", lon: -77.5, lat: 14.6, faint: true },
+    { t: "OCÉANO PACÍFICO", lon: -89.5, lat: 9.6, faint: true },
   ],
   caribbean: [
-    { t: "HAITI", lon: -72.75, lat: 19.35, big: true },
+    { t: "HAITÍ", lon: -72.75, lat: 19.35, big: true },
     { t: "REP. DOMINICANA", lon: -70.4, lat: 18.95 },
     { t: "CUBA", lon: -78.4, lat: 21.75, faint: true },
     { t: "JAMAICA", lon: -77.3, lat: 18.45, faint: true },
-    { t: "MAR DO CARIBE", lon: -74.5, lat: 16.3, faint: true },
+    { t: "MAR CARIBE", lon: -74.5, lat: 16.3, faint: true },
   ],
   haiti: [
-    { t: "HAITI", lon: -73.25, lat: 19.62, big: true },
+    { t: "HAITÍ", lon: -73.25, lat: 19.62, big: true },
     { t: "REP. DOMINICANA", lon: -71.62, lat: 19.2, faint: true },
-    { t: "MAR DO CARIBE", lon: -73.2, lat: 18.03, faint: true },
+    { t: "MAR CARIBE", lon: -73.2, lat: 18.03, faint: true },
   ],
-  pap: [{ t: "BAÍA DE PORTO PRÍNCIPE", lon: -72.47, lat: 18.6, faint: true }],
+  pap: [{ t: "BAHÍA DE PUERTO PRÍNCIPE", lon: -72.47, lat: 18.6, faint: true }],
 };
 
 const MW = 1760;

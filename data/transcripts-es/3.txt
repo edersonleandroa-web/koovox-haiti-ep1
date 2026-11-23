@@ -1,0 +1,76 @@
+[   0.00-   2.08] ¿Y de dónde sacan el dinero estas pandillas?
+[   2.36-   6.70] Según el Banco Mundial, Haití es uno de los países más pobres del mundo
+[   6.70-   9.16] y el más pobre de América Latina y el Caribe.
+[   9.34-  13.40] En las zonas que controlan, las pandillas les cobran a quienes viven y trabajan ahí.
+[  13.60-  16.32] Los comerciantes empezaron a pagar para poder trabajar.
+[  16.64-  20.86] Los transportistas de carga y los conductores del transporte público para poder circular.
+[  21.22-  24.66] Según algunas fuentes, esos cobros les permitieron a las pandillas
+[  24.66-  26.86] depender menos de sus padrinos políticos.
+[  26.86-  30.38] Otra fuente de ingresos son los secuestros para pedir rescate.
+[  30.70-  33.06] Solo entre julio y septiembre de 2026,
+[  33.42-  38.36] la ONU registró en Haití al menos 137 personas secuestradas por ese motivo.
+[  38.54-  41.52] Con lo que recauda, una pandilla puede seguir funcionando
+[  41.52-  44.52] aunque su antiguo padrino pierda el cargo o cambie de bando.
+[  44.66-  48.58] Y el costo lo paga hasta quien nunca ha tenido que vérselas con una pandilla.
+[  48.80-  51.12] Si llevar los productos al mercado cuesta más,
+[  51.36-  54.00] quien va a comprarlos también termina pagando más.
+[  54.00-  58.02] Yo, la verdad, tengo mis dudas sobre muchas de esas fuentes.
+[  58.36-  62.56] Estamos hablando de un país muy pobre y de pandillas que tienen muchísimo poder.
+[  62.92-  65.52] Parte de ese dinero bien podría venir de otro lado.
+[  65.76-  68.34] Pero bueno, mejor me limito a contarles esa versión.
+[  68.72-  71.80] Los expertos de la ONU también identificaron a empresarios,
+[  72.00-  74.36] políticos y miembros de las fuerzas de seguridad
+[  74.36-  77.32] que apoyaban a distintas facciones en beneficio propio.
+[  77.56-  80.36] El caso de Grand Grif, en el departamento de Artibonite,
+[  80.70-  82.92] muestra cómo podía empezar una relación así.
+[  82.92-  86.40] Según el Comité de Sanciones del Consejo de Seguridad de la ONU,
+[  86.64-  89.40] el político Profane Víctor armó a un grupo de jóvenes
+[  89.40-  92.50] para que lo ayudaran a salir elegido diputado en 2016.
+[  92.96-  95.34] Algunos de esos jóvenes formaron Grand Grif.
+[  95.62-  98.80] Más adelante, Víctor empezó a apoyar a grupos rivales.
+[  99.16- 100.44] Grand Grif siguió en pie.
+[ 100.74- 104.08] En octubre de 2024, la pandilla atacó Ponsondé.
+[ 104.44- 106.26] Según el balance que citó el consejo,
+[ 106.50- 108.60] unas 100 personas murieron en la masacre
+[ 108.60- 111.22] y más de 6.000 tuvieron que huir de sus hogares.
+[ 111.22- 114.36] Artibonite es una de las regiones arroceras de Haití.
+[ 114.48- 117.60] Ahí, la violencia se siente hasta en la siguiente cosecha.
+[ 117.80- 120.00] En un reportaje de octubre de 2025,
+[ 120.50- 123.12] el medio haitiano Ayibo Post habló con productores
+[ 123.12- 126.36] que habían perdido cultivos, reservas de grano y molinos.
+[ 126.68- 128.56] Cuando la policía regresó a Liancourt,
+[ 128.84- 131.26] algunas familias volvieron a cultivar sus tierras.
+[ 131.46- 133.68] Después, tuvieron que huir otra vez.
+[ 133.90- 136.96] Valdo Jean, técnico agrícola y periodista de la zona,
+[ 137.26- 140.26] contó que él también había perdido su cultivo de arroz.
+[ 140.26- 143.36] Cuando un agricultor tiene que huir después de sembrar,
+[ 143.66- 146.04] las plántulas y el abono ya están pagados.
+[ 146.26- 148.26] Ese dinero también se pierde.
+[ 148.42- 150.10] En el departamento del centro,
+[ 150.42- 153.74] la crisis alcanzó a uno de los hospitales de referencia del país.
+[ 154.16- 158.08] En abril de 2025, la organización haitiana San Milasante
+[ 158.08- 159.88] empezó a evacuar a los pacientes
+[ 159.88- 162.66] y al personal del Hospital Universitario de Mirebalé.
+[ 162.92- 165.04] El equipo explicó en un comunicado que,
+[ 165.22- 168.94] durante esos días, el hospital se había librado de un ataque directo.
+[ 168.94- 172.80] La violencia en la ciudad hacía demasiado peligroso seguir atendiendo.
+[ 172.96- 174.76] La red trasladó a los pacientes
+[ 174.76- 176.98] y reubicó al personal en otros centros.
+[ 177.20- 180.12] Hay otra parte de esta historia que cruza fronteras.
+[ 180.28- 181.92] El grupo de expertos de la ONU
+[ 181.92- 185.94] documentó envíos ilegales de armas y municiones desde Estados Unidos.
+[ 186.32- 187.20] Dentro de Haití,
+[ 187.32- 190.52] también encontró material desviado de los arsenales del país.
+[ 190.76- 194.40] Por eso les digo que el poder de estas pandillas va más allá de Haití.
+[ 194.50- 197.78] Y yo me pregunto si parte del dinero también viene de fuera.
+[ 197.78- 199.80] En su informe de 2026,
+[ 200.12- 203.96] los expertos señalaron que se seguía violando el embargo internacional de armas.
+[ 204.30- 206.46] También consultaron a los bancos haitianos.
+[ 206.58- 208.38] Según las respuestas que recibieron,
+[ 208.62- 211.56] solo pudieron confirmar el congelamiento de fondos en cuentas
+[ 211.56- 214.04] de dos de las personas sancionadas por la ONU.
+[ 214.12- 215.52] Y eran sumas pequeñas.
+[ 215.74- 219.10] Ahí se ve la distancia que hay entre sancionar a quien pone el dinero
+[ 219.10- 222.36] y tocar el patrimonio que le permite mantener su influencia.
+[ 222.36- 222.38] ¡Gracias!
+[ 222.42- 222.56] ¡Gracias!

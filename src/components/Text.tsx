@@ -3,6 +3,7 @@ import { interpolate, useCurrentFrame } from "remotion";
 import type { LabelSpec } from "../types";
 import { C, FONT, GLOW_RED, GLOW_WHITE } from "../theme";
 import { EASE_OUT, FPS, fmtNum, prog, sec } from "../lib/util";
+import { CircleMark, Highlight } from "./Emphasis";
 
 /**
  * Máquina de escrever: revela caractere a caractere a partir do quadro `at` (cps = caracteres/s).
@@ -73,7 +74,8 @@ export const Label: React.FC<{
   const base = labelStyle(kind);
   const on = neonOn(frame, at);
   const slam = prog(frame, at, at + 8, EASE_OUT);
-  const rule = prog(frame, at + 4, at + 18, EASE_OUT);
+  const typedEnd = at + sec(Math.min(1.4, spec.text.length / 26)) + 2;
+  const mark = spec.mark ?? (kind === "info" && !tag ? "marker" : "none");
   const subAt = at + sec(Math.min(1.2, 0.18 + spec.text.length / 26));
   const sub = spec.sub ? prog(frame, subAt, subAt + 10) : 0;
   return (
@@ -113,18 +115,16 @@ export const Label: React.FC<{
           transform: typed ? undefined : `scale(${interpolate(slam, [0, 1], [1.12, 1])})`,
         }}
       >
-        {typed ? <TypeText text={spec.text} at={at} /> : spec.text}
+        {mark === "marker" ? (
+          <Highlight at={typed ? typedEnd : at + 6}>{typed ? <TypeText text={spec.text} at={at} /> : spec.text}</Highlight>
+        ) : mark === "circle" ? (
+          <CircleMark at={typed ? typedEnd : at + 8}>{typed ? <TypeText text={spec.text} at={at} /> : spec.text}</CircleMark>
+        ) : typed ? (
+          <TypeText text={spec.text} at={at} />
+        ) : (
+          spec.text
+        )}
       </div>
-      <div
-        style={{
-          width: 120,
-          height: 3,
-          backgroundColor: C.redBright,
-          boxShadow: "0 0 6px rgba(255,60,40,0.45)",
-          transform: `scaleX(${rule})`,
-          transformOrigin: align === "center" ? "50% 50%" : "0% 50%",
-        }}
-      />
       {spec.sub ? (
         <div
           style={{

@@ -22,6 +22,11 @@ Regras do usuário (obrigatórias):
 - **Informação perto do centro** da tela (nunca nos cantos/bordas).
 - **Textos com um neon bem leve** (o código cuida do brilho; o roteiro só define o texto).
 - **Imagens e vídeos reais** buscados na internet.
+- **O vídeo é em ESPANHOL** (a narração é em espanhol): todo texto de tela em espanhol, em MAIÚSCULAS,
+  com acentos e sinais de abertura (¿ ¡). Ex.: PUERTO PRÍNCIPE, HAITÍ, PANDILLAS, REPÚBLICA DOMINICANA.
+  Números no padrão hispano-americano (5,940,000 · 1.5).
+- **Nunca linha embaixo do texto.** Para destacar uma palavra: marca-texto (`"mark": "marker"`) ou um
+  círculo à mão em volta (`"mark": "circle"`) no `label`.
 
 ## 2. Formato do arquivo de cenas
 
@@ -111,9 +116,9 @@ Regras de escolha:
 
 ## 3. Regras de texto de tela
 
-- Português do Brasil, **MAIÚSCULAS**, sem ponto final. Grafia correta dos nomes próprios
-  (a transcrição tem erros: "Puerto Príncipe" → PORTO PRÍNCIPE; "pandillas/pandeias" → GANGUES;
-  "FRAP" → FRAPH; "BAS" → BAZ; "Cubox" → KOOVOX; "Tonton Macoutes" → TONTONS MACOUTES).
+- **Espanhol**, **MAIÚSCULAS**, sem ponto final, com acentos e ¿ ¡. Grafia correta dos nomes próprios
+  (PUERTO PRÍNCIPE; HAITÍ; PANDILLAS; FRAPH; BAZ; KOOVOX; TONTONS MACOUTES; CITÉ SOLEIL; GRAN GRIF).
+  Transcrição correta em espanhol: `data/transcripts-es/`.
 - `label.text` ≤ 4 palavras; `sub` ≤ 4 palavras. Máximo **1 rótulo por cena**.
 - Só fatos ditos na narração (ou datas/nomes inequívocos do próprio assunto narrado).
   Nada inventado. Na dúvida, sem texto.

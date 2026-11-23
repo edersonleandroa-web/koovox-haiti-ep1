@@ -36,16 +36,6 @@ export const ChapterCard: React.FC<{ number: string; title: string; dur: number 
         >
           {title}
         </div>
-        <div
-          style={{
-            marginTop: 26,
-            width: 260,
-            height: 4,
-            backgroundColor: C.redBright,
-            boxShadow: "0 0 8px rgba(255,60,40,0.5)",
-            transform: `scaleX(${prog(frame, 18, 36, EASE_OUT)})`,
-          }}
-        />
       </AbsoluteFill>
     </AbsoluteFill>
   );
