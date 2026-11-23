@@ -88,7 +88,11 @@ export const StatView: React.FC<{ s: StatScene }> = ({ s }) => {
               transform: `scale(${interpolate(prog(frame, at, at + 10, EASE_OUT), [0, 1], [1.1, 1])})`,
             }}
           >
-            <CountUp value={s.value} at={at} dur={34} decimals={s.decimals ?? 0} prefix={s.prefix ?? ""} suffix={s.suffix ?? ""} />
+            {s.value >= 10 ? (
+              <CountUp value={s.value} at={at} dur={34} decimals={s.decimals ?? 0} prefix={s.prefix ?? ""} suffix={s.suffix ?? ""} />
+            ) : (
+              full
+            )}
           </div>
           {s.text ? (
             <div
@@ -169,8 +173,9 @@ export const TimelineView: React.FC<{ s: TimelineScene }> = ({ s }) => {
   const items = s.years.slice(0, 7);
   const n = items.length;
   const focus = Math.max(0, Math.min(n - 1, s.focus ?? n - 1));
-  const x0 = W * 0.1;
-  const x1 = W * 0.9;
+  const span = Math.min(W * 0.76, Math.max(0, n - 1) * 400);
+  const x0 = W / 2 - span / 2;
+  const x1 = W / 2 + span / 2;
   const y = H * 0.5;
   const step = n > 1 ? (x1 - x0) / (n - 1) : 0;
   const xs = items.map((_, i) => (n > 1 ? x0 + i * step : W / 2));
@@ -199,7 +204,7 @@ export const TimelineView: React.FC<{ s: TimelineScene }> = ({ s }) => {
                   transform: "translate(-50%, -100%)",
                   fontFamily: FONT.cond,
                   fontWeight: isF ? 700 : 500,
-                  fontSize: isF ? 76 : 50,
+                  fontSize: isF ? 92 : 62,
                   letterSpacing: "0.03em",
                   color: isF ? C.redNeon : C.white,
                   textShadow: isF ? GLOW_RED : GLOW_WHITE,
@@ -215,11 +220,11 @@ export const TimelineView: React.FC<{ s: TimelineScene }> = ({ s }) => {
                     position: "absolute",
                     left: xs[i],
                     top: y + 44,
-                    width: Math.max(180, step - 20),
+                    width: Math.max(220, Math.min(360, step - 24)),
                     transform: "translateX(-50%)",
                     textAlign: "center",
                     fontFamily: FONT.type,
-                    fontSize: isF ? 27 : 22,
+                    fontSize: isF ? 32 : 27,
                     lineHeight: 1.2,
                     letterSpacing: "0.06em",
                     color: C.white,

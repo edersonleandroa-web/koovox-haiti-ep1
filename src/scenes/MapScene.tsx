@@ -23,8 +23,31 @@ const world = feature(
   worldTopo as unknown as Topology,
   (worldTopo as unknown as Topology).objects.countries as GeometryCollection,
 ) as unknown as FeatureCollection<Geometry, { name: string }>;
-const adm1 = adm1Raw as unknown as FeatureCollection<Geometry, { shapeName: string }>;
-const adm3 = adm3Raw as unknown as FeatureCollection<Geometry, { shapeName: string }>;
+// geoBoundaries segue a RFC 7946 (anel externo anti-horário); o d3-geo espera o anel externo
+// horário — sem inverter, ele pinta "o mundo menos o polígono". Reorienta os anéis ao carregar.
+type Ring = number[][];
+const signedArea = (r: Ring) => {
+  let a = 0;
+  for (let i = 0, j = r.length - 1; i < r.length; j = i++) a += (r[j][0] - r[i][0]) * (r[j][1] + r[i][1]);
+  return a / 2; // > 0: anti-horário (x = lon, y = lat)
+};
+const fixPolygon = (poly: Ring[]) =>
+  poly.map((ring, k) => {
+    const ccw = signedArea(ring) > 0;
+    return (k === 0 ? ccw : !ccw) ? [...ring].reverse() : ring;
+  });
+const rewind = <P,>(fc: FeatureCollection<Geometry, P>): FeatureCollection<Geometry, P> => ({
+  ...fc,
+  features: fc.features.map((f) => {
+    const g = f.geometry as unknown as { type: string; coordinates: unknown };
+    if (g.type === "Polygon") return { ...f, geometry: { ...g, coordinates: fixPolygon(g.coordinates as Ring[]) } as unknown as Geometry };
+    if (g.type === "MultiPolygon")
+      return { ...f, geometry: { ...g, coordinates: (g.coordinates as Ring[][]).map(fixPolygon) } as unknown as Geometry };
+    return f;
+  }),
+});
+const adm1 = rewind(adm1Raw as unknown as FeatureCollection<Geometry, { shapeName: string }>);
+const adm3 = rewind(adm3Raw as unknown as FeatureCollection<Geometry, { shapeName: string }>);
 // litoral 10m (Natural Earth) para as vistas aproximadas — o 50m fica grosseiro em Porto Príncipe
 const hisp = hispRaw as unknown as FeatureCollection<Geometry, { name: string }>;
 
