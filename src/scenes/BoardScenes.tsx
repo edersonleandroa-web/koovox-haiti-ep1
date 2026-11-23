@@ -10,6 +10,7 @@ import { EASE_OUT, H, W, prog, rand, sec } from "../lib/util";
 import { C, FONT, GLOW_RED, GLOW_WHITE, SHADOW_OBJ } from "../theme";
 import type { DocScene, DuoScene, HeadlineScene, NetworkScene, PersonScene, PhotoScene } from "../types";
 import { Cam } from "./common";
+import CUTOUTS from "../data/cutouts.json";
 
 const kbOf = (frame: number, dur: number) => Math.min(1.2, frame / Math.max(1, dur));
 
@@ -49,15 +50,25 @@ export const PhotoView: React.FC<{ s: PhotoScene }> = ({ s }) => {
   );
 };
 
-/** Retrato recortado (fundo removido no Canva) sobre um disco e um anel vermelho neon. */
+/**
+ * Retrato recortado (fundo removido no Magnific) sobre um disco e um anel vermelho neon.
+ * Figura e anel se ajustam à proporção do recorte (src/data/cutouts.json): bustos largos ficam
+ * menores e o anel desce até a altura do rosto.
+ */
 const Cutout: React.FC<{ src: string; grade?: string }> = ({ src }) => {
   const frame = useCurrentFrame();
   const { dur } = useScene();
-  const cx = W * 0.36;
+  const aspect = (CUTOUTS as Record<string, number>)[src] ?? 0.78;
+  const boxW = 780;
+  const figH = Math.min(H * 0.84, boxW / aspect);
+  const figW = figH * aspect;
+  const cx = aspect > 1 ? W * 0.34 : W * 0.36;
+  const top = H - figH;
+  const R = Math.round(Math.min(300, figH * 0.42));
+  const ringY = Math.min(H * 0.6, Math.max(H * 0.42, top + figH * 0.34));
   const ring = prog(frame, 4, 26, EASE_OUT);
   const rise = prog(frame, 6, 24, EASE_OUT);
   const t = Math.min(1.3, frame / Math.max(1, dur));
-  const R = 300;
   const circ = 2 * Math.PI * R;
   return (
     <AbsoluteFill style={{ transform: `scale(${1 + 0.035 * t})`, transformOrigin: "36% 70%", willChange: "transform" }}>
@@ -65,7 +76,7 @@ const Cutout: React.FC<{ src: string; grade?: string }> = ({ src }) => {
         style={{
           position: "absolute",
           left: cx - R * 1.25,
-          top: H * 0.46 - R * 1.25,
+          top: ringY - R * 1.25,
           width: R * 2.5,
           height: R * 2.5,
           borderRadius: "50%",
@@ -74,7 +85,7 @@ const Cutout: React.FC<{ src: string; grade?: string }> = ({ src }) => {
           opacity: ring,
         }}
       />
-      <svg style={{ position: "absolute", left: cx - R - 10, top: H * 0.46 - R - 10, width: R * 2 + 20, height: R * 2 + 20, overflow: "visible" }}>
+      <svg style={{ position: "absolute", left: cx - R - 10, top: ringY - R - 10, width: R * 2 + 20, height: R * 2 + 20, overflow: "visible" }}>
         <circle
           cx={R + 10}
           cy={R + 10}
@@ -94,7 +105,8 @@ const Cutout: React.FC<{ src: string; grade?: string }> = ({ src }) => {
           position: "absolute",
           left: cx,
           bottom: -6,
-          height: H * 0.84,
+          width: figW,
+          height: figH,
           transform: `translateX(-50%) translateY(${interpolate(rise, [0, 1], [70, 0])}px)`,
           opacity: prog(frame, 6, 12),
           filter:
@@ -131,7 +143,7 @@ export const PersonView: React.FC<{ s: PersonScene }> = ({ s }) => {
           </Placed>
         </Cam>
       )}
-      <div style={{ position: "absolute", left: W * 0.525, top: H * 0.5, transform: "translateY(-50%)", width: 720 }}>
+      <div style={{ position: "absolute", left: cut ? W * 0.57 : W * 0.525, top: H * 0.5, transform: "translateY(-50%)", width: cut ? 680 : 720 }}>
         <div style={{ fontFamily: FONT.type, fontSize: 56, letterSpacing: "0.06em", lineHeight: 1.1, color: C.white, textShadow: GLOW_WHITE, textTransform: "uppercase" }}>
           <TypeText text={s.name} at={nameAt} />
         </div>
@@ -434,7 +446,7 @@ export const HeadlineView: React.FC<{ s: HeadlineScene }> = ({ s }) => {
               </div>
               <div style={{ display: "flex", gap: 34, marginTop: 26 }}>
                 {hasMedia ? (
-                  <div style={{ width: 470, height: 300, overflow: "hidden", flexShrink: 0, backgroundColor: "#222" }}>
+                  <div style={{ position: "relative", width: 470, height: 300, overflow: "hidden", flexShrink: 0, backgroundColor: "#222" }}>
                     <MediaView media={s.media ? { ...s.media, grade: "bw" } : null} scale={1.03 + 0.05 * kb} extraFilter="contrast(1.25)" />
                   </div>
                 ) : null}

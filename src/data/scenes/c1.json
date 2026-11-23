@@ -106,12 +106,12 @@
       "type": "stat",
       "transition": "zoom",
       "value": 3,
-      "prefix": "",
+      "prefix": "UNOS ",
       "suffix": " DE CADA 4",
       "decimals": 0,
       "text": "HOSPITALES AFECTADOS",
       "label": {
-        "text": "3 DE CADA 4",
+        "text": "UNOS 3 DE CADA 4",
         "at": 1.89,
         "kind": "number"
       },

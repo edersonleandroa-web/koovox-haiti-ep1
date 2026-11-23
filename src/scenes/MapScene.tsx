@@ -81,6 +81,27 @@ const COUNTRY_LABELS: Record<MapView, { t: string; lon: number; lat: number; big
   pap: [{ t: "BAHÍA DE PUERTO PRÍNCIPE", lon: -72.47, lat: 18.6, faint: true }],
 };
 
+// nomes de exibição (espanhol, com acentos) para departamentos e comunas usados como região
+const REGION_ES: Record<string, string> = {
+  artibonite: "ARTIBONITE",
+  centre: "CENTRO",
+  ouest: "OESTE",
+  nord: "NORTE",
+  nordest: "NORESTE",
+  nordouest: "NOROESTE",
+  sud: "SUR",
+  sudest: "SURESTE",
+  grandeanse: "GRAND'ANSE",
+  nippes: "NIPPES",
+  citesoleil: "CITÉ SOLEIL",
+  petionville: "PÉTION-VILLE",
+  portauprince: "PUERTO PRÍNCIPE",
+  croixdesbouquets: "CROIX-DES-BOUQUETS",
+  mirebalais: "MIREBALAIS",
+};
+const regionLabel = (name: string) =>
+  REGION_ES[norm(name)] ?? name.replace(/ Department$/i, "").replace(/^Département (de l'|de la |du |des )?/i, "").toUpperCase();
+
 const MW = 1760;
 const MH = 990;
 const PAD = 40;
@@ -357,7 +378,7 @@ export const MapSceneView: React.FC<{ s: MapScene }> = ({ s }) => {
                   </text>
                 );
               })}
-              {regions.map((r, i) => (
+              {regions.filter((r) => !taken.has(norm(r.name))).map((r, i) => (
                 <text
                   key={`rl${i}`}
                   x={r.hit!.c[0]}
@@ -366,7 +387,7 @@ export const MapSceneView: React.FC<{ s: MapScene }> = ({ s }) => {
                   opacity={prog(frame, r.atF + 8, r.atF + 16)}
                   style={{ fontFamily: FONT.type, fontSize: 26, letterSpacing: "0.12em", fill: C.ink, paintOrder: "stroke", stroke: "rgba(240,234,220,0.9)", strokeWidth: 5 }}
                 >
-                  {r.name.replace(/ Department$/i, "").replace(/^Département (de l'|de la |du |des )?/i, "").toUpperCase()}
+                  {regionLabel(r.name)}
                 </text>
               ))}
               {route ? (

@@ -10,17 +10,22 @@
       "type": "full",
       "transition": "fade",
       "media": {
-        "src": null,
+        "src": "media/c2/lavalas-marcha-2018.mp4",
         "kind": "video",
-        "grade": "bw",
-        "want": "VIDEO: crowd of Aristide / Lavalas supporters in the streets of Port-au-Prince in the 1990s — ideally NARA/DoD footage of the October 1994 return (Operation Uphold Democracy); must be a different shot from the photos used in c1-23 and c1-24 | fallback: photo of a Fanmi Lavalas rally c. 2000 with Aristide posters | sources: NARA / Internet Archive (public domain), DVIDS, Commons | keywords: Aristide return 1994 crowd footage, Operation Uphold Democracy Port-au-Prince crowd, Lavalas supporters rally, Fanmi Lavalas 2000"
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "grade": "warm",
+        "credit": "c2-lavalas-marcha-2018"
       },
       "label": {
-        "text": "ANOS 90 E 2000",
+        "text": "AÑOS 90 Y 2000",
         "at": 0.46,
         "kind": "date"
       },
-      "note": "Nos anos 90 e no início dos 2000, algumas dessas bases (BAZ) se aproximaram do movimento político de Aristide. Abre o capítulo com a multidão lavalas."
+      "note": "Nos anos 90 e no início dos 2000, algumas dessas bases (BAZ) se aproximaram do movimento político de Aristide. Abre o capítulo com a multidão lavalas. [Mídia: marcha de partidários do Fanmi Lavalas em 30/09/2018 (VOA Kreyòl); não há filmagem livre acessível dos anos 90.]"
     },
     {
       "id": "c2-02",
@@ -28,15 +33,9 @@
       "end": 12.05,
       "type": "headline",
       "transition": "flash",
-      "headline": "OS “CHIMÈRES” DE ARISTIDE",
+      "headline": "LOS “CHIMÈRES” DE ARISTIDE",
       "date": "2001–2004",
-      "media": {
-        "src": null,
-        "kind": "image",
-        "grade": "warm",
-        "want": "photo for the clipping: armed pro-Aristide militants ('chimères') in the streets of Port-au-Prince during the February 2004 crisis, faces not in close-up, no bodies | fallback: Jean-Bertrand Aristide during his second term (2001-2004), different from the portraits used in c1-20/c1-24 | sources: Commons, US government | keywords: chimeres Haiti 2004, pro-Aristide militants Port-au-Prince, Aristide supporters February 2004, Jean-Bertrand Aristide 2003"
-      },
-      "note": "Durante o segundo governo de Aristide (2001–2004), os grupos armados ligados a ele passaram a ser chamados de \"chimères\" (\"Ximer\" na transcrição). Recorte de jornal com o termo."
+      "note": "Durante o segundo governo de Aristide (2001–2004), os grupos armados ligados a ele passaram a ser chamados de \"chimères\" (\"Ximer\" na transcrição). Recorte de jornal com o termo. [Mídia: sem foto livre acessível de 2001–2004 (Commons indisponível); recorte sem foto.]"
     },
     {
       "id": "c2-03",
@@ -46,10 +45,14 @@
       "transition": "whip",
       "frame": "polaroid",
       "media": {
-        "src": null,
+        "src": "media/c2/multidao-politica-2018.jpg",
         "kind": "image",
+        "focus": [
+          0.5,
+          0.45
+        ],
         "grade": "warm",
-        "want": "photo: crowd at a Haitian political / campaign rally (2000-2010) seen from behind or at a distance, party flags, posters unreadable — NO identifiable politician (the narration says politicians used armed intermediaries; do not tie it to a real person); different from the polling-station image of c1-19 | sources: Commons (Agência Brasil CC BY 3.0 BR), US government | keywords: Haiti election rally crowd, Haiti political rally 2006, Port-au-Prince campaign rally, Haiti elections 2010 rally"
+        "credit": "c2-multidao-politica-2018"
       },
       "note": "Políticos de diferentes correntes também recorreram a intermediários armados. Imagem genérica da política eleitoral, sem político identificável."
     },
@@ -61,10 +64,14 @@
       "transition": "whip",
       "move": "in",
       "media": {
-        "src": null,
+        "src": "media/c2/cite-soleil-rua-2020.jpg",
         "kind": "image",
+        "focus": [
+          0.45,
+          0.5
+        ],
         "grade": "warm",
-        "want": "PHOTO (Ken Burns): narrow alley of a working-class Port-au-Prince neighborhood (Bel Air or Cité Soleil), packed houses, walls with political graffiti if possible, 2000s; people only at a distance; different from c1-27/c1-28/c1-29 | sources: Commons CC BY/BY-SA, US government | keywords: Bel Air Port-au-Prince alley, Cite Soleil alley, Port-au-Prince slum street, Haiti political graffiti wall"
+        "credit": "c2-cite-soleil-rua-2020"
       },
       "note": "Com o apoio de um chefe local, um candidato podia fazer campanha num bairro onde o rival nem se atrevia a entrar."
     },
@@ -78,8 +85,7 @@
         {
           "media": {
             "src": null,
-            "kind": "image",
-            "want": "NO PHOTO — keep src null on purpose: the renderer draws a neutral silhouette (anonymous politician). Never use a real, identifiable person here."
+            "kind": "image"
           },
           "name": "CANDIDATO",
           "at": 0.15
@@ -87,14 +93,13 @@
         {
           "media": {
             "src": null,
-            "kind": "image",
-            "want": "NO PHOTO — keep src null on purpose: the renderer draws a neutral silhouette (anonymous local boss). Never use a real, identifiable person here."
+            "kind": "image"
           },
-          "name": "CHEFE LOCAL",
+          "name": "JEFE LOCAL",
           "at": 0.99
         }
       ],
-      "link": "TROCA",
+      "link": "INTERCAMBIO",
       "note": "Em troca, o chefe podia conseguir dinheiro, ganhar influência e até contar com proteção se fosse investigado. Duas silhuetas ligadas pelo fio vermelho."
     },
     {
@@ -127,19 +132,13 @@
       "type": "date",
       "transition": "glitch",
       "text": "2004",
-      "sub": "SAÍDA DE ARISTIDE",
+      "sub": "SALIDA DE ARISTIDE",
       "label": {
         "text": "2004",
         "at": 0.24,
         "kind": "date"
       },
-      "media": {
-        "src": null,
-        "kind": "image",
-        "grade": "warm",
-        "want": "photo for a darkened background: US Marines arriving in Port-au-Prince in March 2004 (Operation Secure Tomorrow) or armed rebels of the February 2004 rebellion in northern Haiti (Gonaïves / Cap-Haïtien); different from c1-26 | sources: DoD / DVIDS / Commons (public domain) | keywords: Operation Secure Tomorrow Marines Port-au-Prince 2004, Haiti 2004 rebellion rebels, Gonaives rebels 2004"
-      },
-      "note": "Em 2004, uma rebelião armada e a saída de Aristide deram lugar a uma nova crise."
+      "note": "Em 2004, uma rebelião armada e a saída de Aristide deram lugar a uma nova crise. [Mídia: sem foto livre acessível de 2004 (Commons indisponível); cartão sem fundo.]"
     },
     {
       "id": "c2-08",
@@ -148,16 +147,22 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/c2/minustah-patrulha-2010.mp4",
         "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.45
+        ],
         "grade": "warm",
-        "want": "VIDEO: MINUSTAH blue helmets patrolling Port-au-Prince in white UN armored vehicles or on foot, 2004-2012 (ideally the Brazilian contingent) | fallback: photo of the same | sources: DVIDS, Commons (Agência Brasil / TV Brasil, CC BY 3.0 BR) | keywords: MINUSTAH patrol video, UN peacekeepers Port-au-Prince, Brazilian peacekeepers Haiti, MINUSTAH armored vehicle"
+        "credit": "c2-minustah-patrulha-2010"
       },
       "label": {
         "text": "MINUSTAH",
-        "sub": "MISSÃO DA ONU",
+        "sub": "MISIÓN DE LA ONU",
         "at": 1,
-        "kind": "name"
+        "kind": "name",
+        "mark": "circle"
       },
       "note": "A ONU enviou a Missão das Nações Unidas para a Estabilização no Haiti, a MINUSTAH."
     },
@@ -169,17 +174,21 @@
       "transition": "whip",
       "frame": "polaroid",
       "media": {
-        "src": null,
+        "src": "media/c2/capacetes-azuis-2010.jpg",
         "kind": "image",
+        "focus": [
+          0.6,
+          0.4
+        ],
         "grade": "warm",
-        "want": "photo: Brazilian Army peacekeepers of MINUSTAH in Haiti (Brazilian flag on the uniform, blue helmet or beret), 2004-2017 | sources: Commons (Agência Brasil CC BY 3.0 BR, Ministério da Defesa) | keywords: tropas brasileiras Haiti, Brazilian peacekeepers Haiti, Exercito Brasileiro MINUSTAH, soldados brasileiros Porto Principe"
+        "credit": "c2-capacetes-azuis-2010"
       },
       "label": {
-        "text": "BRASIL NO COMANDO",
+        "text": "BRASIL AL MANDO",
         "at": 0.15,
         "kind": "info"
       },
-      "note": "O Brasil ficou no comando das tropas. Aparte do narrador: um dia quer fazer um vídeo sobre essa missão."
+      "note": "O Brasil ficou no comando das tropas. Aparte do narrador: um dia quer fazer um vídeo sobre essa missão. [Mídia: capacetes azuis da MINUSTAH em Porto Príncipe, 11/03/2010 (DVIDS); a nacionalidade da tropa não é identificável.]"
     },
     {
       "id": "c2-10",
@@ -189,17 +198,21 @@
       "transition": "flash",
       "move": "right",
       "media": {
-        "src": null,
+        "src": "media/c2/terremoto-ruinas-2010.jpg",
         "kind": "image",
+        "focus": [
+          0.5,
+          0.5
+        ],
         "grade": "warm",
-        "want": "PHOTO (Ken Burns): MINUSTAH / Brazilian soldiers searching the rubble right after the 12 January 2010 earthquake in Port-au-Prince; no bodies | sources: Commons (Agência Brasil CC BY 3.0 BR), DoD / DVIDS (public domain) | keywords: MINUSTAH earthquake rescue 2010, Brazilian soldiers Haiti earthquake, UN soldiers rubble Port-au-Prince 2010, terremoto Haiti 2010 Agencia Brasil"
+        "credit": "c2-terremoto-ruinas-2010"
       },
       "label": {
         "text": "TERREMOTO DE 2010",
-        "at": 2.09,
+        "at": 2.57,
         "kind": "date"
       },
-      "note": "A missão ainda estava no Haiti quando ocorreu o terremoto de 2010."
+      "note": "A missão ainda estava no Haiti quando ocorreu o terremoto de 2010. [Mídia: ruas em ruínas no centro de Porto Príncipe, 12/03/2010 (DVIDS).]"
     },
     {
       "id": "c2-11",
@@ -208,10 +221,15 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/c2/aerea-palacio-acampamentos-2010.mp4",
         "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.5
+        ],
         "grade": "warm",
-        "want": "VIDEO: aerial footage over Port-au-Prince after the January 2010 earthquake — collapsed buildings, the National Palace, tent camps of displaced families | sources: DVIDS / US Navy / USAID (public domain) | keywords: Haiti earthquake aerial footage 2010, Port-au-Prince aerial January 2010, Operation Unified Response aerial video, Haiti tent camp aerial"
+        "credit": "c2-aerea-palacio-2010"
       },
       "note": "O sismo destruiu casas e instituições, obrigou famílias a deixar seus lares e transtornou a vida de bairros inteiros."
     },
@@ -223,10 +241,14 @@
       "transition": "zoom",
       "frame": "polaroid",
       "media": {
-        "src": null,
+        "src": "media/c2/cite-soleil-ruela-2020.jpg",
         "kind": "image",
+        "focus": [
+          0.55,
+          0.45
+        ],
         "grade": "warm",
-        "want": "photo: 1) gang tags / graffiti on the walls of a working-class Port-au-Prince neighborhood (2010-2015); 2) fallback: street of Bel Air, Cité Soleil or Martissant with earthquake rubble, young men only from behind or far away; different from c1-27/c1-28/c1-29 | sources: Commons, US government | keywords: Port-au-Prince graffiti wall, Bel Air Port-au-Prince 2010, Cite Soleil street 2011, Port-au-Prince neighborhood rubble"
+        "credit": "c2-cite-soleil-ruela-2020"
       },
       "note": "Em alguns desses bairros, líderes mais jovens começaram a disputar o território e as receitas por conta própria (zoom: detalhe dos bairros vistos do alto)."
     },
@@ -234,21 +256,16 @@
       "id": "c2-13",
       "start": 68.09,
       "end": 72.51,
-      "type": "photo",
+      "type": "date",
       "transition": "whip",
-      "frame": "print",
-      "media": {
-        "src": null,
-        "kind": "image",
-        "grade": "warm",
-        "want": "photo: cholera treatment center in Haiti, 2010-2011 (tents, cots, health workers), no identifiable patient in close-up | sources: CDC / USAID / US Navy (public domain), Commons CC | keywords: cholera treatment center Haiti 2010, CDC Haiti cholera, Haiti cholera outbreak clinic, cholera treatment unit Haiti"
-      },
       "label": {
-        "text": "EPIDEMIA DE CÓLERA",
+        "text": "2010",
         "at": 1.77,
-        "kind": "info"
+        "kind": "date"
       },
-      "note": "A missão também ficou ligada à epidemia de cólera que veio depois do terremoto."
+      "note": "A missão também ficou ligada à epidemia de cólera que veio depois do terremoto. [Mídia: sem foto livre acessível de centro de tratamento de cólera; virou cartão de data (a epidemia começou em outubro de 2010).]",
+      "text": "2010",
+      "sub": "EPIDEMIA DE CÓLERA"
     },
     {
       "id": "c2-14",
@@ -256,13 +273,17 @@
       "end": 79.65,
       "type": "headline",
       "transition": "flash",
-      "headline": "ONU PEDE PERDÃO AOS HAITIANOS",
+      "headline": "LA ONU PIDE PERDÓN A LOS HAITIANOS",
       "date": "2016",
       "media": {
-        "src": null,
+        "src": "media/c2/ban-ki-moon-2016.jpg",
         "kind": "image",
+        "focus": [
+          0.35,
+          0.35
+        ],
         "grade": "warm",
-        "want": "photo for the clipping: Ban Ki-moon, UN Secretary-General, speaking at a podium c. 2015-2016 | sources: Commons CC BY / Agência Brasil | keywords: Ban Ki-moon 2016, Ban Ki-moon speech, UN Secretary-General Ban Ki-moon podium"
+        "credit": "c2-ban-ki-moon-2016"
       },
       "note": "Em 2016, o secretário-geral da ONU (Ban Ki-moon) pediu perdão aos haitianos pelo papel da organização na epidemia."
     },
@@ -274,10 +295,14 @@
       "transition": "whip",
       "move": "left",
       "media": {
-        "src": null,
+        "src": "media/c2/veiculo-onu-2010.jpg",
         "kind": "image",
+        "focus": [
+          0.25,
+          0.55
+        ],
         "grade": "warm",
-        "want": "PHOTO (Ken Burns): Haitians protesting against MINUSTAH / the UN (2010-2012, cholera), banners against the mission | fallback: white UN armored vehicle marked 'UN' in a Port-au-Prince street; different from intro-07 | sources: Commons, US government | keywords: anti-MINUSTAH protest, Haiti protest UN cholera, manifestation contre la MINUSTAH, UN armored vehicle Port-au-Prince"
+        "credit": "c2-veiculo-onu-2010"
       },
       "note": "Além de não resolver nada, trouxeram mais problemas. O narrador tem críticas a fazer à ONU."
     },
@@ -289,10 +314,14 @@
       "transition": "cut",
       "frame": "polaroid",
       "media": {
-        "src": null,
+        "src": "media/c2/base-onu-bandeira-2010.jpg",
         "kind": "image",
+        "focus": [
+          0.45,
+          0.4
+        ],
         "grade": "cold",
-        "want": "photo: close-up of a UN blue helmet / beret with the UN emblem (MINUSTAH, ideally Brazilian contingent) or the UN flag flying over a MINUSTAH base in Haiti; different from intro-06 (UN HQ / Security Council) | sources: Commons (Agência Brasil), DoD | keywords: MINUSTAH blue helmet, UN peacekeeper helmet Haiti, UN flag MINUSTAH base, capacete azul Haiti"
+        "credit": "c2-base-onu-2010"
       },
       "note": "Aparte do narrador: talvez um dia fale do tema, se o YouTube permitir. Imagem neutra da ONU."
     },
@@ -305,7 +334,7 @@
       "years": [
         {
           "year": "2004",
-          "text": "CHEGA A MINUSTAH"
+          "text": "LLEGA LA MINUSTAH"
         },
         {
           "year": "2010",
@@ -317,7 +346,7 @@
         },
         {
           "year": "2019",
-          "text": "FIM DA MINUJUSTH"
+          "text": "TERMINA LA MINUJUSTH"
         }
       ],
       "focus": 2,
@@ -331,10 +360,15 @@
       "transition": "whip",
       "frame": "tv",
       "media": {
-        "src": null,
+        "src": "media/c2/pnh-patrulha-2024.mp4",
         "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.45
+        ],
         "grade": "warm",
-        "want": "VIDEO: Haitian National Police (PNH) officers on patrol in Port-au-Prince, 2018-2021 (foot patrol or pickup); VOA's own footage or US government — never AP/Reuters material inside VOA reports; different from intro-07 | fallback: photo | keywords: Haitian National Police patrol, PNH Port-au-Prince video, Police Nationale d Haiti, VOA Haiti police"
+        "credit": "c2-voa-pnh-2024"
       },
       "note": "Segundo o grupo de especialistas da ONU, depois da retirada a polícia haitiana teve dificuldade para manter presença nas zonas em disputa."
     },
@@ -345,10 +379,15 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/c2/protesto-petrocaribe-2018.mp4",
         "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.45
+        ],
         "grade": "warm",
-        "want": "VIDEO: large anti-corruption (Petrocaribe) protests in Port-au-Prince, 2018-2019 — crowds marching, burning tires | fallback: photo of the crowd | sources: VOA own footage (.webm on Commons), Commons | keywords: Haiti protests 2019 video, Petrocaribe protest Port-au-Prince, Haiti anti-corruption protest 2018, VOA Haiti protests"
+        "credit": "c2-protesto-petrocaribe-2018"
       },
       "note": "As facções ganhavam terreno justamente quando os protestos contra a corrupção mobilizavam o país."
     },
@@ -358,13 +397,17 @@
       "end": 113.56,
       "type": "headline",
       "transition": "zoom",
-      "headline": "MANIFESTANTES COBRAM O DINHEIRO DO PETROCARIBE",
+      "headline": "¿DÓNDE ESTÁ EL DINERO DE PETROCARIBE?",
       "date": "2018",
       "media": {
-        "src": null,
+        "src": "media/c2/kot-kob-petrocaribe-2018.jpg",
         "kind": "image",
+        "focus": [
+          0.5,
+          0.55
+        ],
         "grade": "warm",
-        "want": "photo for the clipping: protesters holding a sign 'Kot kòb Petwo Karibe a?' (Where is the Petrocaribe money?) in Port-au-Prince, 2018-2019 | sources: Commons, VOA | keywords: Petrocaribe protest sign, Kot kob Petwo Karibe a, PetroCaribe challenge Haiti, Haiti Petrocaribe demonstration"
+        "credit": "c2-kot-kob-petrocaribe-2018"
       },
       "note": "Alguns manifestantes exigiam saber para onde tinha ido o dinheiro do Petrocaribe (zoom: detalhe do protesto)."
     },
@@ -377,7 +420,7 @@
       "view": "americas",
       "pins": [
         {
-          "name": "HAITI",
+          "name": "HAITÍ",
           "lon": -72.335,
           "lat": 18.539,
           "at": 0.2
@@ -392,7 +435,8 @@
       "label": {
         "text": "PETROCARIBE",
         "at": 0.42,
-        "kind": "name"
+        "kind": "name",
+        "mark": "circle"
       },
       "note": "Petrocaribe: acordo com a Venezuela que devia liberar fundos para o desenvolvimento do Haiti. Sem rota de propósito (na vista americas a rota desenha um avião)."
     },
@@ -421,13 +465,17 @@
       "transition": "glitch",
       "move": "in",
       "media": {
-        "src": null,
+        "src": "media/c2/la-saline-rua-2020.jpg",
         "kind": "image",
+        "focus": [
+          0.5,
+          0.5
+        ],
         "grade": "warm",
-        "want": "PHOTO (Ken Burns): La Saline / the Port-au-Prince waterfront next to the port and the Croix-des-Bossales market, aerial or street view, 2010-2018; no victims; different from c1-07, c1-27 and intro-10 | sources: DoD / US Navy 2010 aerials (public domain), Commons | keywords: La Saline Port-au-Prince, La Saline Haiti, Port-au-Prince waterfront aerial 2010, Croix-des-Bossales market"
+        "credit": "c2-la-saline-rua-2020"
       },
       "label": {
-        "text": "13–14 DE NOVEMBRO",
+        "text": "13–14 DE NOVIEMBRE",
         "sub": "2018",
         "at": 0.27,
         "kind": "date"
@@ -450,9 +498,9 @@
       "prefix": "",
       "suffix": "",
       "decimals": 0,
-      "text": "MORTOS, PELO MENOS",
+      "text": "MUERTOS, AL MENOS",
       "label": {
-        "text": "71 MORTOS",
+        "text": "71 MUERTOS",
         "at": 0.93,
         "kind": "number"
       },
@@ -464,22 +512,16 @@
       "end": 138.65,
       "type": "doc",
       "transition": "whip",
-      "title": "OBSERVATÓRIO HAITIANO E HARVARD",
+      "title": "OBSERVATORIO HAITIANO Y HARVARD",
       "stamp": "LA SALINE",
       "stampAt": 1.91,
-      "media": {
-        "src": null,
-        "kind": "image",
-        "grade": "warm",
-        "want": "photo to clip on the report: Harvard Law School building (Langdell Hall or Wasserstein Hall), Cambridge, USA | sources: Commons CC | keywords: Harvard Law School, Langdell Hall Harvard, Harvard Law School building"
-      },
       "sfx": [
         {
           "name": "stamp",
           "at": 1.91
         }
       ],
-      "note": "Investigação conjunta do Observatório Haitiano de Crimes contra a Humanidade (OHCCH) e da Clínica de Direitos Humanos de Harvard documentou o massacre. Corte no meio da frase, em \"em uma investigação conjunta\"."
+      "note": "Investigação conjunta do Observatório Haitiano de Crimes contra a Humanidade (OHCCH) e da Clínica de Direitos Humanos de Harvard documentou o massacre. Corte no meio da frase, em \"em uma investigação conjunta\". [Mídia: sem foto livre acessível da Harvard Law School (Commons indisponível); documento sem foto.]"
     },
     {
       "id": "c2-26",
@@ -488,35 +530,41 @@
       "type": "person",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/c2/cherizier-retrato-2024.jpg",
         "kind": "image",
+        "focus": [
+          0.6,
+          0.38
+        ],
         "grade": "warm",
-        "want": "portrait of Jimmy 'Barbecue' Chérizier, 2019-2024 | cand.: Commons 'Jimmy \"Barbecue\" Cherizier 2023.png', 'Jimmy \"Barbecue\" Cherizier 2024.png', 'Public speech of Jimmy Chérizier.png' (check license; prefer one not already used in intro-05 / c1-18) | keywords: Jimmy Cherizier, Barbecue Haiti, Jimmy Cherizier portrait"
+        "credit": "c2-cherizier-retrato-2024",
+        "cutout": "media/c2/cherizier-retrato-2024-recorte.png"
       },
       "name": "JIMMY CHÉRIZIER",
-      "role": "“BARBECUE”, EX-POLICIAL",
+      "role": "“BARBECUE”, EXPOLICÍA",
       "note": "Entre os apontados estava Jimmy Chérizier, conhecido como Barbecue. Naquele momento ele ainda era policial."
     },
     {
       "id": "c2-27",
       "start": 145.13,
       "end": 151.92,
-      "type": "full",
+      "type": "doc",
       "transition": "whip",
-      "move": "in",
-      "media": {
-        "src": null,
-        "kind": "image",
-        "grade": "cold",
-        "want": "PHOTO (Ken Burns): exterior of the US Treasury Building, Washington DC | sources: Commons (public domain / CC) | keywords: Treasury Building Washington DC, United States Department of the Treasury building, Treasury Department exterior"
-      },
       "label": {
-        "text": "TESOURO DOS EUA",
-        "sub": "2020",
-        "at": 1.25,
-        "kind": "name"
+        "text": "2020",
+        "at": 0.23,
+        "kind": "date"
       },
-      "note": "Em 2020, o Departamento do Tesouro dos EUA sancionou Chérizier pelo papel que lhe atribuiu no massacre."
+      "note": "Em 2020, o Departamento do Tesouro dos EUA sancionou Chérizier pelo papel que lhe atribuiu no massacre. [Mídia: sem foto livre acessível do prédio do Tesouro; virou documento com carimbo em \"sancionou\".]",
+      "title": "TESORO DE ESTADOS UNIDOS",
+      "stamp": "SANCIONES",
+      "stampAt": 3.33,
+      "sfx": [
+        {
+          "name": "stamp",
+          "at": 3.33
+        }
+      ]
     },
     {
       "id": "c2-28",
@@ -524,14 +572,18 @@
       "end": 159.15,
       "type": "network",
       "transition": "zoom",
-      "center": "SANÇÕES DOS EUA",
+      "center": "SANCIONES DE ESTADOS UNIDOS",
       "items": [
         {
           "media": {
-            "src": null,
+            "src": "media/c2/cherizier-g9-2023.jpg",
             "kind": "image",
+            "focus": [
+              0.5,
+              0.35
+            ],
             "grade": "warm",
-            "want": "photo: another Jimmy Chérizier image, different from the one picked for c2-26 | cand.: the other Commons files listed in c2-26 | keywords: Jimmy Cherizier, Barbecue G9"
+            "credit": "c2-voa-cherizier-2023"
           },
           "name": "JIMMY CHÉRIZIER",
           "at": 0.26
@@ -539,8 +591,7 @@
         {
           "media": {
             "src": null,
-            "kind": "image",
-            "want": "portrait of Fednel Monchéry, former director general of Haiti's Ministry of the Interior — only if a freely licensed photo exists; otherwise keep src null (silhouette) | keywords: Fednel Monchery"
+            "kind": "image"
           },
           "name": "FEDNEL MONCHÉRY",
           "at": 4.26
@@ -548,8 +599,7 @@
         {
           "media": {
             "src": null,
-            "kind": "image",
-            "want": "portrait of Joseph Pierre Richard Duplan, former departmental delegate of the West — only if a freely licensed photo exists; otherwise keep src null (silhouette) | keywords: Joseph Pierre Richard Duplan"
+            "kind": "image"
           },
           "name": "JOSEPH PIERRE RICHARD DUPLAN",
           "at": 5.4
@@ -566,23 +616,31 @@
       "items": [
         {
           "media": {
-            "src": null,
+            "src": "media/c2/palacio-nacional-2010.jpg",
             "kind": "image",
+            "focus": [
+              0.45,
+              0.45
+            ],
             "grade": "warm",
-            "want": "photo: Haitian government building in Port-au-Prince (National Palace or a ministry) standing for 'public officials' | sources: Commons | keywords: Palais National Port-au-Prince, Haitian government building, Ministere de l Interieur Haiti"
+            "credit": "c2-palacio-nacional-2010"
           },
-          "name": "FUNCIONÁRIOS PÚBLICOS",
+          "name": "FUNCIONARIOS PÚBLICOS",
           "at": 0.23
         },
         {
           "media": {
-            "src": null,
+            "src": "media/c2/g9-membros-mascarados-2023.jpg",
             "kind": "image",
+            "focus": [
+              0.5,
+              0.4
+            ],
             "grade": "warm",
-            "want": "photo: armed gang members in Port-au-Prince, faces covered or not in close-up, 2019-2023; different from intro-02/05/09, c1-06 and c1-18 | sources: VOA, Commons | keywords: Haiti gang members armed, Port-au-Prince gang VOA, G9 armed men"
+            "credit": "c2-voa-g9-mascarados-2023"
           },
-          "name": "CHEFES DE GANGUES",
-          "at": 0.49
+          "name": "JEFES DE PANDILLAS",
+          "at": 4.61
         }
       ],
       "link": "VÍNCULOS",
@@ -595,14 +653,19 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/c2/barbecue-g9-2023.mp4",
         "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.45,
+          0.4
+        ],
         "grade": "warm",
-        "want": "VIDEO: Jimmy 'Barbecue' Chérizier leading armed G9 members, marching or speaking in Port-au-Prince (Lower Delmas), 2020-2024; different from intro-05 | fallback: photo | sources: VOA own footage (.webm on Commons), Commons | keywords: Barbecue G9 video, Cherizier G9 march, G9 an fanmi e alye, VOA Barbecue Haiti"
+        "credit": "c2-voa-g9-delmas-2023"
       },
       "label": {
         "text": "G9",
-        "sub": "JUNHO DE 2020",
+        "sub": "JUNIO DE 2020",
         "at": 3.29,
         "kind": "name"
       },
@@ -616,12 +679,10 @@
       "transition": "flash",
       "media": {
         "src": null,
-        "kind": "image",
-        "grade": "warm",
-        "want": "portrait of Gabriel Jean-Pierre, 'Ti Gabriel', leader of G-Pèp (Brooklyn, Cité Soleil) — a free photo is unlikely; if none exists keep src null (silhouette card) | keywords: Ti Gabriel Haiti, Gabriel Jean-Pierre G-Pep, Ti Gabriel Brooklyn Cite Soleil"
+        "kind": "image"
       },
       "name": "GABRIEL JEAN-PIERRE",
-      "role": "“TI GABRIEL” DO G-PÈP",
+      "role": "“TI GABRIEL”, DEL G-PÈP",
       "note": "A outra grande coalizão da capital, o G-Pèp, estava ligada a Gabriel Jean-Pierre, conhecido como Ti Gabriel."
     },
     {
@@ -632,10 +693,15 @@
       "transition": "whip",
       "move": "right",
       "media": {
-        "src": null,
-        "kind": "image",
+        "src": "media/c2/cite-soleil-canal-2020.mp4",
+        "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.5
+        ],
         "grade": "warm",
-        "want": "PHOTO (Ken Burns): aerial or street view of Cité Soleil (tin-roof houses, canals), Port-au-Prince, 2015-2023; different from c1-27/c1-29 | sources: Commons, US government | keywords: Cite Soleil aerial, Cite Soleil Haiti, Cite Soleil street"
+        "credit": "c2-cite-soleil-canal-2020"
       },
       "label": {
         "text": "CITÉ SOLEIL",
@@ -652,10 +718,14 @@
       "transition": "whip",
       "frame": "print",
       "media": {
-        "src": null,
+        "src": "media/c2/deslocados-ginasio-2021.jpg",
         "kind": "image",
+        "focus": [
+          0.5,
+          0.5
+        ],
         "grade": "warm",
-        "want": "photo: residents displaced by gang violence leaving their neighborhood with their belongings, or a displacement site in a Port-au-Prince school, 2022-2024 — crowd from behind or far away | fallback: abandoned, bullet-riddled houses; no blood; different from c1-10 | sources: USAID / State Dept (public domain), VOA, Commons | keywords: Haiti displaced people gang violence, Port-au-Prince displaced families 2023, Haiti displacement site school, bullet holes wall Port-au-Prince"
+        "credit": "c2-deslocados-ginasio-2021"
       },
       "note": "Os moradores eram atacados só por viver num lugar considerado território do rival."
     },
@@ -667,10 +737,15 @@
       "transition": "whip",
       "frame": "tv",
       "media": {
-        "src": null,
+        "src": "media/c2/barbecue-fala-2023.mp4",
         "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.45,
+          0.35
+        ],
         "grade": "warm",
-        "want": "VIDEO: Jimmy 'Barbecue' Chérizier speaking to journalists / at a press conference, 2021-2024 (VOA's own footage) | fallback: still 'Public speech of Jimmy Chérizier.png' (Commons) | keywords: Barbecue press conference, Jimmy Cherizier speech video, VOA Cherizier"
+        "credit": "c2-voa-barbecue-fala-2023"
       },
       "note": "Chérizier se tornou o rosto mais conhecido das gangues."
     },
@@ -682,10 +757,14 @@
       "transition": "whip",
       "move": "left",
       "media": {
-        "src": null,
+        "src": "media/c2/gangue-mascarados-rua-2023.jpg",
         "kind": "image",
+        "focus": [
+          0.55,
+          0.45
+        ],
         "grade": "warm",
-        "want": "PHOTO (Ken Burns): armed gang members on a Port-au-Prince street, faces covered or not in close-up, 2021-2024; different from intro-02/05/09, c1-06, c1-18 and c2-29 | sources: VOA, Commons | keywords: Haiti gang members street, armed men Port-au-Prince 2022, Haiti gangsters VOA"
+        "credit": "c2-gangue-mascarados-2023"
       },
       "note": "Os demais chefes continuavam tendo seus próprios homens, suas receitas e seus interesses."
     },
@@ -695,7 +774,7 @@
       "end": 204.05,
       "type": "doc",
       "transition": "whip",
-      "title": "RELATÓRIO DOS ESPECIALISTAS DA ONU",
+      "title": "EXPERTOS DE LA ONU",
       "stamp": "2024",
       "stampAt": 2.12,
       "sfx": [
@@ -728,7 +807,7 @@
         }
       ],
       "label": {
-        "text": "OS DOIS MAIS FORTES",
+        "text": "LOS DOS MÁS FUERTES",
         "at": 2.35,
         "kind": "info"
       },
@@ -742,10 +821,15 @@
       "transition": "whip",
       "move": "out",
       "media": {
-        "src": null,
-        "kind": "image",
+        "src": "media/c2/armas-apreendidas-miami-2022.mp4",
+        "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.5
+        ],
         "grade": "warm",
-        "want": "PHOTO (Ken Burns): weapons and ammunition seized on their way to Haiti (rifles laid out on a table), US CBP / HSI / Coast Guard photo, 2022-2024 | sources: US government (public domain), Commons | keywords: weapons seized bound for Haiti, firearms trafficking Haiti CBP, Coast Guard weapons seizure Haiti"
+        "credit": "c2-armas-apreendidas-2022"
       },
       "note": "Levaram em conta o território que controlavam, o número de integrantes, o armamento e as receitas."
     },
@@ -756,15 +840,19 @@
       "type": "person",
       "transition": "glitch",
       "media": {
-        "src": null,
+        "src": "media/c2/jovenel-moise-2019.jpg",
         "kind": "image",
+        "focus": [
+          0.62,
+          0.42
+        ],
         "grade": "warm",
-        "want": "portrait of President Jovenel Moïse (2017-2021) — official photo or a meeting with US officials / Casa Rosada (free license) | sources: Commons, US State Dept, Casa Rosada (CC BY 2.5 AR) | keywords: Jovenel Moise, Jovenel Moise president Haiti, Jovenel Moise portrait"
+        "credit": "c2-jovenel-moise-2019"
       },
       "name": "JOVENEL MOÏSE",
-      "role": "PRESIDENTE DO HAITI",
+      "role": "PRESIDENTE DE HAITÍ",
       "label": {
-        "text": "7 DE JULHO",
+        "text": "7 DE JULIO",
         "sub": "2021",
         "at": 0.76,
         "kind": "date"
@@ -783,22 +871,16 @@
       "end": 226.35,
       "type": "doc",
       "transition": "whip",
-      "title": "PARLAMENTO DO HAITI",
+      "title": "PARLAMENTO DE HAITÍ",
       "stamp": "MANDATOS VENCIDOS",
       "stampAt": 3.29,
-      "media": {
-        "src": null,
-        "kind": "image",
-        "grade": "warm",
-        "want": "photo to clip on the file: Haitian Parliament building (Chamber of Deputies or Senate) in Port-au-Prince | sources: Commons | keywords: Haitian Parliament building, Parlement haitien, Chambre des deputes Haiti, Senat Haiti"
-      },
       "sfx": [
         {
           "name": "stamp",
           "at": 3.29
         }
       ],
-      "note": "O parlamento já não podia funcionar normalmente: tinham vencido os mandatos de vários membros (carimbo em \"vencido\")."
+      "note": "O parlamento já não podia funcionar normalmente: tinham vencido os mandatos de vários membros (carimbo em \"vencido\"). [Mídia: sem foto livre acessível do prédio do Parlamento; documento sem foto.]"
     },
     {
       "id": "c2-41",
@@ -808,10 +890,14 @@
       "transition": "whip",
       "move": "left",
       "media": {
-        "src": null,
+        "src": "media/c2/champ-de-mars-2020.jpg",
         "kind": "image",
+        "focus": [
+          0.65,
+          0.45
+        ],
         "grade": "warm",
-        "want": "PHOTO (Ken Burns): grounds / gates of the National Palace in Port-au-Prince after its 2012 demolition, or the Champ de Mars, 2015-2021 — the empty seat of power | sources: Commons | keywords: Palais National Port-au-Prince, National Palace Haiti site, Champ de Mars Port-au-Prince"
+        "credit": "c2-champ-de-mars-2020"
       },
       "note": "Ainda não havia novas eleições, e não estava claro quem sucederia o presidente. Corte no meio da frase, em \"e ainda\"."
     },
@@ -822,14 +908,19 @@
       "type": "person",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/c2/ariel-henry-2023.jpg",
         "kind": "image",
+        "focus": [
+          0.5,
+          0.3
+        ],
         "grade": "warm",
-        "want": "portrait of Ariel Henry, Prime Minister of Haiti (2021-2024) — e.g. US State Department photo (public domain) | keywords: Ariel Henry, Ariel Henry prime minister Haiti, Blinken Ariel Henry"
+        "credit": "c2-ariel-henry",
+        "cutout": "media/c2/ariel-henry-2023-recorte.png"
       },
       "name": "ARIEL HENRY",
-      "role": "PRIMEIRO-MINISTRO",
-      "note": "Poucos dias antes de morrer, Moïse escolheu Ariel Henry como primeiro-ministro; no fim, foi Henry quem ficou à frente do governo."
+      "role": "PRIMER MINISTRO",
+      "note": "Poucos dias antes de morrer, Moïse escolheu Ariel Henry como primeiro-ministro; no fim, foi Henry quem ficou à frente do governo. [Mídia: sem retrato livre acessível de Ariel Henry (Commons indisponível); silhueta.]"
     },
     {
       "id": "c2-43",
@@ -837,34 +928,46 @@
       "end": 245.04,
       "type": "network",
       "transition": "whip",
-      "center": "GANGUES",
+      "center": "PANDILLAS",
       "items": [
         {
           "media": {
-            "src": null,
+            "src": "media/c2/cherizier-g9-2023.jpg",
             "kind": "image",
+            "focus": [
+              0.5,
+              0.35
+            ],
             "grade": "warm",
-            "want": "REUSE a Chérizier / G9 image already chosen in this chapter (c2-28 or a still of c2-30) | keywords: Jimmy Cherizier G9"
+            "credit": "c2-voa-cherizier-2023"
           },
           "name": "G9",
           "at": 0.15
         },
         {
           "media": {
-            "src": null,
+            "src": "media/c2/cite-soleil-canal-casas-2020.jpg",
             "kind": "image",
+            "focus": [
+              0.5,
+              0.5
+            ],
             "grade": "warm",
-            "want": "REUSE the Ti Gabriel portrait of c2-31 if one was found; otherwise a photo of Brooklyn / Cité Soleil (G-Pèp stronghold) without identifiable people; else keep src null | keywords: Brooklyn Cite Soleil, Cite Soleil Haiti"
+            "credit": "c2-cite-soleil-canal-casas-2020"
           },
           "name": "G-PÈP",
           "at": 1.68
         },
         {
           "media": {
-            "src": null,
+            "src": "media/c2/centro-perto-village-de-dieu-2021.jpg",
             "kind": "image",
+            "focus": [
+              0.5,
+              0.5
+            ],
             "grade": "warm",
-            "want": "photo of Village de Dieu / the downtown Port-au-Prince waterfront (5 Segonn stronghold), 2015-2024, no identifiable people; else keep src null | keywords: Village de Dieu Port-au-Prince, downtown Port-au-Prince waterfront"
+            "credit": "c2-centro-village-de-dieu-2021"
           },
           "name": "5 SEGONN",
           "at": 2.12
@@ -872,9 +975,7 @@
         {
           "media": {
             "src": null,
-            "kind": "image",
-            "grade": "warm",
-            "want": "photo of Martissant / Grand Ravine, Port-au-Prince (Grand Ravine stronghold), 2015-2024, no identifiable people; else keep src null | keywords: Martissant Port-au-Prince, Grand Ravine Martissant"
+            "kind": "image"
           },
           "name": "GRAND RAVINE",
           "at": 2.76
@@ -889,17 +990,22 @@
       "type": "date",
       "transition": "whip",
       "text": "2022",
-      "sub": "BLOQUEIO DE COMBUSTÍVEL",
+      "sub": "BLOQUEO DE COMBUSTIBLE",
       "label": {
         "text": "2022",
-        "at": 0.24,
+        "at": 1.48,
         "kind": "date"
       },
       "media": {
-        "src": null,
+        "src": "media/c2/combustivel-galoes-2022.mp4",
         "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.5
+        ],
         "grade": "warm",
-        "want": "VIDEO for a darkened background: fuel tanker trucks parked or queued at the Varreux fuel terminal / in Port-au-Prince, 2022 | fallback: photo | sources: VOA own footage, Commons | keywords: Varreux fuel terminal, Haiti fuel shortage 2022, fuel trucks Port-au-Prince, Haiti fuel blockade"
+        "credit": "c2-combustivel-galoes-2022"
       },
       "note": "O bloqueio de combustível de 2022, do qual se falou no início do vídeo (capítulo 1)."
     },
@@ -911,10 +1017,15 @@
       "transition": "cut",
       "move": "out",
       "media": {
-        "src": null,
-        "kind": "image",
+        "src": "media/c2/posto-sem-gasolina-2022.mp4",
+        "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.45
+        ],
         "grade": "warm",
-        "want": "PHOTO (Ken Burns): long queue of motorbikes / cars at a gas station, or a closed gas station, in Port-au-Prince during the 2022 fuel crisis | sources: VOA, Commons | keywords: Haiti fuel crisis queue, gas station line Port-au-Prince, Haiti fuel shortage gas station 2022"
+        "credit": "c2-posto-sem-gasolina-2022"
       },
       "note": "...deixou claro quanta pressão as gangues podiam exercer sobre o país. Fecha o capítulo."
     }

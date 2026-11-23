@@ -45,8 +45,8 @@
         "at": 0.45
       },
       "label": {
-        "text": "PAÍS MAIS POBRE",
-        "sub": "AMÉRICA LATINA E CARIBE",
+        "text": "EL PAÍS MÁS POBRE",
+        "sub": "AMÉRICA LATINA Y CARIBE",
         "at": 3.16,
         "kind": "info"
       },
@@ -108,7 +108,7 @@
             "grade": "warm",
             "credit": "c3-cherizier-g9-2024"
           },
-          "name": "GANGUES"
+          "name": "PANDILLAS"
         },
         {
           "media": {
@@ -121,10 +121,11 @@
             "grade": "warm",
             "credit": "c3-palacio-nacional-2009"
           },
-          "name": "PADRINHOS POLÍTICOS"
+          "name": "PADRINOS POLÍTICOS",
+          "at": 3.85
         }
       ],
-      "link": "MENOS DEPENDÊNCIA",
+      "link": "MENOS DEPENDENCIA",
       "note": "'Segundo algumas fontes, essas cobranças permitiram às gangues depender menos de seus padrinhos políticos.' Fio vermelho gangues ↔ políticos. Corte em 27,02 (no respiro após 'políticos') para a cena seguinte ter 3,5 s. [Mídia: G9/Chérizier em quadro de vídeo da VOA Kreyòl (mar/2024); sem foto livre do Parlamento haitiano, o nó PADRINHOS POLÍTICOS usa o Palácio Nacional (2009).]"
     },
     {
@@ -164,7 +165,7 @@
       },
       "move": "in",
       "label": {
-        "text": "JULHO–SETEMBRO DE 2026",
+        "text": "JULIO–SEPTIEMBRE DE 2026",
         "sub": "ONU",
         "at": 0.55,
         "kind": "date"
@@ -178,7 +179,8 @@
       "type": "stat",
       "transition": "zoom",
       "value": 137,
-      "text": "PESSOAS SEQUESTRADAS",
+      "text": "PERSONAS SECUESTRADAS",
+      "at": 0.75,
       "note": "'...pelo menos 137 pessoas sequestradas por esse motivo.' O número conta a partir de 0,35 s (padrão do código) e fecha enquanto o narrador diz '137' (0,69 s)."
     },
     {
@@ -244,8 +246,9 @@
       "end": 58.29,
       "type": "doc",
       "transition": "whip",
-      "title": "FONTES",
-      "stamp": "EM DÚVIDA",
+      "title": "FUENTES",
+      "stamp": "EN DUDA",
+      "stampAt": 1.92,
       "note": "Comentário do narrador: 'Eu, na verdade, tenho minhas dúvidas sobre muitas dessas fontes.' Pasta 'FONTES' recebe o carimbo (o código o põe em ~1,6 s, junto de 'dúvidas')."
     },
     {
@@ -266,7 +269,7 @@
             "grade": "warm",
             "credit": "c3-cite-soleil"
           },
-          "name": "PAÍS MUITO POBRE"
+          "name": "PAÍS MUY POBRE"
         },
         {
           "media": {
@@ -279,7 +282,8 @@
             "grade": "warm",
             "credit": "c3-g9-fuzis-2024"
           },
-          "name": "GANGUES PODEROSAS"
+          "name": "PANDILLAS PODEROSAS",
+          "at": 2.4
         }
       ],
       "note": "'Estamos falando de um país muito pobre e de gangues que têm muito poder.' Contraste pobreza × poder."
@@ -309,7 +313,7 @@
       "end": 71.95,
       "type": "doc",
       "transition": "whip",
-      "title": "PAINEL DE ESPECIALISTAS DA ONU",
+      "title": "EXPERTOS DE LA ONU",
       "note": "'Os especialistas da ONU também identificaram empresários,' — relatório do Painel de Especialistas; o título digita em ~0,33 s, junto de 'Os especialistas da ONU' (68,82)."
     },
     {
@@ -330,7 +334,8 @@
             "grade": "warm",
             "credit": "c3-porto-principe-porto-2010"
           },
-          "name": "EMPRESÁRIOS"
+          "name": "EMPRESARIOS",
+          "at": 0.1
         },
         {
           "media": {
@@ -343,7 +348,8 @@
             "grade": "warm",
             "credit": "c3-palacio-nacional-2009"
           },
-          "name": "POLÍTICOS"
+          "name": "POLÍTICOS",
+          "at": 0.35
         },
         {
           "media": {
@@ -356,10 +362,11 @@
             "grade": "warm",
             "credit": "c3-pnh-patrulha-2024"
           },
-          "name": "FORÇAS DE SEGURANÇA"
+          "name": "FUERZAS DE SEGURIDAD",
+          "at": 1.55
         }
       ],
-      "center": "GANGUES",
+      "center": "PANDILLAS",
       "note": "'...políticos e membros das forças de segurança que apoiavam distintas facções em benefício próprio.' Os nós entram em 0,5/0,9/1,3 s (código): POLÍTICOS ~ 'membros' e FORÇAS DE SEGURANÇA ~ 'forças' (1,5 s). Corte na micro-pausa antes de 'políticos'. [Mídia: porto de Porto Príncipe (US Navy, 2010); Palácio Nacional (2009); agentes da PNH em operação de rua (VOA, nov/2024).]"
     },
     {
@@ -378,7 +385,8 @@
       "label": {
         "text": "GRAN GRIF",
         "at": 0.64,
-        "kind": "name"
+        "kind": "name",
+        "mark": "circle"
       },
       "note": "'O caso da Gran Grif, no departamento de Artibonite, mostra como podia começar uma relação assim.' Rótulo no 'Gran Grif' (78,20), região no 'Artibonite' (79,78)."
     },
@@ -400,8 +408,8 @@
       },
       "move": "out",
       "label": {
-        "text": "SANÇÕES DA ONU",
-        "sub": "CONSELHO DE SEGURANÇA",
+        "text": "SANCIONES DE LA ONU",
+        "sub": "CONSEJO DE SEGURIDAD",
         "at": 0.72,
         "kind": "name"
       },
@@ -415,7 +423,7 @@
       "transition": "whip",
       "media": null,
       "name": "PROPHANE VICTOR",
-      "role": "EX-DEPUTADO HAITIANO",
+      "role": "POLÍTICO HAITIANO",
       "note": "'o político Prophane Victor armou um grupo de jovens para que o ajudassem a ser eleito deputado em 2016.' O nome digita em 0,55 s = 'Prophane' (87,12). Grafia confirmada na lista de sanções da ONU (set/2024). [Sem retrato com licença livre de Prophane Victor: silhueta.]"
     },
     {
@@ -431,10 +439,11 @@
         },
         {
           "media": null,
-          "name": "GRAN GRIF"
+          "name": "GRAN GRIF",
+          "at": 1.75
         }
       ],
-      "link": "JOVENS ARMADOS",
+      "link": "JÓVENES ARMADOS",
       "note": "'Alguns desses jovens formaram a Gran Grif. Mais adiante, Victor começou a apoiar grupos rivais. A Gran Grif continuou de pé.' [Sem imagens livres de Prophane Victor nem da Gran Grif/Luckson Elan: silhuetas.]"
     },
     {
@@ -453,7 +462,7 @@
         }
       ],
       "label": {
-        "text": "OUTUBRO DE 2024",
+        "text": "OCTUBRE DE 2024",
         "at": 0.25,
         "kind": "date"
       },
@@ -467,7 +476,7 @@
       "transition": "glitch",
       "value": 100,
       "prefix": "~",
-      "text": "MORTOS E +6 MIL DESLOCADOS",
+      "text": "MUERTOS · MÁS DE 6,000 DESPLAZADOS",
       "sfx": [
         {
           "name": "boom",
@@ -519,7 +528,7 @@
         "credit": "c3-colheita-arroz-2021"
       },
       "label": {
-        "text": "OUTUBRO DE 2025",
+        "text": "OCTUBRE DE 2025",
         "sub": "AYIBOPOST",
         "at": 1.01,
         "kind": "date"
@@ -583,7 +592,7 @@
       },
       "label": {
         "text": "VALDO JEAN",
-        "sub": "TÉCNICO AGRÍCOLA E JORNALISTA",
+        "sub": "TÉCNICO AGRÍCOLA Y PERIODISTA",
         "at": 0.2,
         "kind": "name"
       },
@@ -622,7 +631,7 @@
         "at": 1.28
       },
       "label": {
-        "text": "DEPARTAMENTO DO CENTRO",
+        "text": "DEPARTAMENTO DEL CENTRO",
         "at": 1.28,
         "kind": "place"
       },
@@ -757,7 +766,7 @@
       },
       "label": {
         "text": "ESTADOS UNIDOS",
-        "at": 2.71,
+        "at": 2.95,
         "kind": "place"
       },
       "note": "'documentou envios ilegais de armas e munições a partir dos Estados Unidos.' Rótulo no 'desde Estados Unidos' (184,70). (Mapa com rota EUA→Haiti descartado: nas views 'caribbean'/'americas' a Flórida fica colada na borda superior e o rótulo da rota sairia fora da folha.) [Mídia: armas e munição apreendidas pela CBP em operação de saída em Del Rio, Texas (2025); não há foto livre ≥900 px de apreensão com destino ao Haiti.]"
@@ -806,8 +815,9 @@
       "end": 204.2,
       "type": "doc",
       "transition": "whip",
-      "title": "RELATÓRIO DA ONU DE 2026",
+      "title": "INFORME DE LA ONU · 2026",
       "stamp": "EMBARGO VIOLADO",
+      "stampAt": 3.85,
       "note": "'Em seu relatório de 2026, os especialistas apontaram que o embargo internacional de armas continuava sendo violado.'"
     },
     {
@@ -836,7 +846,7 @@
       "type": "stat",
       "transition": "zoom",
       "value": 2,
-      "text": "SANCIONADOS COM CONTAS CONGELADAS",
+      "text": "SANCIONADOS CON FONDOS CONGELADOS",
       "note": "'de duas das pessoas sancionadas pela ONU. E eram somas pequenas.' O número entra em 0,35 s = 'duas'."
     },
     {

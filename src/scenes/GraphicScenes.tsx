@@ -55,7 +55,7 @@ export const FullView: React.FC<{ s: FullScene }> = ({ s }) => {
       <AbsoluteFill style={{ background: "radial-gradient(ellipse 75% 70% at 50% 48%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%)" }} />
       {s.label ? (
         <>
-          <TextShade x={W / 2} y={labelY} w={1100} h={300} strength={0.5} />
+          <TextShade x={W / 2} y={labelY} w={1100} h={300} strength={0.62} />
           <Label spec={s.label} x={W / 2} y={labelY} align="center" maxWidth={1100} />
         </>
       ) : null}

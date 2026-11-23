@@ -41,7 +41,7 @@ export const neonOn = (frame: number, at: number) => {
 export const labelStyle = (kind: LabelSpec["kind"]): React.CSSProperties => {
   switch (kind) {
     case "date":
-      return { fontFamily: FONT.cond, fontWeight: 600, fontSize: 70, letterSpacing: "0.06em", color: C.white, textShadow: GLOW_WHITE };
+      return { fontFamily: FONT.cond, fontWeight: 600, fontSize: 62, letterSpacing: "0.05em", color: C.white, textShadow: GLOW_WHITE };
     case "number":
       return { fontFamily: FONT.cond, fontWeight: 700, fontSize: 84, letterSpacing: "0.03em", color: C.redNeon, textShadow: GLOW_RED };
     case "name":

@@ -150,7 +150,13 @@ const sceneEvents = (s: Scene, from: number, prev: Scene | undefined, idx: numbe
     const e = ev(at(x.at ?? 0), base, h + 3, x.volume ?? 1);
     if (e) out.push(e);
   }
-  return out.filter(Boolean) as Ev[];
+  // sem efeitos repetidos: mesmo som (qualquer variação) a menos de 6 quadros de outro igual é descartado
+  const kept: Ev[] = [];
+  const base = (f: string) => f.replace(/^sfx\//, "").replace(/-\d+\.mp3$/, "");
+  for (const e of (out.filter(Boolean) as Ev[]).sort((a, b) => a.f - b.f)) {
+    if (!kept.some((k) => base(k.file) === base(e.file) && Math.abs(k.f - e.f) < 6)) kept.push(e);
+  }
+  return kept;
 };
 
 const ALL: Ev[] = (() => {

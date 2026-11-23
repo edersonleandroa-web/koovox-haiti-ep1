@@ -10,12 +10,17 @@
       "type": "full",
       "transition": "fade",
       "media": {
-        "src": null,
+        "src": "media/final/pap-rua-mercado.mp4",
         "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.5
+        ],
         "grade": "warm",
-        "want": "VIDEO: everyday life in Port-au-Prince — busy street with vendors selling produce on the sidewalk, people walking to work, tap-tap buses passing (wide/crowd shot, no close-up of private individuals), 2015–2025 | keywords: Port-au-Prince street life, Haiti street market vendors, tap tap Port-au-Prince, Haiti daily life b-roll | sources: VOA b-roll (public domain), Wikimedia Commons video"
+        "credit": "final-pap-rua-mercado"
       },
-      "note": "Abertura do capítulo: 'o que acontece com a gente de bem no Haiti, com as famílias, com a gente que trabalha' — cotidiano de uma rua movimentada de Porto Príncipe."
+      "note": "Abertura do capítulo: 'o que acontece com a gente de bem no Haiti, com as famílias, com a gente que trabalha' — cotidiano de uma rua movimentada de Porto Príncipe. Mídia: rua movimentada de Pétion-Ville (tap-taps, camionetes, vendedores), DVIDS/US Navy, 15/02/2010."
     },
     {
       "id": "final-02",
@@ -25,13 +30,21 @@
       "frame": "polaroid",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/final/deslocados-abrigo-escola.jpg",
         "kind": "image",
+        "focus": [
+          0.5,
+          0.55
+        ],
         "grade": "warm",
-        "want": "displacement site in Port-au-Prince: families sheltering in a school or public square turned camp — tarps, mattresses, belongings (wide shot, faces not identifiable), 2023–2025 | keywords: Haiti displacement site, Port-au-Prince displaced families school shelter, Haiti IDP camp 2024, Haiti displaced gang violence | sources: VOA, Wikimedia Commons"
+        "credit": "final-deslocados-abrigo-escola"
       },
-      "label": { "text": "SETEMBRO DE 2026", "at": 2.85, "kind": "date" },
-      "note": "'...e só quer viver em paz. No fim de setembro de 2026' — contraste: famílias num abrigo de deslocados. A data entra na palavra 'setembro'."
+      "label": {
+        "text": "SEPTIEMBRE DE 2026",
+        "at": 2.85,
+        "kind": "date"
+      },
+      "note": "'...e só quer viver em paz. No fim de setembro de 2026' — contraste: famílias num abrigo de deslocados. A data entra na palavra 'setembro'. Mídia: escola de Porto Príncipe transformada em abrigo de deslocados (VOA Kreyòl, 29/03/2024)."
     },
     {
       "id": "final-03",
@@ -41,11 +54,15 @@
       "transition": "zoom",
       "value": 1.5,
       "decimals": 1,
-      "prefix": "QUASE ",
-      "suffix": " MILHÃO",
-      "text": "DESLOCADOS DENTRO DO HAITI",
+      "prefix": "CASI ",
+      "suffix": " MILLONES",
+      "text": "DESPLAZADOS DENTRO DE HAITÍ",
       "media": null,
-      "label": { "text": "QUASE 1,5 MILHÃO", "at": 0.15, "kind": "number" },
+      "label": {
+        "text": "CASI 1.5 MILLONES",
+        "at": 0.15,
+        "kind": "number"
+      },
       "note": "'quase um milhão e meio de pessoas tiveram que deixar suas casas e seguiam deslocadas dentro do Haiti'. O label só dá o tempo da contagem (StatView não o desenha); número conta junto com 'quase um milhão e meio'."
     },
     {
@@ -56,13 +73,21 @@
       "transition": "whip",
       "move": "left",
       "media": {
-        "src": null,
+        "src": "media/final/criancas-abrigo-patio.jpg",
         "kind": "image",
+        "focus": [
+          0.45,
+          0.62
+        ],
         "grade": "warm",
-        "want": "displaced children in a camp/shelter in Port-au-Prince — a group of kids among tents or in a school courtyard turned shelter, wide shot or seen from behind (no close-up portraits), 2023–2025 | keywords: Haiti displaced children, Port-au-Prince displacement camp children, Haiti IDP children 2024 | sources: VOA, Wikimedia Commons"
+        "credit": "final-criancas-abrigo-patio"
       },
-      "label": { "text": "52% SÃO CRIANÇAS", "at": 1.55, "kind": "number" },
-      "note": "'As crianças representavam 52% do total' (TTS diz 'meninos' = niños). Segue sob 'Segundo a Organização Internacional para as Migrações'."
+      "label": {
+        "text": "52% SON NIÑOS",
+        "at": 1.55,
+        "kind": "number"
+      },
+      "note": "'As crianças representavam 52% do total' (TTS diz 'meninos' = niños). Segue sob 'Segundo a Organização Internacional para as Migrações'. Mídia: crianças no pátio de um abrigo de deslocados em Porto Príncipe (VOA Kreyòl, 29/03/2024)."
     },
     {
       "id": "final-05",
@@ -71,8 +96,20 @@
       "type": "map",
       "transition": "whip",
       "view": "haiti",
-      "pins": [{ "name": "PORTO PRÍNCIPE", "lon": -72.335, "lat": 18.539, "at": 3.33 }],
-      "label": { "text": "4 DE CADA 5", "sub": "FORA DA CAPITAL", "at": 0.38, "kind": "number" },
+      "pins": [
+        {
+          "name": "PUERTO PRÍNCIPE",
+          "lon": -72.335,
+          "lat": 18.539,
+          "at": 3.88
+        }
+      ],
+      "label": {
+        "text": "CASI 4 DE CADA 5",
+        "sub": "FUERA DE LA CAPITAL",
+        "at": 0.38,
+        "kind": "number"
+      },
       "note": "OIM: 'quase 4 de cada 5 pessoas deslocadas estavam fora de Porto Príncipe'. Rótulo em 'quatro'; pino cai em 'fora do Porto Príncipe'."
     },
     {
@@ -83,12 +120,16 @@
       "frame": "polaroid",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/final/familia-mudanca-onibus.jpg",
         "kind": "image",
+        "focus": [
+          0.5,
+          0.45
+        ],
         "grade": "warm",
-        "want": "displaced Haitian family sheltering with relatives/host family — crowded modest house or yard with mattresses and bags, or people arriving at a relative's home carrying belongings (wide, faces not identifiable), Haiti 2023–2025 | keywords: Haiti host families displaced, Haiti displaced people relatives home, Haiti family belongings mattress, Haiti displaced moving belongings | sources: VOA, Wikimedia Commons"
+        "credit": "final-familia-mudanca-onibus"
       },
-      "note": "'Muitas famílias encontraram refúgio em casas de parentes ou conhecidos.'"
+      "note": "'Muitas famílias encontraram refúgio em casas de parentes ou conhecidos.' Mídia: micro-ônibus carregado de colchões e trouxas de famílias que deixam um abrigo (VOA Kreyòl, 12/09/2023)."
     },
     {
       "id": "final-07",
@@ -97,8 +138,20 @@
       "type": "map",
       "transition": "whip",
       "view": "haiti",
-      "regions": [{ "name": "Artibonite Department", "at": 0.27 }],
-      "pins": [{ "name": "SAINT-MARC", "lon": -72.693, "lat": 19.108, "at": 4.1 }],
+      "regions": [
+        {
+          "name": "Artibonite Department",
+          "at": 0.27
+        }
+      ],
+      "pins": [
+        {
+          "name": "SAINT-MARC",
+          "lon": -72.693,
+          "lat": 19.108,
+          "at": 4.45
+        }
+      ],
       "note": "'Em Artibonite, Médicos Sem Fronteiras falou com [uma mãe] que fugiu para Saint-Marc' ('San Marque' na transcrição). Departamento acende em 'Artibonite'; pino cai em 'fugiu para' e o nome digita sobre 'Saint-Marc'. A mãe é pessoa privada: sem nome nem retrato na tela."
     },
     {
@@ -109,12 +162,16 @@
       "frame": "print",
       "transition": "glitch",
       "media": {
-        "src": null,
+        "src": "media/final/casas-queimadas-bele.jpg",
         "kind": "image",
+        "focus": [
+          0.5,
+          0.4
+        ],
         "grade": "warm",
-        "want": "house burned by armed gangs in Haiti — charred walls and collapsed roof, smoke or ashes, no people and no bodies; Artibonite or Port-au-Prince, 2023–2025 | keywords: Haiti burned houses gang attack, Haiti homes torched gangs, Pont-Sonde burned houses, Port-au-Prince burned house | sources: VOA, Wikimedia Commons"
+        "credit": "final-casas-queimadas-bele"
       },
-      "note": "'...depois que uns homens armados incendiaram sua casa' — glitch na entrada (violência). Corte para o hospital cai em 'hospitais'."
+      "note": "'...depois que uns homens armados incendiaram sua casa' — glitch na entrada (violência). Corte para o hospital cai em 'hospitais'. Mídia: casa queimada em Bel Air após ataque de homens armados (VOA Kreyòl, 02/04/2021)."
     },
     {
       "id": "final-09",
@@ -123,12 +180,17 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/final/hospital-atendimento.mp4",
         "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.5
+        ],
         "grade": "warm",
-        "want": "VIDEO: a functioning hospital in Haiti — busy waiting area or pediatric ward, nurses/doctors attending mothers with children (wide, faces not identifiable); ideally Saint-Marc (Hôpital Saint-Nicolas) or elsewhere in Artibonite, 2020s; avoid 2010-earthquake triage imagery and the Mirebalais hospital used in chapter 3 | keywords: Haiti hospital ward, Saint-Marc hospital Haiti, Hopital Saint-Nicolas Saint-Marc, Haiti pediatric hospital, Haiti clinic patients waiting | sources: VOA, DVIDS, Wikimedia Commons"
+        "credit": "final-hospital-atendimento"
       },
-      "note": "'Ali ainda havia hospitais abertos. [Ela] contou que uma criança podia ficar sem atendimento se a família não tivesse com que pagar a consulta.'"
+      "note": "'Ali ainda havia hospitais abertos. [Ela] contou que uma criança podia ficar sem atendimento se a família não tivesse com que pagar a consulta.' Mídia: posto médico do navio-hospital USNS Comfort em Porto Príncipe — multidão à espera e atendimento a mãe com bebê (DVIDS, nov/2019)."
     },
     {
       "id": "final-10",
@@ -136,14 +198,20 @@
       "end": 52.88,
       "type": "doc",
       "transition": "whip",
-      "title": "RECRUTAMENTO DE CRIANÇAS",
+      "title": "RECLUTAMIENTO DE NIÑOS",
       "stamp": "UNICEF",
+      "stampAt": 0.5,
       "media": {
-        "src": null,
+        "src": "media/final/armas-apreendidas-pnh.jpg",
         "kind": "image",
-        "want": "rifles and ammunition seized from gangs by the Haitian National Police laid out on a table (weapons only, no people), 2022–2025 | keywords: Haiti police seized weapons gangs, Haiti weapons seizure rifles, Haiti seized firearms ammunition, PNH armes saisies | sources: VOA, US State Department / US Embassy Port-au-Prince, Wikimedia Commons"
+        "focus": [
+          0.55,
+          0.45
+        ],
+        "grade": "warm",
+        "credit": "final-armas-apreendidas-pnh"
       },
-      "note": "'O UNICEF estima que o número de crianças recrutadas ou usadas por grupos armados...' — dossiê com carimbo UNICEF e foto clipada de armas apreendidas (simboliza os grupos armados sem mostrar menores)."
+      "note": "'O UNICEF estima que o número de crianças recrutadas ou usadas por grupos armados...' — dossiê com carimbo UNICEF e foto clipada de armas apreendidas (simboliza os grupos armados sem mostrar menores). Mídia: fuzis ilegais apreendidos pela PNH e apresentados à imprensa (VOA Kreyòl, 30/12/2019)."
     },
     {
       "id": "final-11",
@@ -152,9 +220,13 @@
       "type": "date",
       "transition": "zoom",
       "text": "2025",
-      "sub": "RECRUTAMENTO TRIPLICOU",
+      "sub": "SE TRIPLICÓ EL RECLUTAMIENTO",
       "media": null,
-      "label": { "text": "2025", "at": 0.42, "kind": "date" },
+      "label": {
+        "text": "2025",
+        "at": 1.06,
+        "kind": "date"
+      },
       "note": "'...triplicou em 2025 em relação ao ano anterior.' Zoom: detalhe do dossiê anterior. O ano bate em 'triplicou' e o sub digita sobre '2025'."
     },
     {
@@ -165,12 +237,16 @@
       "transition": "whip",
       "move": "in",
       "media": {
-        "src": null,
+        "src": "media/final/sala-de-aula-vazia.jpg",
         "kind": "image",
+        "focus": [
+          0.35,
+          0.55
+        ],
         "grade": "warm",
-        "want": "empty classroom in a school in Haiti — wooden desks/benches and blackboard, no people (school closed by violence or abandoned), Port-au-Prince or provinces, 2015–2025 | keywords: Haiti empty classroom, Haiti school classroom desks, Haiti school closed gangs, salle de classe Haiti | sources: Wikimedia Commons, VOA, USAID"
+        "credit": "final-sala-de-aula-vazia"
       },
-      "note": "'O risco aumenta quando uma criança deixa de ir à escola, perde o apoio das pessoas ao redor e a família fica sem renda.' Sala vazia; rima visual com a final-14 (alunos de volta)."
+      "note": "'O risco aumenta quando uma criança deixa de ir à escola, perde o apoio das pessoas ao redor e a família fica sem renda.' Sala vazia; rima visual com a final-14 (alunos de volta). Mídia: carteiras e cadernos abandonados numa escola de Porto Príncipe (USAF, 19/01/2010)."
     },
     {
       "id": "final-13",
@@ -181,25 +257,34 @@
       "items": [
         {
           "media": {
-            "src": null,
+            "src": "media/final/bandeira-palacio.jpg",
             "kind": "image",
+            "focus": [
+              0.6,
+              0.3
+            ],
             "grade": "warm",
-            "want": "Haitian government — Haitian flag on a government building in Port-au-Prince (e.g., the Primature / Prime Minister's office, Villa d'Accueil or a ministry), 2015–2025 | keywords: Haiti government building flag, Primature Haiti, Port-au-Prince government ministry, Haitian flag government | sources: Wikimedia Commons, VOA"
+            "credit": "final-bandeira-palacio"
           },
-          "name": "GOVERNO DO HAITI"
+          "name": "GOBIERNO HAITIANO"
         },
         {
           "media": {
-            "src": null,
+            "src": "media/final/unicef-les-cayes.jpg",
             "kind": "image",
+            "focus": [
+              0.4,
+              0.35
+            ],
             "grade": "warm",
-            "want": "UNICEF in Haiti — UNICEF logo on a tent, school kit, supplies or vehicle in Haiti (public-domain US government photo or CC licence) | keywords: UNICEF Haiti, UNICEF tent Haiti, UNICEF supplies Haiti, UNICEF school Haiti | sources: DVIDS, USAID, Wikimedia Commons"
+            "credit": "final-unicef-les-cayes"
           },
-          "name": "UNICEF"
+          "name": "UNICEF",
+          "at": 1.2
         }
       ],
-      "link": "PREVENÇÃO",
-      "note": "'O governo haitiano e o UNICEF lançaram um programa para prevenir o recrutamento.' Nome do programa ('Prejeune' na transcrição) não verificado: fica fora da tela."
+      "link": "PREVENCIÓN",
+      "note": "'O governo haitiano e o UNICEF lançaram um programa para prevenir o recrutamento.' Nome do programa ('Prejeune' na transcrição) não verificado: fica fora da tela. Mídia: bandeira do Haiti diante do Palácio Nacional (US Navy, 2010) + faixa do UNICEF no Dia Mundial da Criança em Les Cayes (VOA Kreyòl, nov/2021)."
     },
     {
       "id": "final-14",
@@ -209,12 +294,16 @@
       "transition": "whip",
       "move": "right",
       "media": {
-        "src": null,
+        "src": "media/final/aluna-quadro-negro.jpg",
         "kind": "image",
+        "focus": [
+          0.45,
+          0.45
+        ],
         "grade": "warm",
-        "want": "Haitian students back in class — children in school uniforms writing at desks, seen from behind or wide (faces not identifiable), 2015–2025 | keywords: Haiti classroom students, Haitian school children uniforms, Haiti school class lesson | sources: USAID, Wikimedia Commons, VOA"
+        "credit": "final-aluna-quadro-negro"
       },
-      "note": "'Também ajuda quem sai desses grupos a voltar a estudar e retomar a vida na comunidade.'"
+      "note": "'Também ajuda quem sai desses grupos a voltar a estudar e retomar a vida na comunidade.' Mídia: aluna de uniforme no quadro-negro de uma escola de Cap-Haïtien (US Navy, fev/2010)."
     },
     {
       "id": "final-15",
@@ -222,10 +311,14 @@
       "end": 81.74,
       "type": "doc",
       "transition": "cut",
-      "title": "VIOLÊNCIA SEXUAL",
-      "stamp": "REGISTRO TARDIO",
+      "title": "VIOLENCIA SEXUAL",
+      "stamp": "REGISTRO TARDÍO",
       "media": null,
-      "label": { "text": "JUL–SET DE 2026", "at": 4.13, "kind": "date" },
+      "label": {
+        "text": "JUL–SEP DE 2026",
+        "at": 4.13,
+        "kind": "date"
+      },
       "note": "'Os casos de violência sexual às vezes demoram a ser registrados. Entre julho e setembro de 2026...' Sem imagem (tema sensível). O carimbo cai sozinho em ~2,2 s, sobre 'demoram a ser registrados'; data em 'Entre julho'."
     },
     {
@@ -236,12 +329,17 @@
       "transition": "whip",
       "move": "in",
       "media": {
-        "src": null,
-        "kind": "image",
+        "src": "media/final/gangue-armada-rua.mp4",
+        "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.45,
+          0.45
+        ],
         "grade": "cold",
-        "want": "armed gang members in Port-au-Prince — masked men with rifles in a street or at a barricade (as photographed by VOA), no victims; prefer a shot not used in chapters 1–3 | keywords: Haiti armed gang members, Port-au-Prince gang rifles masked, Viv Ansanm gang members, Haiti gang barricade | sources: VOA, Wikimedia Commons"
+        "credit": "final-gangue-armada-rua"
       },
-      "note": "'...a ONU recebeu relatos de estupros cometidos por membros das gangues.' Mostra os agressores (gangues), nunca vítimas."
+      "note": "'...a ONU recebeu relatos de estupros cometidos por membros das gangues.' Mostra os agressores (gangues), nunca vítimas. Mídia (vídeo): homens mascarados e armados da coalizão Viv Ansanm em Croix-des-Bouquets (VOA Kreyòl, 23/05/2024)."
     },
     {
       "id": "final-17",
@@ -250,9 +348,13 @@
       "type": "stat",
       "transition": "cut",
       "value": 344,
-      "text": "VÍTIMAS NO MESMO TRIMESTRE",
+      "text": "VÍCTIMAS EN ESE MISMO TRIMESTRE",
       "media": null,
-      "label": { "text": "344", "at": 0.15, "kind": "number" },
+      "label": {
+        "text": "344",
+        "at": 0.15,
+        "kind": "number"
+      },
       "note": "'344 das vítimas sofreram a agressão nesse mesmo trimestre.' Sobre o mural, sem foto."
     },
     {
@@ -263,12 +365,16 @@
       "frame": "clipping",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/final/marcha-mulheres-2023.jpg",
         "kind": "image",
+        "focus": [
+          0.45,
+          0.55
+        ],
         "grade": "warm",
-        "want": "Haitian women marching against violence in Port-au-Prince — crowd with banners/placards (public demonstration, wide shot), 2018–2025 | keywords: Haiti women march violence, Port-au-Prince women protest, Haiti violence against women march, Haiti women's rights demonstration | sources: Wikimedia Commons, VOA"
+        "credit": "final-marcha-mulheres-2023"
       },
-      "note": "'Os demais testemunhos se referiam a agressões ocorridas meses ou anos antes.' Mulheres como multidão/protesto (sem vítimas identificáveis)."
+      "note": "'Os demais testemunhos se referiam a agressões ocorridas meses ou anos antes.' Mulheres como multidão/protesto (sem vítimas identificáveis). Mídia: marcha de organizações feministas em Porto Príncipe contra a violência contra mulheres e meninas (VOA Kreyòl, 03/04/2023)."
     },
     {
       "id": "final-19",
@@ -278,12 +384,16 @@
       "transition": "whip",
       "move": "out",
       "media": {
-        "src": null,
+        "src": "media/final/panelas-fogareiro.jpg",
         "kind": "image",
+        "focus": [
+          0.55,
+          0.55
+        ],
         "grade": "warm",
-        "want": "food in Haiti — a pot of rice and beans (diri ak pwa) cooking over a charcoal fire, hands stirring, no faces | keywords: Haiti cooking charcoal pot, Haitian rice and beans, diri ak pwa, Haiti charcoal stove kitchen | sources: Wikimedia Commons"
+        "credit": "final-panelas-fogareiro"
       },
-      "note": "'A insegurança também se sente na hora de comer. O relatório de segurança alimentar do IPC inclui...'"
+      "note": "'A insegurança também se sente na hora de comer. O relatório de segurança alimentar do IPC inclui...' Mídia: panelas sobre fogareiro a carvão (Commons, CC BY-SA 4.0)."
     },
     {
       "id": "final-20",
@@ -291,15 +401,24 @@
       "end": 108.07,
       "type": "date",
       "transition": "whip",
-      "text": "SET/2026 – FEV/2027",
-      "sub": "ESTIMATIVA DO IPC",
+      "text": "SEP 2026 – FEB 2027",
+      "sub": "ESTIMACIÓN DEL IPC",
       "media": {
-        "src": null,
+        "src": "media/final/sacos-arroz-feijao.jpg",
         "kind": "image",
-        "want": "sacks of rice, beans and corn for sale at a market in Haiti (goods only, no faces) — used as darkened background | keywords: Haiti market rice sacks, Haiti grain market, Haiti food market bags, Haiti beans market | sources: Wikimedia Commons, USAID"
+        "focus": [
+          0.5,
+          0.55
+        ],
+        "grade": "warm",
+        "credit": "final-sacos-arroz-feijao"
       },
-      "label": { "text": "SET/2026 – FEV/2027", "at": 1.3, "kind": "date" },
-      "note": "'...uma estimativa para os seis meses que vão de setembro de 2026 a fevereiro de 2027.' Período entra em 'seis meses'."
+      "label": {
+        "text": "SEP 2026 – FEB 2027",
+        "at": 2.4,
+        "kind": "date"
+      },
+      "note": "'...uma estimativa para os seis meses que vão de setembro de 2026 a fevereiro de 2027.' Período entra em 'seis meses'. Mídia: sacos de arroz, feijão e milho num mercado de Porto Príncipe (VOA Kreyòl, 28/02/2024)."
     },
     {
       "id": "final-21",
@@ -309,9 +428,13 @@
       "transition": "zoom",
       "value": 5940000,
       "prefix": "+",
-      "text": "EM CRISE ALIMENTAR OU PIOR",
+      "text": "EN CRISIS ALIMENTARIA O PEOR",
       "media": null,
-      "label": { "text": "+5.940.000", "at": 0.41, "kind": "number" },
+      "label": {
+        "text": "+5,940,000",
+        "at": 0.41,
+        "kind": "number"
+      },
       "note": "'Mais de 5.940.000 pessoas estariam em situação de crise alimentar ou pior.' Zoom: detalhe da estimativa do IPC. Contagem começa em 'cinco milhões'."
     },
     {
@@ -321,13 +444,24 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/final/distribuicao-arroz.mp4",
         "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.5
+        ],
         "grade": "warm",
-        "want": "VIDEO: food distribution in Haiti — crowd of people queuing to receive sacks of food/rations (WFP / USAID-funded), wide shot, 2019–2025 | keywords: Haiti food distribution WFP, USAID food aid Haiti, Haiti food line sacks, Haiti hunger food assistance | sources: DVIDS, USAID, VOA"
+        "credit": "final-distribuicao-arroz"
       },
-      "label": { "text": "53% DA POPULAÇÃO ANALISADA", "at": 0.91, "kind": "number" },
-      "note": "'Isso equivale a 53% da população analisada.'"
+      "label": {
+        "text": "53%",
+        "sub": "DE LA POBLACIÓN ANALIZADA",
+        "at": 0.91,
+        "kind": "number",
+        "mark": "circle"
+      },
+      "note": "'Isso equivale a 53% da população analisada.' Mídia (vídeo): distribuição de sacos de arroz da USAID no acampamento do Pétionville Club (DVIDS, 13/03/2010)."
     },
     {
       "id": "final-23",
@@ -337,12 +471,16 @@
       "frame": "print",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/final/agricultor-enxada.jpg",
         "kind": "image",
+        "focus": [
+          0.35,
+          0.45
+        ],
         "grade": "warm",
-        "want": "Haitian farmers working a field with hoes or harvesting, rural Haiti (wide shot); prefer a different shot from the Artibonite rice paddies of chapter 3 | keywords: Haiti farmers field, Haitian farmer hoe, Haiti agriculture harvest, Haiti farm workers | sources: USAID, Wikimedia Commons"
+        "credit": "final-agricultor-enxada"
       },
-      "note": "'A violência obriga os agricultores a deixar suas terras e interrompe o comércio.'"
+      "note": "'A violência obriga os agricultores a deixar suas terras e interrompe o comércio.' Mídia: agricultor com enxada num campo de milho em Bas Boën (USAID, 2011)."
     },
     {
       "id": "final-24",
@@ -350,37 +488,51 @@
       "end": 129.06,
       "type": "network",
       "transition": "whip",
-      "center": "CRISE ALIMENTAR",
+      "center": "CRISIS ALIMENTARIA",
       "items": [
         {
           "media": {
-            "src": null,
+            "src": "media/final/banca-mercado-precos.jpg",
             "kind": "image",
+            "focus": [
+              0.4,
+              0.55
+            ],
             "grade": "warm",
-            "want": "market stall in Haiti selling rice/beans by the cup or with price signs (goods only, no faces) | keywords: Haiti market food prices, Haiti rice price market, Port-au-Prince market stall beans | sources: Wikimedia Commons, USAID"
+            "credit": "final-banca-mercado-precos"
           },
-          "name": "PREÇOS ALTOS"
+          "name": "PRECIOS ALTOS"
         },
         {
           "media": {
-            "src": null,
+            "src": "media/final/gourdes-maos.jpg",
             "kind": "image",
+            "focus": [
+              0.5,
+              0.45
+            ],
             "grade": "warm",
-            "want": "Haitian gourde banknotes / cash held in hand (no faces) | keywords: Haitian gourde banknotes, Haiti money gourdes, HTG currency notes | sources: Wikimedia Commons"
+            "credit": "final-gourdes-maos"
           },
-          "name": "PERDA DE PODER AQUISITIVO"
+          "name": "PÉRDIDA DE PODER ADQUISITIVO",
+          "at": 2.75
         },
         {
           "media": {
-            "src": null,
+            "src": "media/final/vegetacao-furacao.jpg",
             "kind": "image",
+            "focus": [
+              0.6,
+              0.5
+            ],
             "grade": "warm",
-            "want": "climate damage to farming in Haiti — drought-cracked field, or crops/fields flooded or flattened by a hurricane (e.g., Hurricane Matthew 2016), no people | keywords: Haiti drought field, Haiti hurricane crop damage, Hurricane Matthew Haiti crops, Haiti flood farmland | sources: USAID, DVIDS, Wikimedia Commons"
+            "credit": "final-vegetacao-furacao"
           },
-          "name": "EFEITOS DO CLIMA"
+          "name": "EFECTOS DEL CLIMA",
+          "at": 4.5
         }
       ],
-      "note": "'O relatório também aponta os preços altos, a perda de poder aquisitivo e os efeitos do clima.' Três causas ligadas por fio vermelho à crise alimentar."
+      "note": "'O relatório também aponta os preços altos, a perda de poder aquisitivo e os efeitos do clima.' Três causas ligadas por fio vermelho à crise alimentar. Mídia: banca de arroz e feijão (VOA, 2024); mãos contando notas de 1000 gourdes (VOA, 2022); vegetação arrasada pelo furacão Matthew perto de Moron (CDC, 2016)."
     },
     {
       "id": "final-25",
@@ -390,12 +542,16 @@
       "frame": "polaroid",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/final/mercado-petionville.jpg",
         "kind": "image",
+        "focus": [
+          0.62,
+          0.6
+        ],
         "grade": "warm",
-        "want": "shoppers buying food at a crowded market in Port-au-Prince (e.g., Croix-des-Bossales or Pétion-Ville market) — wide shot, faces not prominent | keywords: Port-au-Prince market shoppers, Croix-des-Bossales market, Haiti market buying food, Haiti marketplace crowd | sources: VOA, Wikimedia Commons"
+        "credit": "final-mercado-petionville"
       },
-      "note": "'Quem ficou sem renda tem que comprar comida justamente quando está mais cara.'"
+      "note": "'Quem ficou sem renda tem que comprar comida justamente quando está mais cara.' Mídia: mercado de rua lotado em Pétion-Ville (USAID, 2011)."
     },
     {
       "id": "final-26",
@@ -404,12 +560,17 @@
       "type": "full",
       "transition": "cut",
       "media": {
-        "src": null,
+        "src": "media/final/pap-vista-aerea.mp4",
         "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.5
+        ],
         "grade": "warm",
-        "want": "VIDEO: Haitian flag waving in the wind (real footage, not CGI); fallback: wide view over Port-au-Prince and its bay at dusk | keywords: Haiti flag waving, Haitian flag wind, Port-au-Prince panorama, Port-au-Prince bay sunset | sources: Wikimedia Commons, VOA, DVIDS"
+        "credit": "final-pap-vista-aerea"
       },
-      "note": "'Bom, vou deixar por aqui. Se não surgir outro tema que me chame mais a atenção...' — plano de fechamento sobre o Haiti."
+      "note": "'Bom, vou deixar por aqui. Se não surgir outro tema que me chame mais a atenção...' — plano de fechamento sobre o Haiti. Mídia (vídeo): vista aérea de Porto Príncipe ao amanhecer, com névoa (DVIDS/US Navy, nov/2019) — alternativa prevista ao plano da bandeira."
     },
     {
       "id": "final-27",
@@ -419,13 +580,23 @@
       "frame": "tv",
       "transition": "whip",
       "media": {
-        "src": null,
+        "src": "media/final/soldados-salvadorenhos.mp4",
         "kind": "video",
+        "trim": 0,
+        "focus": [
+          0.5,
+          0.5
+        ],
         "grade": "warm",
-        "want": "VIDEO: soldiers of the Salvadoran Armed Forces (Fuerza Armada de El Salvador) marching or standing in formation in El Salvador — neutral ceremony/training footage, no combat | keywords: Salvadoran soldiers formation, El Salvador army soldiers, Fuerza Armada de El Salvador, DVIDS El Salvador soldiers, Salvadoran Army parade | sources: DVIDS, Wikimedia Commons"
+        "credit": "final-soldados-salvadorenhos"
       },
-      "label": { "text": "FORÇAS ARMADAS", "sub": "NO PRÓXIMO VÍDEO", "at": 2.08, "kind": "info" },
-      "note": "'No próximo vídeo vou falar das Forças Armadas em [...] e em El Salvador. E aí vão notar uma diferença importante.' Um dos países saiu duvidoso na transcrição: NÃO aparece na tela. Imagem neutra de soldados salvadorenhos; rótulo em 'Forças Armadas'."
+      "label": {
+        "text": "FUERZAS ARMADAS",
+        "sub": "EN EL PRÓXIMO VIDEO",
+        "at": 2.08,
+        "kind": "info"
+      },
+      "note": "'No próximo vídeo vou falar das Forças Armadas em [...] e em El Salvador. E aí vão notar uma diferença importante.' Um dos países saiu duvidoso na transcrição: NÃO aparece na tela. Imagem neutra de soldados salvadorenhos; rótulo em 'Forças Armadas'. Mídia (vídeo): soldados da Força Armada de El Salvador em formação na cerimônia de abertura do Beyond the Horizon 2018, Zacatecoluca (DVIDS)."
     },
     {
       "id": "final-28",
