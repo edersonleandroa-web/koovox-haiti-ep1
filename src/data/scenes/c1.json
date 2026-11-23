@@ -1,0 +1,528 @@
+{
+  "chapter": "c1",
+  "audio": "audio/1.mp3",
+  "duration": 158.041,
+  "scenes": [
+    {
+      "id": "c1-01",
+      "start": 0,
+      "end": 3.88,
+      "type": "full",
+      "transition": "fade",
+      "media": {
+        "src": null,
+        "kind": "video",
+        "grade": "warm",
+        "want": "VIDEO: busy street in Port-au-Prince, Haiti (traffic, tap-taps, motorbikes, pedestrians), ideally with an ambulance driving by; 2018-2024, wide shot, no violence | sources: VOA own footage (.webm on Commons), DVIDS, Commons CC BY/BY-SA | keywords: Port-au-Prince street traffic video, Haiti ambulance street, tap tap Port-au-Prince, downtown Port-au-Prince b-roll"
+      },
+      "move": "in",
+      "label": { "text": "SETEMBRO DE 2022", "at": 0.15, "kind": "date" },
+      "note": "'Em setembro de 2022, o Serviço Nacional de Ambulâncias...' Abertura do capítulo: rua real de Porto Príncipe (de preferência com uma ambulância passando). A data aparece em 'setembro'. Corte no respiro antes de 'apenas'."
+    },
+    {
+      "id": "c1-02",
+      "start": 3.88,
+      "end": 9.04,
+      "type": "stat",
+      "transition": "whip",
+      "value": 3,
+      "prefix": "",
+      "suffix": "",
+      "decimals": 0,
+      "text": "AMBULÂNCIAS NAS RUAS",
+      "label": { "text": "3 AMBULÂNCIAS NAS RUAS", "at": 1.15, "kind": "number" },
+      "media": {
+        "src": null,
+        "kind": "image",
+        "grade": "warm",
+        "want": "photo for a darkened background: an ambulance in Port-au-Prince (parked or on duty), landscape | cand.: Commons 'US Navy 100224-N-8366W-224 ... load supplies to an ambulance at Ciment Varreux' (public domain, 2010) | keywords: ambulance Port-au-Prince, Haiti ambulance, Centre Ambulancier National Haiti"
+      },
+      "note": "'...apenas podia colocar três veículos nas ruas de Porto Príncipe. Faltava combustível.' O número 3 sobe em 'três' (label.at = tempo da contagem; o StatView não desenha o rótulo). Fundo: ambulância escurecida."
+    },
+    {
+      "id": "c1-03",
+      "start": 9.04,
+      "end": 14.86,
+      "type": "map",
+      "transition": "whip",
+      "view": "pap",
+      "pins": [
+        { "name": "TERMINAL VARREUX", "lon": -72.3466, "lat": 18.5737, "at": 3.94 }
+      ],
+      "label": { "text": "G9", "sub": "COALIZÃO DE GANGUES", "at": 0.24, "kind": "name" },
+      "note": "'O G9, uma coalizão de gangues, tinha bloqueado o principal terminal de combustível do Haiti.' Mapa da região metropolitana: rótulo G9 em 'G9'; alfinete no Terminal Varreux (principal terminal de combustível, bloqueado pelo G9 em set/2022) quando ele diz 'terminal'."
+    },
+    {
+      "id": "c1-04",
+      "start": 14.86,
+      "end": 19.57,
+      "type": "photo",
+      "transition": "whip",
+      "frame": "print",
+      "media": {
+        "src": null,
+        "kind": "image",
+        "grade": "warm",
+        "want": "photo: diesel generator powering a hospital in Haiti (or a technician next to a hospital generator), landscape | sources: US Navy/Seabees, USAID, DoD 2010-2021 (public domain), Commons | keywords: Haiti hospital generator, Seabees generator hospital Port-au-Prince, General Hospital Port-au-Prince generator, diesel generator Haiti clinic"
+      },
+      "note": "'Os principais hospitais do país dependiam de seus geradores cada vez que faltava luz,' Foto impressa presa no mural: o gerador do hospital. Sem texto."
+    },
+    {
+      "id": "c1-05",
+      "start": 19.57,
+      "end": 23.81,
+      "type": "stat",
+      "transition": "zoom",
+      "value": 3,
+      "prefix": "",
+      "suffix": " EM CADA 4",
+      "decimals": 0,
+      "text": "HOSPITAIS AFETADOS",
+      "label": { "text": "3 EM CADA 4", "at": 1.89, "kind": "number" },
+      "media": {
+        "src": null,
+        "kind": "image",
+        "grade": "warm",
+        "want": "photo for a darkened background: corridor or ward of a hospital in Port-au-Prince (e.g. Hôpital de l'Université d'État d'Haïti / HUEH), dim light; no close-ups of patients | sources: DoD/US Navy, USAID, Commons | keywords: HUEH hospital Port-au-Prince, General Hospital Port-au-Prince ward, Haiti hospital corridor"
+      },
+      "note": "'...e a escassez já afetava uns três de cada quatro. Com esse bloqueio,' Número '3 EM CADA 4' em 'três' (label.at = tempo da contagem). 'Com esse bloqueio' ainda cai sobre esta cena; o corte vem no respiro antes de 'uns homens armados'."
+    },
+    {
+      "id": "c1-06",
+      "start": 23.81,
+      "end": 31.05,
+      "type": "full",
+      "transition": "cut",
+      "media": {
+        "src": null,
+        "kind": "video",
+        "grade": "warm",
+        "want": "VIDEO: armed gang members manning a barricade/checkpoint on a Port-au-Prince road, cars or trucks stopped, 2022-2025; medium/wide shot, faces not in close-up, no bodies, no blood; must be a different clip from intro-02 | fallback: barricade of burning tires blocking a street of the capital | sources: VOA own footage (not AP/Reuters), Commons | keywords: Haiti gang checkpoint Port-au-Prince, G9 gang barricade, Port-au-Prince barricade burning tires, VOA Haiti gangs video"
+      },
+      "move": "in",
+      "note": "'...uns homens armados na capital acabaram decidindo se uma ambulância chegava a tempo e se uma maternidade podia seguir atendendo.' Corte seco em 'uns homens armados': quem controla a rua decide quem passa. Sem texto."
+    },
+    {
+      "id": "c1-07",
+      "start": 31.05,
+      "end": 35.73,
+      "type": "date",
+      "transition": "whip",
+      "text": "NOVEMBRO DE 2026",
+      "label": { "text": "NOVEMBRO DE 2026", "at": 1.42, "kind": "date" },
+      "media": {
+        "src": null,
+        "kind": "image",
+        "grade": "warm",
+        "want": "photo for a darkened background: aerial view of Port-au-Prince (dense neighborhoods, bay in the background), landscape, the more recent the better; different image from intro-10 | cand.: Commons 'US Navy 080916-N-2653P-276 An aerial view of the Haitian capital city, Port-Au-Prince...' (public domain, 2008) | keywords: aerial view Port-au-Prince, Port-au-Prince from above, DVIDS Port-au-Prince aerial 2021"
+      },
+      "note": "'Quatro anos depois, em novembro de 2026, as gangues ainda controlavam...' Cartão de data sobre vista aérea da capital; a data bate em 'em novembro' (label.at = tempo da data; o DateView não desenha o rótulo)."
+    },
+    {
+      "id": "c1-08",
+      "start": 35.73,
+      "end": 42,
+      "type": "map",
+      "transition": "whip",
+      "view": "pap",
+      "shade": {
+        "communes": ["Port au Prince", "Delmas", "Cite Soleil", "Tabarre", "Carrefour", "Petionville"],
+        "at": 0.53
+      },
+      "label": { "text": "+80% SOB CONTROLE", "sub": "ESTIMATIVA DA REUTERS", "at": 1, "kind": "number" },
+      "note": "'...mais de 80% da área metropolitana de Porto Príncipe. Essa era a estimativa que a Reuters publicou.' Corte em 'mais de 80%': as comunas da região metropolitana se pintam de vermelho em '80'; o rótulo com a fonte entra em 'por cento'. Shade sem texto (o rótulo já leva o número)."
+    },
+    {
+      "id": "c1-09",
+      "start": 42,
+      "end": 45.65,
+      "type": "map",
+      "transition": "whip",
+      "view": "haiti",
+      "regions": [
+        { "name": "Artibonite Department", "at": 0.88 },
+        { "name": "Centre Department", "at": 2.56 }
+      ],
+      "note": "'No interior do país, a situação mudou de uma cidade a outra.' A câmera sai da capital para o país inteiro; Artibonite (em 'país') e Centro (em 'de uma cidade a outra') se acendem em hachura — os departamentos do interior onde as gangues avançaram. Sem texto além dos rótulos de país do próprio mapa."
+    },
+    {
+      "id": "c1-10",
+      "start": 45.65,
+      "end": 50.27,
+      "type": "photo",
+      "transition": "whip",
+      "frame": "tv",
+      "media": {
+        "src": null,
+        "kind": "video",
+        "grade": "warm",
+        "want": "VIDEO (or photo): displaced families walking with their belongings on a rural road in Haiti's interior (Artibonite or Centre), fleeing gang violence, 2023-2025; seen from behind or at a distance | sources: VOA own footage, US government, Commons | keywords: Haiti displaced families Artibonite, Haitians flee gang violence countryside, internally displaced Haiti 2024, Haiti farmers displaced"
+      },
+      "note": "'Foi preciso evacuar hospitais. Alguns agricultores foram expulsos de suas terras.' TV antiga no mural passando imagens de famílias deixando o campo (pessoas forçadas a sair). Sem texto."
+    },
+    {
+      "id": "c1-11",
+      "start": 50.27,
+      "end": 57.61,
+      "type": "full",
+      "transition": "whip",
+      "media": {
+        "src": null,
+        "kind": "image",
+        "grade": "warm",
+        "want": "PHOTO (Ken Burns): a working community service in a Haitian provincial town despite the crisis: health post seeing patients, a school class, or a busy market, 2020s; people at a distance | sources: USAID, VOA, Commons | keywords: Haiti community health clinic, Haiti market town, Haiti school classroom 2023, USAID Haiti community"
+      },
+      "move": "in",
+      "note": "'Também houve comunidades que conseguiram restabelecer serviços ainda em meio à violência. Para entender como o Haiti chegou a este ponto,' Respiro de vida normal no interior. A frase de passagem 'Para entender...' fica sobre esta imagem; o salto para o passado acontece no corte seguinte. Sem texto."
+    },
+    {
+      "id": "c1-12",
+      "start": 57.61,
+      "end": 62.97,
+      "type": "full",
+      "transition": "flash",
+      "media": {
+        "src": null,
+        "kind": "video",
+        "grade": "bw",
+        "want": "VIDEO: black-and-white newsreel of Haiti in the late 1950s / early 1960s: Port-au-Prince streets, political crowds, armed soldiers or militiamen next to politicians | cand.: NARA film 'Turbulent Haiti' (1963, CC0, archive.org gov.archives.arc.644637) | keywords: Haiti 1957 election newsreel, Port-au-Prince 1950s, Duvalier rise to power newsreel"
+      },
+      "move": "in",
+      "note": "'...é preciso voltar à época em que os homens armados dependiam muito mais dos políticos que os financiavam.' Flash para o arquivo em preto e branco no 'voltar à época'. Sem texto."
+    },
+    {
+      "id": "c1-13",
+      "start": 62.97,
+      "end": 68.51,
+      "type": "person",
+      "transition": "whip",
+      "name": "FRANÇOIS DUVALIER",
+      "role": "“PAPA DOC”",
+      "years": "1957–1971",
+      "media": {
+        "src": null,
+        "kind": "image",
+        "grade": "bw",
+        "want": "portrait of François Duvalier ('Papa Doc'), president of Haiti, c. 1957-1963 | cand.: Commons 'François Duvalier Presidential Portrait (1957).png' or '1963haiti duvalier.jpg' (check license) | keywords: Francois Duvalier portrait, Papa Doc 1957"
+      },
+      "note": "'François Duvalier, conhecido como Papa Doc, chegou à presidência em 1957.' Ficha de pessoa: retrato real, nome, apelido e o período no poder (1957 dito com ênfase)."
+    },
+    {
+      "id": "c1-14",
+      "start": 68.51,
+      "end": 74.63,
+      "type": "duo",
+      "transition": "whip",
+      "items": [
+        {
+          "name": "EXÉRCITO",
+          "at": 0.15,
+          "media": {
+            "src": null,
+            "kind": "image",
+            "grade": "bw",
+            "want": "photo: soldiers of the Haitian army (Forces Armées d'Haïti) in formation or on parade, 1950s-60s, B&W | cand.: frame from NARA films 'Turbulent Haiti' (1963) or 'Haiti's Francois Duvalier Dictatorship' (1971), CC0 | keywords: Haitian army 1958, Forces Armées d'Haïti 1950s, Haitian soldiers parade 1960s"
+          }
+        },
+        {
+          "name": "MILÍCIA",
+          "at": 3.73,
+          "media": {
+            "src": null,
+            "kind": "image",
+            "grade": "bw",
+            "want": "photo: Duvalier's militiamen (Tontons Macoutes / VSN) armed or in their denim uniform, 1960s, B&W; the SAME image is reused in c1-18 and c1-21 | cand.: frame from NARA film 'Haiti's Francois Duvalier Dictatorship' (1971, CC0, archive.org gov.archives.arc.1654747) | keywords: Tonton Macoute militia 1960s, Volontaires de la Sécurité Nationale, Duvalier militia"
+          }
+        }
+      ],
+      "link": "CONTRAPESO",
+      "note": "'No ano seguinte, após uma tentativa de golpe de Estado, criou sua própria milícia para fazer contrapeso ao exército.' Polaroid do EXÉRCITO já no início (a ameaça do golpe); a MILÍCIA entra em 'milícia'; o fio e 'CONTRAPESO' chegam por volta de 'contrapeso'."
+    },
+    {
+      "id": "c1-15",
+      "start": 74.63,
+      "end": 82.37,
+      "type": "full",
+      "transition": "flash",
+      "media": {
+        "src": null,
+        "kind": "video",
+        "grade": "bw",
+        "want": "VIDEO: Tontons Macoutes on the streets (patrol, parade, armed guard) and a population under watch, 1960s, B&W; no explicit violence; a different shot from c1-12 | cand.: NARA 'Haiti's Francois Duvalier Dictatorship' (1971, CC0, archive.org gov.archives.arc.1654747) or 'Turbulent Haiti' (1963, gov.archives.arc.644637) | keywords: Tonton Macoutes footage, Duvalier militia newsreel, Haiti 1960s dictatorship"
+      },
+      "move": "in",
+      "label": { "text": "TONTONS MACOUTES", "at": 1.53, "kind": "name" },
+      "note": "'Seus integrantes eram chamados de Tontons Macoutes. Perseguiam os opositores do regime e intimidavam a população em nome do presidente.' Arquivo em movimento dos milicianos; o nome aparece em 'Tontons Macoutes'."
+    },
+    {
+      "id": "c1-16",
+      "start": 82.37,
+      "end": 87.44,
+      "type": "person",
+      "transition": "whip",
+      "name": "JEAN-CLAUDE DUVALIER",
+      "role": "FILHO DE PAPA DOC",
+      "years": "1971–1986",
+      "media": {
+        "src": null,
+        "kind": "image",
+        "grade": "bw",
+        "want": "portrait of a young Jean-Claude Duvalier, president of Haiti in the 1970s (ideally around his 1971 inauguration) | cand.: frame from NARA film 'Haiti' (1972, CC0, archive.org gov.archives.arc.650721); last resort: Commons 'Baby Doc.jpg' (Agência Brasil, CC BY 3.0 BR, 2011) | keywords: Jean-Claude Duvalier 1971, Baby Doc 1970s portrait"
+      },
+      "note": "'Quando Duvalier morreu, em 1971, seu filho Jean-Claude herdou a presidência.' Ficha do filho: 'FILHO DE PAPA DOC' e 1971–1986 deixam claro quem herdou o poder."
+    },
+    {
+      "id": "c1-17",
+      "start": 87.44,
+      "end": 92.72,
+      "type": "timeline",
+      "transition": "whip",
+      "years": [
+        { "year": "1957", "text": "PAPA DOC" },
+        { "year": "1971", "text": "JEAN-CLAUDE" },
+        { "year": "1986", "text": "QUEDA DA DITADURA" }
+      ],
+      "focus": 2,
+      "note": "'Manteve esse aparato de repressão até a queda da ditadura, em 1986.' Fio vermelho com os 29 anos da dinastia Duvalier; destaque em 1986 (dito com ênfase)."
+    },
+    {
+      "id": "c1-18",
+      "start": 92.72,
+      "end": 97.14,
+      "type": "duo",
+      "transition": "whip",
+      "items": [
+        {
+          "name": "TONTONS MACOUTES",
+          "at": 1.02,
+          "media": {
+            "src": null,
+            "kind": "image",
+            "grade": "bw",
+            "want": "REUSE the MILÍCIA image from c1-14 (Tontons Macoutes, 1960s, B&W)"
+          }
+        },
+        {
+          "name": "GANGUES DE HOJE",
+          "at": 2.12,
+          "media": {
+            "src": null,
+            "kind": "image",
+            "grade": "warm",
+            "want": "photo: armed gang members in Port-au-Prince today (2022-2025) or G9 leader Jimmy 'Barbecue' Chérizier (publicly sanctioned gang leader), color; must differ from the intro-05 photo | cand.: Commons 'Jimmy \"Barbecue\" Cherizier 2024.png' (check license/origin) | keywords: Haiti gang members 2024, G9 Cherizier, Viv Ansanm gang Port-au-Prince"
+          }
+        }
+      ],
+      "link": "?",
+      "note": "'E o que aquela milícia tem a ver com as gangues de hoje? Depois dos Duvalier,' A pergunta do capítulo no mural: Macoutes (P&B) ligados por fio às gangues atuais (cor), com '?' no fio. 'Depois dos Duvalier' ainda cai aqui; o corte vem antes de 'os que disputavam o poder'."
+    },
+    {
+      "id": "c1-19",
+      "start": 97.14,
+      "end": 104.05,
+      "type": "full",
+      "transition": "whip",
+      "media": {
+        "src": null,
+        "kind": "image",
+        "grade": "bw",
+        "want": "PHOTO (Ken Burns): ballot box / voters at a polling station in Haiti, post-Duvalier era (ideally the 1987-1990 elections, otherwise 2006); the ballot box is the subject; avoid photos where the armed men in frame are UN peacekeepers | sources: Commons (Agência Brasil CC BY), US government | keywords: Haiti election ballot box, Haitian voters polling station, Haiti 1990 election, Haiti 2006 election Agência Brasil"
+      },
+      "move": "in",
+      "note": "'...os que disputavam o poder ainda podiam recorrer a homens armados para conseguir o que dificilmente conseguiriam nas urnas.' Aproximação lenta na urna: armas no lugar de votos. Sem texto."
+    },
+    {
+      "id": "c1-20",
+      "start": 104.05,
+      "end": 109.56,
+      "type": "person",
+      "transition": "glitch",
+      "name": "JEAN-BERTRAND ARISTIDE",
+      "role": "PRESIDENTE ELEITO",
+      "years": "DEPOSTO EM 1991",
+      "media": {
+        "src": null,
+        "kind": "image",
+        "grade": "bw",
+        "want": "portrait of Jean-Bertrand Aristide in 1991 | cand.: Commons 'Jean-Bertrand Aristide - 1991 (cropped).jpg' or the original 'Arrival of Jean-Bertrand Aristide, in the centre, accompanied by Manuel Marín - 1991.jpg' (European Commission, CC BY 4.0) | keywords: Jean-Bertrand Aristide 1991 portrait"
+      },
+      "note": "'Em 1991, os militares derrubaram o presidente eleito Jean-Bertrand Aristide.' Glitch = ruptura (golpe). Ficha de Aristide; a linha vermelha 'DEPOSTO EM 1991' marca a data do golpe."
+    },
+    {
+      "id": "c1-21",
+      "start": 109.56,
+      "end": 117.01,
+      "type": "network",
+      "transition": "whip",
+      "center": "FRAPH",
+      "items": [
+        {
+          "name": "PARAMILITARES",
+          "at": 2.42,
+          "media": {
+            "src": null,
+            "kind": "image",
+            "grade": "bw",
+            "want": "photo: FRAPH members or the FRAPH headquarters in Port-au-Prince, 1993-1994 (e.g. US troops at the FRAPH headquarters, Oct 1994) | sources: DoD/NARA (public domain), Commons | keywords: FRAPH Haiti 1994, FRAPH headquarters Port-au-Prince, Haitian paramilitary 1994, Emmanuel Toto Constant FRAPH"
+          }
+        },
+        {
+          "name": "GOLPISTAS",
+          "at": 3.84,
+          "media": {
+            "src": null,
+            "kind": "image",
+            "grade": "bw",
+            "want": "photo: General Raoul Cédras, head of the 1991 military junta | cand.: Commons 'Raoul Cédras.jpg' (check license) or a DoD photo from 1994 | keywords: Raoul Cedras 1994, Haitian military junta 1991"
+          }
+        },
+        {
+          "name": "ANTIGOS MACOUTES",
+          "at": 6.16,
+          "media": {
+            "src": null,
+            "kind": "image",
+            "grade": "bw",
+            "want": "REUSE the MILÍCIA image from c1-14 (Tontons Macoutes, 1960s, B&W)"
+          }
+        }
+      ],
+      "note": "'Depois surgiu a FRAPH, uma organização paramilitar aliada dos golpistas. Entre seus integrantes havia antigos macoutes.' FRAPH no centro; os nós entram em 'paramilitar', 'golpistas' e 'antigos macoutes' — a mesma foto dos Macoutes reaparece no mural."
+    },
+    {
+      "id": "c1-22",
+      "start": 117.01,
+      "end": 121.27,
+      "type": "doc",
+      "transition": "zoom",
+      "title": "ASSASSINATOS POLÍTICOS",
+      "stamp": "DOCUMENTADO",
+      "stampAt": 1.65,
+      "sfx": [{ "name": "stamp", "at": 1.65 }],
+      "note": "'Organizações de direitos humanos documentaram assassinatos políticos e perseguições...' Pasta de relatório; o carimbo DOCUMENTADO bate em 'documentaram'. Sem foto (nada de vítimas)."
+    },
+    {
+      "id": "c1-23",
+      "start": 121.27,
+      "end": 125.05,
+      "type": "full",
+      "transition": "whip",
+      "media": {
+        "src": null,
+        "kind": "image",
+        "grade": "bw",
+        "want": "PHOTO (Ken Burns): Aristide supporters in the streets of Port-au-Prince holding his posters/portraits, 1994, wide crowd shot | sources: DoD/NARA Operation Uphold Democracy (public domain), Commons | keywords: Aristide supporters 1994, Haitians celebrate Aristide posters, Operation Uphold Democracy crowd Port-au-Prince"
+      },
+      "move": "left",
+      "note": "'...contra pessoas apontadas como simpatizantes do presidente deposto.' Multidão com retratos de Aristide (os alvos da perseguição). Corte no meio da frase, em 'contra pessoas'. Sem texto."
+    },
+    {
+      "id": "c1-24",
+      "start": 125.05,
+      "end": 128.58,
+      "type": "photo",
+      "transition": "flash",
+      "frame": "polaroid",
+      "media": {
+        "src": null,
+        "kind": "image",
+        "grade": "bw",
+        "want": "photo: Aristide returns to the National Palace, 15 October 1994 (portrait orientation, fine for a square polaroid) | cand.: Commons 'DD-SD-99-03743.jpg' (DoD, public domain) | keywords: Aristide returns National Palace October 1994, Aristide return Haiti 1994"
+      },
+      "label": { "text": "1994", "at": 1.75, "kind": "date" },
+      "note": "'Aristide voltou ao país em 1994.' Foto de arquivo do retorno; o ano aparece em '1994'. Cena curta (3,5 s): o corte de entrada fica 0,24 s antes de 'Aristide', ainda no silêncio."
+    },
+    {
+      "id": "c1-25",
+      "start": 128.58,
+      "end": 135.16,
+      "type": "duo",
+      "transition": "whip",
+      "items": [
+        {
+          "name": "EXÉRCITO",
+          "at": 0.13,
+          "media": {
+            "src": null,
+            "kind": "image",
+            "grade": "bw",
+            "want": "photo: soldiers of the Armed Forces of Haiti (FAd'H) in uniform, 1994 | sources: DoD/NARA 1994 (public domain), Commons category 'Operation Uphold Democracy' | keywords: Haitian Army soldiers 1994, FAd'H 1994, Haitian military Port-au-Prince 1994"
+          }
+        },
+        {
+          "name": "POLÍCIA NACIONAL",
+          "at": 2.84,
+          "media": {
+            "src": null,
+            "kind": "image",
+            "grade": "bw",
+            "want": "photo: uniformed officers of the Haitian National Police (PNH); ideally its first class, 1995 | cand.: Commons 'Haiti National Police (HNP) graduation day on 10 January 2025 taken by the United States Embassy in Port-au-Prince, Haiti - NN.jpg' (public domain) | keywords: Haitian National Police 1995 first class, Police Nationale d'Haïti, HNP graduation"
+          }
+        }
+      ],
+      "link": "1995",
+      "note": "'No ano seguinte, dissolveu o exército e a nova Polícia Nacional do Haiti ficou a cargo da segurança interna.' EXÉRCITO (1994) de um lado, POLÍCIA NACIONAL entra em 'Polícia'; o fio leva o ano 1995. Rima com c1-14 (o exército de novo)."
+    },
+    {
+      "id": "c1-26",
+      "start": 135.16,
+      "end": 141.11,
+      "type": "full",
+      "transition": "whip",
+      "media": {
+        "src": null,
+        "kind": "image",
+        "grade": "bw",
+        "want": "PHOTO (Ken Burns): soldiers of the former Haitian army being demobilized or turning in weapons, 1994-1995 | fallback: armed former soldiers in a group (2004 rebellion) | sources: DoD/NARA (public domain), Commons | keywords: Haitian soldiers disarmament 1994, FAd'H demobilization 1995, Haitian soldiers turn in weapons, former Haitian army rebels 2004"
+      },
+      "move": "right",
+      "note": "'Alguns ex-soldados ficaram sem opções para voltar à vida civil e se juntaram a grupos armados.' Soldados sem farda/sem exército. Sem texto."
+    },
+    {
+      "id": "c1-27",
+      "start": 141.11,
+      "end": 148.68,
+      "type": "full",
+      "transition": "whip",
+      "media": {
+        "src": null,
+        "kind": "image",
+        "grade": "bw",
+        "want": "PHOTO (Ken Burns): street in a working-class neighborhood of Port-au-Prince in the 1990s (Cité Soleil / Bel Air / La Saline): packed houses, residents at a distance | sources: DoD/NARA 1994-95 (public domain), Commons CC BY/BY-SA | keywords: Cite Soleil 1994, Port-au-Prince slum 1990s, Bel Air Port-au-Prince street, Operation Uphold Democracy Cite Soleil"
+      },
+      "move": "left",
+      "note": "'Naquela época, os moradores dos bairros populares de Porto Príncipe já tinham formado seus próprios grupos de defesa e mobilização.' Travelling lento por uma rua de bairro popular. Sem texto."
+    },
+    {
+      "id": "c1-28",
+      "start": 148.68,
+      "end": 152.69,
+      "type": "photo",
+      "transition": "zoom",
+      "frame": "polaroid",
+      "media": {
+        "src": null,
+        "kind": "image",
+        "grade": "bw",
+        "want": "photo: residents gathered on a street of a Port-au-Prince popular neighborhood (neighborhood committee / popular organization), 1990s-2000s; group at a distance, no close-up faces | sources: DoD/NARA, Commons, VOA | keywords: Port-au-Prince neighborhood committee, Cite Soleil residents meeting, Haiti popular organization 1990s, Bel Air community Port-au-Prince"
+      },
+      "label": { "text": "BAZ", "sub": "“BASES” EM CRIOULO", "at": 1.7, "kind": "name" },
+      "note": "'Em crioulo haitiano, eram chamados de BAZ, ou seja, bases.' Polaroid de um grupo de moradores; o termo BAZ aparece em 'BAZ'."
+    },
+    {
+      "id": "c1-29",
+      "start": 152.69,
+      "end": 158.041,
+      "type": "full",
+      "transition": "whip",
+      "media": {
+        "src": null,
+        "kind": "image",
+        "grade": "bw",
+        "want": "PHOTO (Ken Burns, pull back): wide view of a dense popular neighborhood on a Port-au-Prince hillside (stacked houses, alleys), late-afternoon light; different from c1-27 | cand.: Commons 'Bel Air, Port-au-Prince, Haiti - panoramio (10).jpg' (CC BY 3.0) | keywords: Port-au-Prince hillside neighborhood, Bel Air Port-au-Prince, Jalousie Petion-Ville, Cite Soleil aerial"
+      },
+      "move": "out",
+      "note": "'O rumo de cada grupo dependeu de quem o apoiava e das disputas políticas do seu bairro.' Fecho do capítulo: a câmera se afasta do bairro inteiro. Sem texto."
+    }
+  ]
+}

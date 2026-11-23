@@ -111,12 +111,12 @@ const sceneEvents = (s: Scene, from: number, prev: Scene | undefined, idx: numbe
       if (s.shade) out.push(ev(at(s.shade.at ?? 1), "marker_circle", h, 0.9, 2));
       break;
     case "stat":
-      out.push(ev(at(s.label?.at ?? 0.35), "boom", h, 0.5, 4));
-      if (s.text) out.push(ev(at((s.label?.at ?? 0.35) + 0.75), "typewriter", h, 0.8));
+      out.push(ev(at(s.label?.at ?? s.at ?? 0.35), "boom", h, 0.5, 4));
+      if (s.text) out.push(ev(at((s.label?.at ?? s.at ?? 0.35) + 0.75), "typewriter", h, 0.8));
       break;
     case "date":
-      out.push(ev(at((s.label?.at ?? 0.3) + 0.08), "stamp", h));
-      if (s.sub) out.push(ev(at((s.label?.at ?? 0.3) + 0.55), "typewriter", h, 0.7));
+      out.push(ev(at((s.label?.at ?? s.at ?? 0.3) + 0.08), "stamp", h));
+      if (s.sub) out.push(ev(at((s.label?.at ?? s.at ?? 0.3) + 0.55), "typewriter", h, 0.7));
       break;
     case "timeline":
       out.push(ev(at(0.12), "string_twang", h));
@@ -139,7 +139,7 @@ const sceneEvents = (s: Scene, from: number, prev: Scene | undefined, idx: numbe
       break;
   }
   // rótulo datilografado
-  if (s.label && s.type !== "stat" && s.type !== "date") {
+  if (s.label && s.type !== "stat" && s.type !== "date" && s.type !== "person") {
     const k = s.label.kind ?? "info";
     if (k === "place" || k === "name" || k === "info") out.push(ev(at(s.label.at ?? 0.5), "typewriter", h + 7, 0.8));
     else out.push(ev(at(s.label.at ?? 0.5), "stamp", h + 7, 0.45, 1));

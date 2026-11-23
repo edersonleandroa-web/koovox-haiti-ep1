@@ -2,12 +2,13 @@ import { getLength, getPointAtLength, getTangentAtLength } from "@remotion/paths
 import { geoBounds, geoCentroid, geoMercator, geoPath } from "d3-geo";
 import type { Feature, FeatureCollection, Geometry } from "geojson";
 import React, { useMemo } from "react";
-import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { feature } from "topojson-client";
 import type { GeometryCollection, Topology } from "topojson-specification";
 import worldTopo from "world-atlas/countries-50m.json";
 import adm1Raw from "../data/geo/hti-adm1.json";
 import adm3Raw from "../data/geo/hti-adm3.json";
+import hispRaw from "../data/geo/hispaniola-10m.json";
 import { Board } from "../components/Board";
 import { Placed, Tex } from "../components/Paper";
 import { useScene } from "../components/SceneCtx";
@@ -24,6 +25,8 @@ const world = feature(
 ) as unknown as FeatureCollection<Geometry, { name: string }>;
 const adm1 = adm1Raw as unknown as FeatureCollection<Geometry, { shapeName: string }>;
 const adm3 = adm3Raw as unknown as FeatureCollection<Geometry, { shapeName: string }>;
+// litoral 10m (Natural Earth) para as vistas aproximadas — o 50m fica grosseiro em Porto Príncipe
+const hisp = hispRaw as unknown as FeatureCollection<Geometry, { name: string }>;
 
 // [oeste, sul, leste, norte]
 const VIEWS: Record<MapView, [number, number, number, number]> = {
@@ -67,9 +70,9 @@ const norm = (s: string) =>
     .replace(/(department|departement|du|de la|de l'|des|de)\b/g, "")
     .replace(/[^a-z]/g, "");
 
-const overlaps = (f: Feat, b: [number, number, number, number]) => {
+const overlaps = (f: Feat, b: [number, number, number, number], m = 2) => {
   const [[w, s], [e, n]] = geoBounds(f);
-  return !(e < b[0] - 2 || w > b[2] + 2 || n < b[1] - 2 || s > b[3] + 2);
+  return !(e < b[0] - m || w > b[2] + m || n < b[1] - m || s > b[3] + m);
 };
 
 type Prepared = {
@@ -94,13 +97,15 @@ const prepare = (view: MapView): Prepared => {
     { type: "MultiPoint", coordinates: [[b[0], b[1]], [b[2], b[3]]] },
   );
   const path = geoPath(proj);
-  const countries = (world.features as Feat[])
+  const close = view === "haiti" || view === "pap";
+  const src = (close ? hisp.features : world.features) as Feat[];
+  const countries = src
     .filter((f) => overlaps(f, b))
     .map((f) => ({ d: path(f) ?? "", id: String((f as unknown as { id: string }).id) }));
-  const haitiF = (world.features as Feat[]).find((f) => String((f as unknown as { id: string }).id) === "332");
+  const haitiF = src.find((f) => String((f as unknown as { id: string }).id) === "332");
   const detail = view === "pap" ? adm3 : adm1;
   const adm = (detail.features as Feat[])
-    .filter((f) => view === "haiti" || view === "pap" ? overlaps(f, b) : false)
+    .filter((f) => (view === "haiti" ? overlaps(f, b) : view === "pap" ? overlaps(f, b, 0.05) : false))
     .map((f) => ({ d: path(f) ?? "", name: f.properties.shapeName ?? "" }));
   const byName = new Map<string, { d: string; c: [number, number] }>();
   for (const f of [...(adm1.features as Feat[]), ...(adm3.features as Feat[])]) {
@@ -153,6 +158,43 @@ const MapPinMark: React.FC<{ x: number; y: number; at: number; name: string; she
     </g>
   );
 };
+
+/** Camadas estáticas do mapa (papel + mar + países + divisões). Renderizada uma vez por vista. */
+export const MapBase: React.FC<{ view: MapView }> = ({ view }) => {
+  const m = prepare(view);
+  return (
+    <AbsoluteFill style={{ backgroundColor: "#E2DBC9" }}>
+      <Tex src="paper-wide.jpg" tint="#E2DBC9" />
+      <svg width={MW} height={MH} style={{ position: "absolute", inset: 0 }}>
+        <defs>
+          <pattern id="sea-base" patternUnits="userSpaceOnUse" width="14" height="14">
+            <line x1="0" y1="7" x2="14" y2="7" stroke="rgba(60,72,78,0.10)" strokeWidth="1" />
+          </pattern>
+        </defs>
+        <rect x={0} y={0} width={MW} height={MH} fill="rgba(88,104,110,0.30)" />
+        <rect x={0} y={0} width={MW} height={MH} fill="url(#sea-base)" />
+        <clipPath id="land-base">
+          <path d={m.haiti} />
+        </clipPath>
+        {m.countries.map((c, i) => (
+          <path key={i} d={c.d} fill={c.id === "332" ? "#EFE8D6" : "#D6CEBB"} stroke="#4f483e" strokeWidth={c.id === "332" ? 1.8 : 1.1} />
+        ))}
+        {/* divisões internas só sobre a terra (os limites de comuna avançam pelo mar) */}
+        <g clipPath="url(#land-base)">
+          {m.adm.map((a, i) => (
+            <path key={i} d={a.d} fill="none" stroke="rgba(70,62,52,0.5)" strokeWidth={view === "pap" ? 1.6 : 1} strokeDasharray={view === "pap" ? undefined : "5 4"} />
+          ))}
+        </g>
+        {m.haiti ? <path d={m.haiti} fill="none" stroke="#2a2620" strokeWidth={2.4} /> : null}
+      </svg>
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse 70% 70% at 50% 50%, rgba(60,45,25,0) 55%, rgba(60,45,25,0.32) 100%)" }} />
+    </AbsoluteFill>
+  );
+};
+
+export const MAP_W = MW;
+export const MAP_H = MH;
+export const MAP_VIEWS = Object.keys(VIEWS) as MapView[];
 
 export const MapSceneView: React.FC<{ s: MapScene }> = ({ s }) => {
   const frame = useCurrentFrame();
@@ -241,28 +283,14 @@ export const MapSceneView: React.FC<{ s: MapScene }> = ({ s }) => {
               overflow: "hidden",
             }}
           >
-            <Tex src="paper-wide.jpg" tint="#E2DBC9" />
+            {/* base do mapa (papel, mar, países, divisões) pré-renderizada em 2x: scripts/render.mjs maps */}
+            <Img src={staticFile(`maps/${view}.jpg`)} style={{ position: "absolute", left: 0, top: 0, width: MW, height: MH }} />
             <svg width={MW} height={MH} style={{ position: "absolute", inset: 0 }}>
               <defs>
                 <pattern id={`hatch-${uid}`} patternUnits="userSpaceOnUse" width="11" height="11" patternTransform="rotate(45)">
                   <line x1="0" y1="0" x2="0" y2="11" stroke={C.red} strokeWidth="3.2" />
                 </pattern>
-                <pattern id={`sea-${uid}`} patternUnits="userSpaceOnUse" width="14" height="14">
-                  <line x1="0" y1="7" x2="14" y2="7" stroke="rgba(60,72,78,0.10)" strokeWidth="1" />
-                </pattern>
               </defs>
-              {/* mar */}
-              <rect x={0} y={0} width={MW} height={MH} fill="rgba(88,104,110,0.30)" />
-              <rect x={0} y={0} width={MW} height={MH} fill={`url(#sea-${uid})`} />
-              {/* países */}
-              {m.countries.map((c, i) => (
-                <path key={i} d={c.d} fill={c.id === "332" ? "#EFE8D6" : "#D6CEBB"} stroke="#4f483e" strokeWidth={c.id === "332" ? 1.8 : 1.1} />
-              ))}
-              {/* divisões internas (departamentos / comunas) */}
-              {m.adm.map((a, i) => (
-                <path key={i} d={a.d} fill="none" stroke="rgba(70,62,52,0.55)" strokeWidth={view === "pap" ? 1.4 : 1} strokeDasharray="5 4" />
-              ))}
-              {m.haiti ? <path d={m.haiti} fill="none" stroke="#2a2620" strokeWidth={2.4} /> : null}
               {/* território dominado */}
               {shade
                 ? shade.parts.map((p, i) => {
@@ -356,8 +384,6 @@ export const MapSceneView: React.FC<{ s: MapScene }> = ({ s }) => {
                 <MapPinMark key={i} x={p.xy[0]} y={p.xy[1]} at={p.atF} name={p.name} sheetFrame={frame} />
               ))}
             </svg>
-            {/* vinheta do papel */}
-            <AbsoluteFill style={{ boxShadow: "inset 0 0 120px rgba(60,45,25,0.35)", pointerEvents: "none" }} />
           </div>
         </Placed>
       </AbsoluteFill>

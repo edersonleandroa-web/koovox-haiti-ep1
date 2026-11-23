@@ -73,6 +73,14 @@ if (mode === "info") {
     onProgress: progress("áudio"),
   });
   log("ok out/audio.wav");
+} else if (mode === "maps") {
+  // base estática de cada vista de mapa, em 2x, para a cena de mapa só animar pinos/rotas por cima
+  fs.mkdirSync("public/maps", { recursive: true });
+  for (const view of (a1 ? a1.split(",") : ["americas", "caribbean", "haiti", "pap"])) {
+    const comp = await selectComposition({ serveUrl, id: "MapBase", inputProps: { view } });
+    await renderStill({ serveUrl, composition: comp, inputProps: { view }, frame: 0, output: `public/maps/${view}.jpg`, imageFormat: "jpeg", jpegQuality: 92, scale: 2, timeoutInMilliseconds: 300000 });
+    log("mapa", view);
+  }
 } else if (mode === "stills") {
   const frames = String(a1 ?? "0")
     .split(",")

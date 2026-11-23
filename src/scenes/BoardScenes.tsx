@@ -111,6 +111,9 @@ export const PersonView: React.FC<{ s: PersonScene }> = ({ s }) => {
   const r = rand(seed);
   const kb = kbOf(frame, dur);
   const cut = s.media?.cutout;
+  // linha vermelha: anos, ou o rótulo da cena (ex.: data do assassinato)
+  const lab = s.label ? (s.label.sub ? `${s.label.text}${/^\d{4}$/.test(s.label.sub) ? " DE " : " · "}${s.label.sub}` : s.label.text) : undefined;
+  const redLine = [s.years, lab].filter(Boolean).join("  ·  ");
   const nameAt = sec(0.55);
   const roleAt = nameAt + sec(Math.min(1.1, s.name.length / 24)) + 4;
   const yearsAt = roleAt + 10;
@@ -148,9 +151,9 @@ export const PersonView: React.FC<{ s: PersonScene }> = ({ s }) => {
             {s.role}
           </div>
         ) : null}
-        {s.years ? (
-          <div style={{ marginTop: 12, fontFamily: FONT.cond, fontWeight: 600, fontSize: 46, letterSpacing: "0.05em", color: C.redNeon, textShadow: GLOW_RED, opacity: yearsOn }}>
-            {s.years}
+        {redLine ? (
+          <div style={{ marginTop: 12, fontFamily: FONT.cond, fontWeight: 600, fontSize: 46, letterSpacing: "0.05em", color: C.redNeon, textShadow: GLOW_RED, opacity: yearsOn, textTransform: "uppercase" }}>
+            {redLine}
           </div>
         ) : null}
       </div>

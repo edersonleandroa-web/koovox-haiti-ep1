@@ -82,9 +82,10 @@ export type StatScene = Base & {
   suffix?: string;
   decimals?: number;
   text?: string;
+  at?: number;
   media?: MediaRef | null;
 };
-export type DateScene = Base & { type: "date"; text: string; sub?: string; media?: MediaRef | null };
+export type DateScene = Base & { type: "date"; text: string; sub?: string; at?: number; media?: MediaRef | null };
 export type TimelineScene = Base & {
   type: "timeline";
   years: { year: string; text?: string }[];

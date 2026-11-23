@@ -91,9 +91,9 @@ export const TitleCard: React.FC<{ title: string; sub: string; kicker: string; d
 };
 
 /** Encerramento: logo do canal sobre o mural; único fade para preto do filme. */
-export const Outro: React.FC<{ dur: number }> = ({ dur }) => {
+export const Outro: React.FC<{ dur: number; continueLogo?: boolean }> = ({ dur, continueLogo = false }) => {
   const frame = useCurrentFrame();
-  const on = neonOn(frame, 10);
+  const on = continueLogo ? 1 : neonOn(frame, 10);
   const black = prog(frame, dur - 30, dur);
   return (
     <AbsoluteFill>
@@ -102,9 +102,9 @@ export const Outro: React.FC<{ dur: number }> = ({ dur }) => {
         <Img
           src={staticFile("brand/koovox.png")}
           style={{
-            width: 380,
+            width: continueLogo ? 430 : 380,
             opacity: on,
-            transform: `scale(${interpolate(prog(frame, 10, 40, EASE_OUT), [0, 1], [0.94, 1])})`,
+            transform: `scale(${continueLogo ? 1 : interpolate(prog(frame, 10, 40, EASE_OUT), [0, 1], [0.94, 1])})`,
             filter: "drop-shadow(0 0 8px rgba(255,245,230,0.35)) drop-shadow(0 0 22px rgba(255,236,214,0.15))",
           }}
         />

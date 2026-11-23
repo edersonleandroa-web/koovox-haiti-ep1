@@ -6,7 +6,7 @@ import { RedString } from "../components/Marks";
 import { Pin } from "../components/Paper";
 import { useScene } from "../components/SceneCtx";
 import { CountUp, Label, TypeText, neonOn } from "../components/Text";
-import { EASE_OUT, H, W, prog, rand, sec } from "../lib/util";
+import { EASE_OUT, H, W, fmtNum, prog, rand, sec } from "../lib/util";
 import { C, FONT, GLOW_RED, GLOW_WHITE } from "../theme";
 import type { DateScene, FullScene, MediaRef, StatScene, TimelineScene } from "../types";
 import { Cam, TextShade } from "./common";
@@ -64,9 +64,11 @@ export const FullView: React.FC<{ s: FullScene }> = ({ s }) => {
 
 export const StatView: React.FC<{ s: StatScene }> = ({ s }) => {
   const frame = useCurrentFrame();
-  const at = sec(s.label?.at ?? 0.35);
+  const at = sec(s.label?.at ?? s.at ?? 0.35);
   const on = neonOn(frame, at);
   const textAt = at + 22;
+  const full = `${s.prefix ?? ""}${fmtNum(s.value, s.decimals ?? 0)}${s.suffix ?? ""}`;
+  const fontSize = Math.min(220, Math.floor(1500 / Math.max(1, full.length * 0.47)));
   return (
     <AbsoluteFill>
       <GraphicBg media={s.media} />
@@ -76,8 +78,9 @@ export const StatView: React.FC<{ s: StatScene }> = ({ s }) => {
             style={{
               fontFamily: FONT.cond,
               fontWeight: 700,
-              fontSize: 220,
+              fontSize,
               lineHeight: 1,
+              whiteSpace: "nowrap",
               letterSpacing: "0.01em",
               color: C.redNeon,
               textShadow: GLOW_RED,
@@ -112,7 +115,7 @@ export const StatView: React.FC<{ s: StatScene }> = ({ s }) => {
 
 export const DateView: React.FC<{ s: DateScene }> = ({ s }) => {
   const frame = useCurrentFrame();
-  const at = sec(s.label?.at ?? 0.3);
+  const at = sec(s.label?.at ?? s.at ?? 0.3);
   const p = prog(frame, at, at + 7, EASE_OUT);
   const shake = frame >= at + 3 && frame < at + 11 ? Math.sin((frame - at) * 2.7) * (11 - (frame - at)) * 0.9 : 0;
   const long = s.text.length > 8;

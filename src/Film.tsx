@@ -7,7 +7,7 @@ import { Grain, Preload, Vignette } from "./components/Fx";
 import { prog, sec } from "./lib/util";
 import { ChapterCard, Outro, TitleCard } from "./scenes/Cards";
 import { SceneHost, overlapFrames, whipDir } from "./SceneHost";
-import { EPISODE, TIMELINE } from "./timeline";
+import { ENDS_ON_LOGO, EPISODE, TIMELINE } from "./timeline";
 import type { ChapterData } from "./types";
 
 const FadeIn: React.FC<{ frames: number; children: React.ReactNode }> = ({ frames, children }) => {
@@ -64,7 +64,7 @@ export const Film: React.FC = () => (
       return (
         <Sequence key={i} from={seg.from} durationInFrames={seg.dur} name="encerramento">
           <FadeIn frames={10}>
-            <Outro dur={seg.dur} />
+            <Outro dur={seg.dur} continueLogo={ENDS_ON_LOGO} />
           </FadeIn>
         </Sequence>
       );

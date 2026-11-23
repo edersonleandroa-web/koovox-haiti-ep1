@@ -8,7 +8,7 @@ import type { ChapterData } from "./types";
 export const PAD = 0.8;
 export const TITLE_DUR = sec(5.5);
 export const CARD_DUR = sec(3.6);
-export const OUTRO_DUR = sec(6);
+export const OUTRO_DUR = sec(4);
 const CARD_IN = 10; // o cartão entra por cima do fim do capítulo (fade)
 const CH_IN = 18; // o capítulo entra por cima do fim do cartão (fade da 1ª cena)
 
@@ -78,6 +78,12 @@ const build = () => {
 };
 
 export const TIMELINE = build();
+
+/** O capítulo final termina numa cena de logo? (o encerramento então só segura o logo e escurece) */
+export const ENDS_ON_LOGO = (() => {
+  const last = [...TIMELINE.segments].reverse().find((s) => s.kind === "chapter");
+  return last?.kind === "chapter" && last.data.scenes[last.data.scenes.length - 1]?.type === "logo";
+})();
 export const TOTAL_FRAMES = TIMELINE.total;
 
 /** Fala (s) por capítulo → para cada quadro global, se o narrador está falando. */
