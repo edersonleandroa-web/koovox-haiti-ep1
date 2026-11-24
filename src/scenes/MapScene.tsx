@@ -11,7 +11,6 @@ import adm3Raw from "../data/geo/hti-adm3.json";
 import hispRaw from "../data/geo/hispaniola-10m.json";
 import { Board } from "../components/Board";
 import { Placed, Tex } from "../components/Paper";
-import { useScene } from "../components/SceneCtx";
 import { Label, TypeText } from "../components/Text";
 import { EASE_OUT, H, W, prog, sec } from "../lib/util";
 import { C, FONT, SHADOW_OBJ } from "../theme";
@@ -243,7 +242,6 @@ export const MAP_VIEWS = Object.keys(VIEWS) as MapView[];
 
 export const MapSceneView: React.FC<{ s: MapScene }> = ({ s }) => {
   const frame = useCurrentFrame();
-  const { dur } = useScene();
   const view: MapView = VIEWS[s.view] ? s.view : "haiti";
   const m = useMemo(() => prepare(view), [view]);
   const uid = s.id.replace(/[^a-zA-Z0-9]/g, "");
@@ -286,8 +284,6 @@ export const MapSceneView: React.FC<{ s: MapScene }> = ({ s }) => {
   ];
   const fx = pts.length ? pts.reduce((acc, p) => acc + p[0], 0) / pts.length : MW / 2;
   const fy = pts.length ? pts.reduce((acc, p) => acc + p[1], 0) / pts.length : MH / 2;
-  const t = Math.min(1.3, frame / Math.max(1, dur));
-  const zoom = 1 + (view === "americas" ? 0.08 : 0.13) * t;
 
   const sheetX = (W - MW) / 2;
   const sheetY = (H - MH) / 2 + 6;
@@ -321,13 +317,7 @@ export const MapSceneView: React.FC<{ s: MapScene }> = ({ s }) => {
   return (
     <AbsoluteFill>
       <Board />
-      <AbsoluteFill
-        style={{
-          transform: `scale(${zoom})`,
-          transformOrigin: `${(focusScreen[0] / W) * 100}% ${(focusScreen[1] / H) * 100}%`,
-          willChange: "transform",
-        }}
-      >
+      <AbsoluteFill>
         <Placed x={W / 2} y={H / 2 + 6} rot={-0.8} at={0} dur={16}>
           <div
             style={{

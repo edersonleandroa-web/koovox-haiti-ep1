@@ -1,36 +1,11 @@
 import React from "react";
-import { AbsoluteFill, useCurrentFrame } from "remotion";
-import { useScene } from "../components/SceneCtx";
-import { rand } from "../lib/util";
+import { AbsoluteFill } from "remotion";
 
 /**
- * Câmera do mural: push-in lento e linear (1 → 1+push) com deriva lateral. Nunca para — mesmo
- * num "hold" o quadro respira. Continua durante a cauda da transição de saída.
+ * Câmera do mural: parada. Push e deriva lentos moviam tudo em frações de pixel a cada quadro e
+ * faziam textos, linhas e objetos tremerem.
  */
-export const Cam: React.FC<{
-  children: React.ReactNode;
-  push?: number;
-  drift?: number;
-  origin?: [number, number];
-}> = ({ children, push = 0.045, drift = 18, origin = [0.5, 0.5] }) => {
-  const frame = useCurrentFrame();
-  const { dur, seed } = useScene();
-  const t = Math.min(1.35, frame / Math.max(1, dur));
-  const r = rand(seed * 13 + 5);
-  const dx = (r() < 0.5 ? -1 : 1) * drift * t;
-  const dy = (r() < 0.5 ? -1 : 1) * drift * 0.45 * t;
-  return (
-    <AbsoluteFill
-      style={{
-        transform: `translate3d(${dx}px, ${dy}px, 0) scale(${1 + push * t})`,
-        transformOrigin: `${origin[0] * 100}% ${origin[1] * 100}%`,
-        willChange: "transform",
-      }}
-    >
-      {children}
-    </AbsoluteFill>
-  );
-};
+export const Cam: React.FC<{ children: React.ReactNode }> = ({ children }) => <AbsoluteFill>{children}</AbsoluteFill>;
 
 /** Escurecimento radial atrás de um texto sobre foto/vídeo (legibilidade sem caixa). */
 export const TextShade: React.FC<{ x: number; y: number; w?: number; h?: number; strength?: number }> = ({

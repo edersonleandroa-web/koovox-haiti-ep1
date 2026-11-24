@@ -83,7 +83,7 @@ export const StatView: React.FC<{ s: StatScene }> = ({ s }) => {
   return (
     <AbsoluteFill>
       <GraphicBg media={s.media} at={at} />
-      <Cam push={0.03} drift={10}>
+      <Cam>
         <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
           <div
             style={{
@@ -96,7 +96,6 @@ export const StatView: React.FC<{ s: StatScene }> = ({ s }) => {
               color: long ? C.white : C.redNeon,
               textShadow: long ? GLOW_WHITE : GLOW_RED,
               opacity: on,
-              transform: `scale(${interpolate(prog(frame, at, at + 10, EASE_OUT), [0, 1], [1.1, 1])})`,
             }}
           >
             {long ? (
@@ -140,7 +139,7 @@ export const DateView: React.FC<{ s: DateScene }> = ({ s }) => {
   return (
     <AbsoluteFill>
       <GraphicBg media={s.media} at={at} />
-      <Cam push={0.03} drift={10}>
+      <Cam>
         <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
           <div
             style={{
@@ -174,7 +173,6 @@ export const DateView: React.FC<{ s: DateScene }> = ({ s }) => {
 
 export const TimelineView: React.FC<{ s: TimelineScene }> = ({ s }) => {
   const frame = useCurrentFrame();
-  const { dur } = useScene();
   const items = s.years.slice(0, 7);
   const n = items.length;
   const focus = Math.max(0, Math.min(n - 1, s.focus ?? n - 1));
@@ -184,13 +182,10 @@ export const TimelineView: React.FC<{ s: TimelineScene }> = ({ s }) => {
   const y = H * 0.5;
   const step = n > 1 ? (x1 - x0) / (n - 1) : 0;
   const xs = items.map((_, i) => (n > 1 ? x0 + i * step : W / 2));
-  // câmera desliza devagar em direção ao ano em foco
-  const t = Math.min(1.3, frame / Math.max(1, dur));
-  const camX = interpolate(t, [0, 1], [0, (W / 2 - xs[focus]) * 0.18]);
   return (
     <AbsoluteFill>
       <Board />
-      <AbsoluteFill style={{ transform: `translateX(${camX}px) scale(${1 + 0.03 * t})`, willChange: "transform" }}>
+      <AbsoluteFill>
         <RedString x1={x0 - 60} y1={y} x2={x1 + 60} y2={y} at={4} dur={30} sag={18} width={3.4} />
         {items.map((it, i) => {
           // cada pino aparece quando o fio passa por ele

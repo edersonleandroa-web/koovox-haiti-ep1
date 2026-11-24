@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Img, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Img, staticFile } from "remotion";
 import { H, W, rand } from "../lib/util";
 import { useScene } from "./SceneCtx";
 
@@ -8,19 +8,15 @@ const TEX_H = 2960;
 
 /**
  * O fundo quadriculado do usuário (ampliado no Magnific). Cada cena mostra um pedaço diferente do
- * mesmo quadro e desliza devagar — o "chão" nunca corta, só a câmera muda de lugar.
+ * mesmo quadro, parado (deslizar em frações de pixel fazia o quadriculado tremer).
  */
 export const Board: React.FC<{ dim?: number; scale?: number }> = ({ dim = 0, scale = 0.74 }) => {
-  const frame = useCurrentFrame();
-  const { dur, seed } = useScene();
+  const { seed } = useScene();
   const r = rand(seed * 31 + 7);
   const w = TEX_W * scale;
   const h = TEX_H * scale;
-  const x0 = 80 + r() * (w - W - 160);
-  const y0 = 80 + r() * (h - H - 160);
-  const t = Math.min(1.25, frame / Math.max(1, dur));
-  const dx = (r() - 0.5) * 90 * t;
-  const dy = (r() - 0.5) * 50 * t;
+  const x0 = Math.round(80 + r() * (w - W - 160));
+  const y0 = Math.round(80 + r() * (h - H - 160));
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#141414" }}>
       <Img
@@ -31,8 +27,7 @@ export const Board: React.FC<{ dim?: number; scale?: number }> = ({ dim = 0, sca
           top: 0,
           width: w,
           height: h,
-          transform: `translate3d(${-(x0 + dx)}px, ${-(y0 + dy)}px, 0)`,
-          willChange: "transform",
+          transform: `translate(${-x0}px, ${-y0}px)`,
         }}
       />
       {/* luz de cima: centro um pouco mais claro, bordas mais escuras */}

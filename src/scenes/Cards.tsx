@@ -1,8 +1,8 @@
 import React from "react";
-import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Img, staticFile, useCurrentFrame } from "remotion";
 import { Board } from "../components/Board";
 import { TypeText, neonOn } from "../components/Text";
-import { EASE_OUT, prog } from "../lib/util";
+import { prog } from "../lib/util";
 import { C, FONT, GLOW_RED, GLOW_WHITE } from "../theme";
 
 /** Cartão de capítulo: "CAPÍTULO N" + título, neon acendendo, traço vermelho se desenha. */
@@ -11,11 +11,10 @@ export const ChapterCard: React.FC<{ number: string; title: string; dur: number 
   const kOn = neonOn(frame, 6);
   const tOn = neonOn(frame, 14);
   const out = 1 - prog(frame, dur - 12, dur);
-  const push = 1 + 0.03 * (frame / dur);
   return (
     <AbsoluteFill>
       <Board dim={0.25} />
-      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column", opacity: out, transform: `scale(${push})` }}>
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column", opacity: out }}>
         <div style={{ fontFamily: FONT.type, fontSize: 36, letterSpacing: "0.5em", color: C.redNeon, textShadow: GLOW_RED, opacity: kOn, marginBottom: 18, paddingLeft: "0.5em" }}>
           {number}
         </div>
@@ -46,9 +45,6 @@ export const TitleCard: React.FC<{ title: string; sub: string; kicker: string; d
   const frame = useCurrentFrame();
   const on = neonOn(frame, 8);
   const out = 1 - prog(frame, dur - 14, dur);
-  const s = interpolate(prog(frame, 8, 30, EASE_OUT), [0, 1], [1.08, 1]) * (1 + 0.025 * (frame / dur));
-  // falha de neon uma vez, no meio do cartão
-  const flick = frame > 52 && frame < 56 ? 0.35 : 1;
   return (
     <AbsoluteFill>
       <Board dim={0.32} />
@@ -66,8 +62,7 @@ export const TitleCard: React.FC<{ title: string; sub: string; kicker: string; d
             paddingLeft: "0.1em",
             color: C.white,
             textShadow: GLOW_WHITE,
-            opacity: on * flick,
-            transform: `scale(${s})`,
+            opacity: on,
           }}
         >
           {title}
@@ -94,7 +89,6 @@ export const Outro: React.FC<{ dur: number; continueLogo?: boolean }> = ({ dur, 
           style={{
             width: continueLogo ? 430 : 380,
             opacity: on,
-            transform: `scale(${continueLogo ? 1 : interpolate(prog(frame, 10, 40, EASE_OUT), [0, 1], [0.94, 1])})`,
             filter: "drop-shadow(0 0 8px rgba(255,245,230,0.35)) drop-shadow(0 0 22px rgba(255,236,214,0.15))",
           }}
         />

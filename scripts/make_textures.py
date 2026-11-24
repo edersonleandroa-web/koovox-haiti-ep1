@@ -2,7 +2,6 @@
 
 - public/textures/fundo-limpo.jpg : fundo quadriculado do usuário (ampliado 4x no Magnific) sem a
   fileira de pontos de poeira repetidos no meio da imagem
-- public/textures/grain-big-0..3.png : grão de filme (cinza médio, para mix-blend-mode: overlay)
 - public/textures/paper.jpg       : papel envelhecido (polaroid, documentos, mapa)
 - public/textures/paper-wide.jpg  : papel largo para a folha do mapa
 - public/textures/kraft.jpg       : papel kraft (pasta de arquivo)
@@ -120,19 +119,11 @@ def clean_background():
     print("fundo-limpo.jpg ok; período da grade:", period, "pixels corrigidos:", int(keep.sum()))
 
 
-def grain():
-    for i in range(4):
-        n = np.random.default_rng(200 + i).normal(128, 52, (1024, 1024)).astype(np.float32)
-        img = Image.fromarray(np.clip(n, 0, 255).astype(np.uint8), "L").filter(ImageFilter.GaussianBlur(0.65))
-        img.save(os.path.join(TEX, f"grain-big-{i}.png"))
-    print("grain ok")
-
 
 
 if __name__ == "__main__":
     os.makedirs(TEX, exist_ok=True)
     clean_background()
-    grain()
     paper(1024, 1024, (233, 227, 211), 11).save(os.path.join(TEX, "paper.jpg"), quality=90)
     paper(2400, 1400, (226, 219, 201), 21, fibers=3500).save(os.path.join(TEX, "paper-wide.jpg"), quality=88)
     paper(1024, 1024, (196, 160, 108), 31, fibers=2200, stain=1.4, fine=5.0).save(os.path.join(TEX, "kraft.jpg"), quality=90)

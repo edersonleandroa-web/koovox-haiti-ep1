@@ -3,7 +3,7 @@ import React from "react";
 import { AbsoluteFill, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { SfxTrack } from "./audio/Sfx";
 import { Soundtrack } from "./audio/Soundtrack";
-import { Grain, Vignette } from "./components/Fx";
+import { Vignette } from "./components/Fx";
 import { prog, sec } from "./lib/util";
 import { ChapterCard, Outro, TitleCard } from "./scenes/Cards";
 import { SceneHost, overlapFrames, whipDir } from "./SceneHost";
@@ -72,7 +72,6 @@ export const Film: React.FC = () => (
     <Soundtrack />
     <SfxTrack />
     <Vignette />
-    <Grain />
   </AbsoluteFill>
 );
 

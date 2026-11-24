@@ -12,35 +12,32 @@ import type { DocScene, DuoScene, HeadlineScene, NetworkScene, PersonScene, Phot
 import { Cam } from "./common";
 import CUTOUTS from "../data/cutouts.json";
 
-const kbOf = (frame: number, dur: number) => Math.min(1.2, frame / Math.max(1, dur));
 
 export const PhotoView: React.FC<{ s: PhotoScene }> = ({ s }) => {
-  const frame = useCurrentFrame();
-  const { dur, seed } = useScene();
+  const { seed } = useScene();
   const r = rand(seed);
   const hasLabel = Boolean(s.label);
   const ft = s.frame ?? "polaroid";
-  const kb = kbOf(frame, dur);
   const rot = (r() - 0.5) * 7;
   const cy = H * 0.49;
   let obj: React.ReactNode;
   let cx = hasLabel ? W * 0.37 : W * 0.5;
   if (ft === "polaroid") {
-    obj = <Polaroid w={hasLabel ? 500 : 560} media={s.media} caption={s.caption} hold={r() < 0.6 ? "tape" : "pin"} seed={seed} kb={kb} />;
+    obj = <Polaroid w={hasLabel ? 500 : 560} media={s.media} caption={s.caption} hold={r() < 0.6 ? "tape" : "pin"} seed={seed} />;
   } else if (ft === "print") {
     cx = hasLabel ? W * 0.33 : W * 0.5;
-    obj = <Print w={hasLabel ? 760 : 1060} media={s.media} seed={seed} kb={kb} />;
+    obj = <Print w={hasLabel ? 760 : 1060} media={s.media} seed={seed} />;
   } else if (ft === "tv") {
     cx = hasLabel ? W * 0.33 : W * 0.5;
-    obj = <Print w={hasLabel ? 780 : 1100} media={s.media} seed={seed} kb={kb} dark />;
+    obj = <Print w={hasLabel ? 780 : 1100} media={s.media} seed={seed} dark />;
   } else {
     cx = hasLabel ? W * 0.33 : W * 0.5;
-    obj = <Clipping w={hasLabel ? 720 : 980} media={s.media} seed={seed} kb={kb} />;
+    obj = <Clipping w={hasLabel ? 720 : 980} media={s.media} seed={seed} />;
   }
   return (
     <AbsoluteFill>
       <Board />
-      <Cam origin={[cx / W, 0.5]}>
+      <Cam>
         <Placed x={cx} y={cy} rot={ft === "tv" ? rot * 0.3 : rot} at={2}>
           {obj}
         </Placed>
@@ -57,7 +54,6 @@ export const PhotoView: React.FC<{ s: PhotoScene }> = ({ s }) => {
  */
 const Cutout: React.FC<{ src: string; grade?: string }> = ({ src }) => {
   const frame = useCurrentFrame();
-  const { dur } = useScene();
   const aspect = (CUTOUTS as Record<string, number>)[src] ?? 0.78;
   const boxW = 780;
   const figH = Math.min(H * 0.84, boxW / aspect);
@@ -68,10 +64,9 @@ const Cutout: React.FC<{ src: string; grade?: string }> = ({ src }) => {
   const ringY = Math.min(H * 0.6, Math.max(H * 0.42, top + figH * 0.34));
   const ring = prog(frame, 4, 26, EASE_OUT);
   const rise = prog(frame, 6, 24, EASE_OUT);
-  const t = Math.min(1.3, frame / Math.max(1, dur));
   const circ = 2 * Math.PI * R;
   return (
-    <AbsoluteFill style={{ transform: `scale(${1 + 0.035 * t})`, transformOrigin: "36% 70%", willChange: "transform" }}>
+    <AbsoluteFill>
       <div
         style={{
           position: "absolute",
@@ -119,9 +114,8 @@ const Cutout: React.FC<{ src: string; grade?: string }> = ({ src }) => {
 
 export const PersonView: React.FC<{ s: PersonScene }> = ({ s }) => {
   const frame = useCurrentFrame();
-  const { dur, seed } = useScene();
+  const { seed } = useScene();
   const r = rand(seed);
-  const kb = kbOf(frame, dur);
   const cut = s.media?.cutout;
   // linha vermelha: anos, ou o rótulo da cena (ex.: data do assassinato)
   const lab = s.label ? (s.label.sub ? `${s.label.text}${/^\d{4}$/.test(s.label.sub) ? " DE " : " · "}${s.label.sub}` : s.label.text) : undefined;
@@ -137,9 +131,9 @@ export const PersonView: React.FC<{ s: PersonScene }> = ({ s }) => {
       {cut ? (
         <Cutout src={cut} />
       ) : (
-        <Cam origin={[0.4, 0.5]}>
+        <Cam>
           <Placed x={W * 0.365} y={H * 0.49} rot={(r() - 0.5) * 6} at={2}>
-            <Polaroid w={470} media={s.media} hold="pin" seed={seed} kb={kb} />
+            <Polaroid w={470} media={s.media} hold="pin" seed={seed} />
           </Placed>
         </Cam>
       )}
@@ -167,7 +161,6 @@ export const DuoView: React.FC<{ s: DuoScene }> = ({ s }) => {
   const frame = useCurrentFrame();
   const { dur, seed } = useScene();
   const r = rand(seed);
-  const kb = kbOf(frame, dur);
   const items = s.items.slice(0, 2);
   // o 1º objeto entra logo no começo (nunca mural vazio); o 2º na palavra que o motiva
   const at0 = Math.min(sec(0.35), items[0]?.at !== undefined ? sec(items[0].at as number) : 2);
@@ -187,7 +180,7 @@ export const DuoView: React.FC<{ s: DuoScene }> = ({ s }) => {
       <Cam>
         {items.map((it, i) => (
           <Placed key={i} x={pos[i].x} y={pos[i].y} rot={pos[i].rot} at={pos[i].at}>
-            <Polaroid w={pw} media={it.media} hold="pin" seed={seed + i * 17} kb={kb} />
+            <Polaroid w={pw} media={it.media} hold="pin" seed={seed + i * 17} />
           </Placed>
         ))}
         <RedString x1={pos[0].x} y1={pinY} x2={pos[1].x} y2={pinY} at={stringAt} sag={110} />
@@ -240,7 +233,6 @@ export const DuoView: React.FC<{ s: DuoScene }> = ({ s }) => {
 export const NetworkView: React.FC<{ s: NetworkScene }> = ({ s }) => {
   const frame = useCurrentFrame();
   const { dur, seed } = useScene();
-  const kb = kbOf(frame, dur);
   const items = s.items.slice(0, 5);
   const n = items.length;
   const cx = W * 0.5;
@@ -252,7 +244,7 @@ export const NetworkView: React.FC<{ s: NetworkScene }> = ({ s }) => {
   return (
     <AbsoluteFill>
       <Board />
-      <Cam push={0.035}>
+      <Cam>
         {items.map((it, i) => {
           const a = -Math.PI / 2 + (i / n) * Math.PI * 2 + (n % 2 === 0 ? Math.PI / n : 0);
           const x = cx + Math.cos(a) * rx;
@@ -264,7 +256,7 @@ export const NetworkView: React.FC<{ s: NetworkScene }> = ({ s }) => {
             <React.Fragment key={i}>
               <RedString x1={cx} y1={cy} x2={x} y2={y2} at={at + 8} sag={30} />
               <Placed x={x} y={y} rot={((i * 37) % 9) - 4} at={at}>
-                <Polaroid w={pw} media={it.media} hold="pin" seed={seed + i * 11} kb={kb} />
+                <Polaroid w={pw} media={it.media} hold="pin" seed={seed + i * 11} />
               </Placed>
               <div
                 style={{
@@ -320,8 +312,7 @@ export const NetworkView: React.FC<{ s: NetworkScene }> = ({ s }) => {
 
 export const DocView: React.FC<{ s: DocScene }> = ({ s }) => {
   const frame = useCurrentFrame();
-  const { dur, seed } = useScene();
-  const kb = kbOf(frame, dur);
+  const { seed } = useScene();
   const hasLabel = Boolean(s.label);
   const cx = hasLabel ? W * 0.39 : W * 0.5;
   const cy = H * 0.52;
@@ -331,7 +322,7 @@ export const DocView: React.FC<{ s: DocScene }> = ({ s }) => {
   return (
     <AbsoluteFill>
       <Board />
-      <Cam origin={[cx / W, 0.5]}>
+      <Cam>
         <Placed x={cx} y={cy} rot={-2} at={2}>
           <div style={{ position: "relative", width: fw, height: fh }}>
             {/* aba da pasta */}
@@ -384,7 +375,7 @@ export const DocView: React.FC<{ s: DocScene }> = ({ s }) => {
               </div>
               {s.media && s.media.src ? (
                 <div style={{ position: "absolute", left: 60, top: 190, width: 330, height: 250, transform: "rotate(-3deg)", boxShadow: "0 8px 18px rgba(0,0,0,0.45)", border: "10px solid #f1eee6", overflow: "hidden", backgroundColor: "#111" }}>
-                  <MediaView media={{ ...s.media, grade: s.media.grade ?? "bw" }} scale={1.03 + 0.05 * kb} />
+                  <MediaView media={{ ...s.media, grade: s.media.grade ?? "bw" }} scale={1.03} />
                 </div>
               ) : null}
               <div style={{ position: "absolute", left: s.media && s.media.src ? 440 : 60, top: 200 }}>
@@ -401,8 +392,7 @@ export const DocView: React.FC<{ s: DocScene }> = ({ s }) => {
 
 export const HeadlineView: React.FC<{ s: HeadlineScene }> = ({ s }) => {
   const frame = useCurrentFrame();
-  const { dur, seed } = useScene();
-  const kb = kbOf(frame, dur);
+  const { seed } = useScene();
   const hasMedia = Boolean(s.media && s.media.src);
   const cw = 1080;
   const reveal = prog(frame, 10, 34, EASE_OUT);
@@ -444,7 +434,7 @@ export const HeadlineView: React.FC<{ s: HeadlineScene }> = ({ s }) => {
               <div style={{ display: "flex", gap: 34, marginTop: 26 }}>
                 {hasMedia ? (
                   <div style={{ position: "relative", width: 470, height: 300, overflow: "hidden", flexShrink: 0, backgroundColor: "#222" }}>
-                    <MediaView media={s.media ? { ...s.media, grade: "bw" } : null} scale={1.03 + 0.05 * kb} extraFilter="contrast(1.25)" />
+                    <MediaView media={s.media ? { ...s.media, grade: "bw" } : null} scale={1.03} extraFilter="contrast(1.25)" />
                   </div>
                 ) : null}
                 <div style={{ flex: 1, paddingTop: 6 }}>
@@ -463,7 +453,6 @@ export const HeadlineView: React.FC<{ s: HeadlineScene }> = ({ s }) => {
 
 export const LogoView: React.FC = () => {
   const frame = useCurrentFrame();
-  const p = prog(frame, 4, 22, EASE_OUT);
   const on = neonOn(frame, 4);
   return (
     <AbsoluteFill>
@@ -473,7 +462,6 @@ export const LogoView: React.FC = () => {
           src={staticFile("brand/koovox.png")}
           style={{
             width: 430,
-            transform: `scale(${interpolate(p, [0, 1], [0.92, 1])})`,
             opacity: on,
             filter: "drop-shadow(0 0 8px rgba(255,245,230,0.35)) drop-shadow(0 0 22px rgba(255,236,214,0.15))",
           }}

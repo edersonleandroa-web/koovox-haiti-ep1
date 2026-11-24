@@ -28,15 +28,8 @@ export const TypeText: React.FC<{ text: string; at: number; cps?: number; style?
   );
 };
 
-/** Liga o neon com uma piscadinha curta (3 quadros) — bem discreto. */
-export const neonOn = (frame: number, at: number) => {
-  const f = frame - at;
-  if (f < 0) return 0;
-  if (f < 2) return 0.55;
-  if (f < 3) return 0.2;
-  if (f < 5) return 0.85;
-  return 1;
-};
+/** O texto acende com um fade curto (6 quadros), sem piscar. */
+export const neonOn = (frame: number, at: number) => prog(frame, at, at + 6);
 
 export const labelStyle = (kind: LabelSpec["kind"]): React.CSSProperties => {
   switch (kind) {
@@ -159,11 +152,19 @@ export const CountUp: React.FC<{
   const frame = useCurrentFrame();
   const p = prog(frame, at, at + dur, EASE_OUT);
   const v = value * p;
+  // largura fixa (a do número final) e dígitos de mesma largura: o número cresce sem sacudir o centro
   return (
-    <span style={style}>
-      {prefix}
-      {fmtNum(decimals ? v : Math.round(v), decimals)}
-      {suffix}
+    <span style={{ ...style, position: "relative", display: "inline-block", fontVariantNumeric: "tabular-nums" }}>
+      <span style={{ visibility: "hidden" }}>
+        {prefix}
+        {fmtNum(decimals ? value : Math.round(value), decimals)}
+        {suffix}
+      </span>
+      <span style={{ position: "absolute", right: 0, top: 0, whiteSpace: "nowrap" }}>
+        {prefix}
+        {fmtNum(decimals ? v : Math.round(v), decimals)}
+        {suffix}
+      </span>
     </span>
   );
 };
