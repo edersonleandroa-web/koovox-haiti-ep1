@@ -5,7 +5,7 @@
   "scenes": [
     {
       "id": "final-01",
-      "start": 0.0,
+      "start": 0,
       "end": 4.55,
       "type": "full",
       "transition": "fade",
@@ -199,8 +199,6 @@
       "type": "doc",
       "transition": "whip",
       "title": "RECLUTAMIENTO DE NIÑOS",
-      "stamp": "UNICEF",
-      "stampAt": 0.5,
       "media": {
         "src": "media/final/armas-apreendidas-pnh.jpg",
         "kind": "image",
@@ -211,7 +209,7 @@
         "grade": "warm",
         "credit": "final-armas-apreendidas-pnh"
       },
-      "note": "'O UNICEF estima que o número de crianças recrutadas ou usadas por grupos armados...' — dossiê com carimbo UNICEF e foto clipada de armas apreendidas (simboliza os grupos armados sem mostrar menores). Mídia: fuzis ilegais apreendidos pela PNH e apresentados à imprensa (VOA Kreyòl, 30/12/2019)."
+      "note": "'O UNICEF estima que o número de crianças recrutadas ou usadas por grupos armados...' — dossiê com foto clipada de armas apreendidas (simboliza os grupos armados sem mostrar menores). Mídia: fuzis ilegais apreendidos pela PNH e apresentados à imprensa (VOA Kreyòl, 30/12/2019)."
     },
     {
       "id": "final-11",
@@ -312,14 +310,13 @@
       "type": "doc",
       "transition": "cut",
       "title": "VIOLENCIA SEXUAL",
-      "stamp": "REGISTRO TARDÍO",
       "media": null,
       "label": {
         "text": "JUL–SEP DE 2026",
         "at": 4.13,
         "kind": "date"
       },
-      "note": "'Os casos de violência sexual às vezes demoram a ser registrados. Entre julho e setembro de 2026...' Sem imagem (tema sensível). O carimbo cai sozinho em ~2,2 s, sobre 'demoram a ser registrados'; data em 'Entre julho'."
+      "note": "'Os casos de violência sexual às vezes demoram a ser registrados. Entre julho e setembro de 2026...' Sem imagem (tema sensível). Data em 'Entre julho'."
     },
     {
       "id": "final-16",

@@ -44,13 +44,3 @@ export const Vignette: React.FC = () => {
     </>
   );
 };
-
-/**
- * Pré-carrega as texturas usadas por CSS (máscara do carimbo) com <Img> invisível: o Remotion só
- * fotografa o quadro depois que elas carregam.
- */
-export const Preload: React.FC = () => (
-  <div style={{ position: "absolute", width: 1, height: 1, opacity: 0, overflow: "hidden", pointerEvents: "none" }}>
-    <Img src={staticFile("textures/stamp-mask.png")} style={{ width: 1, height: 1 }} />
-  </div>
-);

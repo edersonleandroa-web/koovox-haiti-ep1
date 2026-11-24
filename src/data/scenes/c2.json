@@ -480,12 +480,6 @@
         "at": 0.27,
         "kind": "date"
       },
-      "sfx": [
-        {
-          "name": "heartbeat",
-          "at": 3.81
-        }
-      ],
       "note": "Nos dias 13 e 14 de novembro de 2018, grupos armados atacaram os moradores de La Saline (massacre de La Saline)."
     },
     {
@@ -513,14 +507,6 @@
       "type": "doc",
       "transition": "whip",
       "title": "OBSERVATORIO HAITIANO Y HARVARD",
-      "stamp": "LA SALINE",
-      "stampAt": 1.91,
-      "sfx": [
-        {
-          "name": "stamp",
-          "at": 1.91
-        }
-      ],
       "note": "Investigação conjunta do Observatório Haitiano de Crimes contra a Humanidade (OHCCH) e da Clínica de Direitos Humanos de Harvard documentou o massacre. Corte no meio da frase, em \"em uma investigação conjunta\". [Mídia: sem foto livre acessível da Harvard Law School (Commons indisponível); documento sem foto.]"
     },
     {
@@ -555,16 +541,8 @@
         "at": 0.23,
         "kind": "date"
       },
-      "note": "Em 2020, o Departamento do Tesouro dos EUA sancionou Chérizier pelo papel que lhe atribuiu no massacre. [Mídia: sem foto livre acessível do prédio do Tesouro; virou documento com carimbo em \"sancionou\".]",
-      "title": "TESORO DE ESTADOS UNIDOS",
-      "stamp": "SANCIONES",
-      "stampAt": 3.33,
-      "sfx": [
-        {
-          "name": "stamp",
-          "at": 3.33
-        }
-      ]
+      "note": "Em 2020, o Departamento do Tesouro dos EUA sancionou Chérizier pelo papel que lhe atribuiu no massacre. [Mídia: sem foto livre acessível do prédio do Tesouro; virou documento.]",
+      "title": "TESORO DE ESTADOS UNIDOS"
     },
     {
       "id": "c2-28",
@@ -775,14 +753,6 @@
       "type": "doc",
       "transition": "whip",
       "title": "EXPERTOS DE LA ONU",
-      "stamp": "2024",
-      "stampAt": 2.12,
-      "sfx": [
-        {
-          "name": "stamp",
-          "at": 2.12
-        }
-      ],
       "note": "Em 2024, por exemplo, os especialistas da ONU identificaram... (o relatório, sem foto). Corte no meio da frase, antes de \"a Cinco Segundos\"."
     },
     {
@@ -857,12 +827,6 @@
         "at": 0.76,
         "kind": "date"
       },
-      "sfx": [
-        {
-          "name": "boom",
-          "at": 3.48
-        }
-      ],
       "note": "Voltemos a 7 de julho de 2021: nesse dia assassinaram o presidente Jovenel Moïse em sua casa. A linha vermelha do cartão vira \"7 DE JULHO DE 2021\"."
     },
     {
@@ -872,15 +836,7 @@
       "type": "doc",
       "transition": "whip",
       "title": "PARLAMENTO DE HAITÍ",
-      "stamp": "MANDATOS VENCIDOS",
-      "stampAt": 3.29,
-      "sfx": [
-        {
-          "name": "stamp",
-          "at": 3.29
-        }
-      ],
-      "note": "O parlamento já não podia funcionar normalmente: tinham vencido os mandatos de vários membros (carimbo em \"vencido\"). [Mídia: sem foto livre acessível do prédio do Parlamento; documento sem foto.]"
+      "note": "O parlamento já não podia funcionar normalmente: tinham vencido os mandatos de vários membros. [Mídia: sem foto livre acessível do prédio do Parlamento; documento sem foto.]"
     },
     {
       "id": "c2-41",

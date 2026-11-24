@@ -8,7 +8,7 @@ Documentário de ~14 min sobre o Haiti e as gangues, editado em **Remotion** a p
 - Quadro de investigação sobre o **fundo quadriculado escuro** enviado pelo usuário
   (`public/textures/fundo-limpo.jpg`, ampliado 4× no Magnific e limpo de uma fileira de pontos de poeira).
 - Polaroids com fita crepe e tachinhas, mapa de papel com alfinetes e rotas tracejadas, pasta de
-  arquivo com carimbo, recortes de jornal, fio vermelho ligando pistas, b-roll real em tela cheia.
+  arquivo, recortes de jornal, fio vermelho ligando pistas, b-roll real em tela cheia.
 - **Texto só para lugares, nomes, datas, números e informação essencial**, sempre perto do centro,
   com um **neon bem leve** (`src/theme.ts`: `GLOW_WHITE`, `GLOW_RED`).
 - Fontes do Google Fonts via `@remotion/google-fonts`: Special Elite (máquina de escrever),
@@ -23,7 +23,7 @@ Documentário de ~14 min sobre o Haiti e as gangues, editado em **Remotion** a p
 | `src/data/scenes/*.json` | roteiro de cada capítulo: cenas sincronizadas com a fala |
 | `src/scenes/` | tipos de cena: foto no mural, tela cheia, pessoa, dupla, rede, mapa, número, data, linha do tempo, documento, manchete, logo |
 | `src/SceneHost.tsx` | transições (chicotada com desfoque, zoom, flash, glitch, fade) |
-| `src/audio/` | trilha (abaixa sob a voz e sobe nas pausas/cartões) e efeitos sonoros automáticos por cena |
+| `src/audio/` | mixagem em `mix.ts`: trilha fixa sob a voz (sobe só no título e nos cartões) e efeitos só em transições e números que acendem |
 | `public/music`, `public/sfx` | trilhas e efeitos gerados no **Magnific** (Google Lyria 3 Pro / ElevenLabs SFX) |
 | `public/media/<capítulo>/` | fotos e vídeos reais com licença livre (créditos em `CREDITS.md`) |
 

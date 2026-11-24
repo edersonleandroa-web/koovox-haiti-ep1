@@ -24,8 +24,6 @@ export type LabelSpec = {
   mark?: "marker" | "circle" | "none"; // destaque: marca-texto ou círculo (nunca linha embaixo)
 };
 
-export type SfxSpec = { name: string; at?: number; volume?: number };
-
 export type TransitionType = "whip" | "zoom" | "flash" | "glitch" | "fade" | "cut";
 
 type Base = {
@@ -34,7 +32,6 @@ type Base = {
   end: number;
   transition?: TransitionType;
   label?: LabelSpec;
-  sfx?: SfxSpec[];
   note?: string;
 };
 
@@ -93,7 +90,7 @@ export type TimelineScene = Base & {
   years: { year: string; text?: string }[];
   focus?: number;
 };
-export type DocScene = Base & { type: "doc"; title: string; stamp?: string; stampAt?: number; media?: MediaRef | null };
+export type DocScene = Base & { type: "doc"; title: string; media?: MediaRef | null };
 export type HeadlineScene = Base & {
   type: "headline";
   headline: string;

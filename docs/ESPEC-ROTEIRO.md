@@ -10,7 +10,7 @@ código. Os dados de cada capítulo ficam em `src/data/scenes/<cap>.json` (cap =
 Quadro de investigação visto de frente/de cima sobre **um único fundo escuro quadriculado** (textura
 do usuário, `public/textures/fundo-4x.jpg`). Sobre ele: **polaroids** presas com fita crepe ou
 tachinha, **mapa** impresso (estilo mapa de papel antigo, dessaturado) com alfinetes e rota tracejada
-vermelha, **pasta de arquivo** (kraft) com carimbo, **recortes de jornal**, **fio vermelho** ligando
+vermelha, **pasta de arquivo** (kraft), **recortes de jornal**, **fio vermelho** ligando
 pistas. Entre os quadros do mural entram **fotos e vídeos reais em tela cheia** (b-roll de
 documentário, com granulação e vinheta).
 
@@ -62,7 +62,6 @@ Duração de cena: **3,5 s a 8 s** (ideal 4–6 s). Trecho longo sobre um mesmo 
     "at": 0.6,                   // s desde o início da cena
     "kind": "date"               // place | name | date | number | info
   },
-  "sfx": [ {"name": "photo_slide", "at": 0.1} ],   // opcional; o código já põe sons padrão por tipo
   "note": "o que a cena mostra (texto livre, não aparece no vídeo)"
 }
 ```
@@ -101,7 +100,7 @@ Antes da busca, o planejador deixa `src: null` e descreve o que precisa em `"wan
 | `stat` | número importante | `value` (número), `prefix`, `suffix`, `decimals`, `text` (≤ 5 palavras sob o número), `media` opcional (fundo escurecido) |
 | `date` | ano/data marcante | `text` (ex.: "1957"), `sub` (≤ 4 palavras), `media` opcional (fundo) |
 | `timeline` | sequência de anos (história) | `years`: lista de `{year, text}` (≤ 7 itens, `text` ≤ 3 palavras), `focus`: índice destacado |
-| `doc` | relatório, decreto, denúncia, documento | `title` (≤ 5 palavras), `stamp` (≤ 2 palavras, ex. "CONFIDENCIAL"), `media` opcional (foto clipada no documento) |
+| `doc` | relatório, decreto, denúncia, documento | `title` (≤ 5 palavras), `media` opcional (foto clipada no documento) |
 | `headline` | notícia/recorte de jornal | `headline` (≤ 8 palavras, fato da narração), `date`, `media` opcional |
 | `chapter` | cartão de capítulo (só o código usa) | — |
 

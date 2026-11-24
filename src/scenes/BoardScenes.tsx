@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { Board } from "../components/Board";
-import { RedString, Stamp, TypedLines } from "../components/Marks";
+import { RedString, TypedLines } from "../components/Marks";
 import { Above, Clipping, Pin, Placed, Polaroid, Print, Tex } from "../components/Paper";
 import { useScene } from "../components/SceneCtx";
 import { Label, TypeText, neonOn } from "../components/Text";
@@ -327,7 +327,6 @@ export const DocView: React.FC<{ s: DocScene }> = ({ s }) => {
   const cy = H * 0.52;
   const fw = 900;
   const fh = 600;
-  const stampAt = s.stampAt !== undefined ? sec(s.stampAt) : sec(Math.max(1.0, Math.min(2.2, (dur / 30) * 0.4)));
   const slide = prog(frame, 8, 26, EASE_OUT);
   return (
     <AbsoluteFill>
@@ -391,11 +390,6 @@ export const DocView: React.FC<{ s: DocScene }> = ({ s }) => {
               <div style={{ position: "absolute", left: s.media && s.media.src ? 440 : 60, top: 200 }}>
                 <TypedLines n={6} width={s.media && s.media.src ? 360 : 700} seed={seed + 5} at={18} gap={30} />
               </div>
-              {s.stamp ? (
-                <div style={{ position: "absolute", right: 70, bottom: 70 }}>
-                  <Stamp text={s.stamp} at={stampAt} size={62} rot={-10} />
-                </div>
-              ) : null}
             </div>
           </div>
         </Placed>

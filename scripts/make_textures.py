@@ -128,23 +128,11 @@ def grain():
     print("grain ok")
 
 
-def stamp_mask():
-    """Máscara RGBA para carimbos: tinta cheia com falhas (alpha baixo) espalhadas."""
-    s = 260
-    n = smooth_noise(s, s, 30, 77) + 0.6 * smooth_noise(s, s, 90, 78) + 0.25 * np.random.default_rng(79).normal(0, 1, (s, s))
-    alpha = np.clip(1.0 - np.clip((n - 0.18) * 4.0, 0, 1), 0.08, 1.0)
-    img = np.zeros((s, s, 4), np.uint8)
-    img[..., :3] = 255
-    img[..., 3] = (alpha * 255).astype(np.uint8)
-    Image.fromarray(img, "RGBA").save(os.path.join(TEX, "stamp-mask.png"))
-    print("stamp-mask ok")
-
 
 if __name__ == "__main__":
     os.makedirs(TEX, exist_ok=True)
     clean_background()
     grain()
-    stamp_mask()
     paper(1024, 1024, (233, 227, 211), 11).save(os.path.join(TEX, "paper.jpg"), quality=90)
     paper(2400, 1400, (226, 219, 201), 21, fibers=3500).save(os.path.join(TEX, "paper-wide.jpg"), quality=88)
     paper(1024, 1024, (196, 160, 108), 31, fibers=2200, stain=1.4, fine=5.0).save(os.path.join(TEX, "kraft.jpg"), quality=90)

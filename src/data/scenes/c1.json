@@ -334,9 +334,7 @@
       "type": "doc",
       "transition": "flash",
       "title": "MILICIA DE DUVALIER",
-      "stamp": "TONTONS MACOUTES",
-      "stampAt": 1.53,
-      "note": "'Seus integrantes eram chamados de Tontons Macoutes. Perseguiam os opositores do regime e intimidavam a população em nome do presidente.' Não existe foto nem vídeo livre dos Tontons Macoutes (os cinejornais do Internet Archive têm copyright): a cena virou dossiê. Pasta 'MILÍCIA DE DUVALIER' (a milícia citada na cena anterior); o carimbo TONTONS MACOUTES bate quando ele diz 'Tontons Macoutes' (stampAt)."
+      "note": "'Seus integrantes eram chamados de Tontons Macoutes. Perseguiam os opositores do regime e intimidavam a população em nome do presidente.' Não existe foto nem vídeo livre dos Tontons Macoutes (os cinejornais do Internet Archive têm copyright): a cena virou dossiê. Pasta 'MILÍCIA DE DUVALIER' (a milícia citada na cena anterior)."
     },
     {
       "id": "c1-16",
@@ -496,15 +494,7 @@
       "type": "doc",
       "transition": "zoom",
       "title": "ASESINATOS POLÍTICOS",
-      "stamp": "DOCUMENTADO",
-      "stampAt": 1.65,
-      "sfx": [
-        {
-          "name": "stamp",
-          "at": 1.65
-        }
-      ],
-      "note": "'Organizações de direitos humanos documentaram assassinatos políticos e perseguições...' Pasta de relatório; o carimbo DOCUMENTADO bate em 'documentaram'. Sem foto (nada de vítimas)."
+      "note": "'Organizações de direitos humanos documentaram assassinatos políticos e perseguições...' Pasta de relatório. Sem foto (nada de vítimas)."
     },
     {
       "id": "c1-23",

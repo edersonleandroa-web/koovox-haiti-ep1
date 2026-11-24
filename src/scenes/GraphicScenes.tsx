@@ -136,13 +136,12 @@ export const DateView: React.FC<{ s: DateScene }> = ({ s }) => {
   const frame = useCurrentFrame();
   const at = sec(s.label?.at ?? s.at ?? 0.3);
   const p = prog(frame, at, at + 7, EASE_OUT);
-  const shake = frame >= at + 3 && frame < at + 11 ? Math.sin((frame - at) * 2.7) * (11 - (frame - at)) * 0.9 : 0;
   const long = s.text.length > 8;
   return (
     <AbsoluteFill>
       <GraphicBg media={s.media} at={at} />
       <Cam push={0.03} drift={10}>
-        <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column", transform: `translate(${shake}px, ${shake * 0.4}px)` }}>
+        <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
           <div
             style={{
               fontFamily: FONT.cond,
@@ -154,7 +153,6 @@ export const DateView: React.FC<{ s: DateScene }> = ({ s }) => {
               textShadow: GLOW_WHITE,
               textTransform: "uppercase",
               opacity: frame >= at ? interpolate(p, [0, 0.3, 1], [0, 1, 1]) : 0,
-              transform: `scale(${interpolate(p, [0, 1], [1.28, 1])})`,
               textAlign: "center",
               maxWidth: 1500,
             }}

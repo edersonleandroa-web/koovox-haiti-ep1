@@ -83,7 +83,7 @@
     {
       "id": "intro-04",
       "start": 17.8,
-      "end": 22.0,
+      "end": 22,
       "type": "map",
       "transition": "whip",
       "view": "haiti",
@@ -98,7 +98,7 @@
     },
     {
       "id": "intro-05",
-      "start": 22.0,
+      "start": 22,
       "end": 26.08,
       "type": "photo",
       "transition": "whip",
@@ -233,12 +233,6 @@
         "at": 4.98,
         "kind": "info"
       },
-      "sfx": [
-        {
-          "name": "boom",
-          "at": 4.98
-        }
-      ],
       "note": "'E, bom, vendo como as gangues atuam, esses caras também podem ser chamados de terroristas?' Foto em tela cheia com aproximação lenta nos homens armados; a pergunta-chave aparece quando ele diz 'terroristas'."
     },
     {
@@ -248,8 +242,6 @@
       "type": "doc",
       "transition": "whip",
       "title": "HAITÍ",
-      "stamp": "KOOVOX",
-      "stampAt": 4.38,
       "media": {
         "src": "media/intro/porto-principe-aerea.jpg",
         "kind": "image",
@@ -260,13 +252,7 @@
         "grade": "warm",
         "credit": "intro-pap-aerea"
       },
-      "sfx": [
-        {
-          "name": "stamp",
-          "at": 4.38
-        }
-      ],
-      "note": "'Espero que goste. Levei tempo investigando o tema e editando este vídeo. Sou KOOVOX, vamos ao vídeo.' Pasta de arquivo kraft 'HAITI' (a investigação do narrador) com foto clipada; o carimbo KOOVOX bate quando ele diz 'KOOVOX' (stampAt). Em seguida o código mostra o título do episódio."
+      "note": "'Espero que goste. Levei tempo investigando o tema e editando este vídeo. Sou KOOVOX, vamos ao vídeo.' Pasta de arquivo kraft 'HAITI' (a investigação do narrador) com foto clipada. Em seguida o código mostra o título do episódio."
     }
   ]
 }

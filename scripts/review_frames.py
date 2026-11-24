@@ -23,7 +23,7 @@ def texts(s):
     for k in ("text", "sub"):
         if lab.get(k):
             out.append(f"label.{k}: {lab[k]}")
-    for k in ("name", "role", "years", "text", "sub", "title", "stamp", "headline", "date", "caption", "link", "center", "prefix", "suffix"):
+    for k in ("name", "role", "years", "text", "sub", "title", "headline", "date", "caption", "link", "center", "prefix", "suffix"):
         if isinstance(s.get(k), str) and s.get(k).strip():
             out.append(f"{k}: {s[k]}")
     for i, it in enumerate(s.get("items") or []):

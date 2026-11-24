@@ -247,9 +247,7 @@
       "type": "doc",
       "transition": "whip",
       "title": "FUENTES",
-      "stamp": "EN DUDA",
-      "stampAt": 1.92,
-      "note": "Comentário do narrador: 'Eu, na verdade, tenho minhas dúvidas sobre muitas dessas fontes.' Pasta 'FONTES' recebe o carimbo (o código o põe em ~1,6 s, junto de 'dúvidas')."
+      "note": "Comentário do narrador: 'Eu, na verdade, tenho minhas dúvidas sobre muitas dessas fontes.' Pasta 'FONTES'."
     },
     {
       "id": "c3-13",
@@ -466,12 +464,6 @@
       "value": 100,
       "prefix": "~",
       "text": "MUERTOS · MÁS DE 6,000 DESPLAZADOS",
-      "sfx": [
-        {
-          "name": "boom",
-          "at": 0.34
-        }
-      ],
       "note": "'cerca de 100 pessoas morreram no massacre e mais de 6 mil tiveram que fugir de suas casas.' O número entra em 0,35 s = '100'. Sem imagens de vítimas."
     },
     {
@@ -598,7 +590,7 @@
         "kind": "image",
         "focus": [
           0.6,
-          1.0
+          1
         ],
         "grade": "warm",
         "credit": "c3-mudas-viveiro"
@@ -795,8 +787,6 @@
       "type": "doc",
       "transition": "whip",
       "title": "INFORME DE LA ONU · 2026",
-      "stamp": "EMBARGO VIOLADO",
-      "stampAt": 3.85,
       "note": "'Em seu relatório de 2026, os especialistas apontaram que o embargo internacional de armas continuava sendo violado.'"
     },
     {
