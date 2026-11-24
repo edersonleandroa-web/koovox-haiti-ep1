@@ -11,10 +11,32 @@
       "transition": "fade",
       "view": "americas",
       "pins": [
-        { "name": "EL SALVADOR", "lon": -89.19, "lat": 13.69, "at": 1.38 },
-        { "name": "HAITÍ", "lon": -72.335, "lat": 18.539, "at": 3.8 }
+        {
+          "name": "EL SALVADOR",
+          "lon": -89.19,
+          "lat": 13.69,
+          "at": 1.38
+        },
+        {
+          "name": "HAITÍ",
+          "lon": -72.335,
+          "lat": 18.539,
+          "at": 3.8,
+          "side": "above"
+        }
       ],
-      "route": { "from": [-89.19, 13.69], "to": [-72.335, 18.539], "at": 4.1, "label": "SOLDADOS" },
+      "route": {
+        "from": [
+          -89.19,
+          13.69
+        ],
+        "to": [
+          -72.335,
+          18.539
+        ],
+        "at": 4.1,
+        "label": "SOLDADOS"
+      },
       "note": "Narração: 'Nos últimos dias, El Salvador travou combates muito duros no Haiti para tentar trazer de volta seus soldados.' Abertura do vídeo. Mapa das Américas: alfinete EL SALVADOR quando ele diz 'El Salvador', alfinete HAITI em 'Haiti', depois a rota tracejada vermelha El Salvador -> Haiti com 'SOLDADOS' durante 'para tentar trazer de volta seus soldados'."
     },
     {
@@ -24,12 +46,16 @@
       "type": "full",
       "transition": "whip",
       "media": {
-        "src": "media/intro/gangues-armadas-rua.mp4",
+        "src": "media/intro/gangues-armadas-rua-a.mp4",
         "kind": "video",
         "trim": 0,
-        "focus": [0.45, 0.45],
+        "focus": [
+          0.45,
+          0.45
+        ],
         "grade": "warm",
-        "credit": "intro-gangues-rua"
+        "credit": "intro-gangues-rua",
+        "rate": 0.7
       },
       "move": "in",
       "note": "'Há zonas do país que ficaram nas mãos de gangues violentas e muito bem armadas.' Primeiro b-roll real em tela cheia: homens armados controlando uma rua de Porto Príncipe. Sem texto."
@@ -45,7 +71,10 @@
         "src": "media/intro/soldados-salvadorenhos-haiti.mp4",
         "kind": "video",
         "trim": 0,
-        "focus": [0.5, 0.6],
+        "focus": [
+          0.5,
+          0.6
+        ],
         "grade": "cold",
         "credit": "intro-soldados-salvador"
       },
@@ -59,7 +88,12 @@
       "transition": "whip",
       "view": "haiti",
       "pins": [],
-      "label": { "text": "HAITÍ", "at": 0.4, "kind": "place", "mark": "circle" },
+      "label": {
+        "text": "HAITÍ",
+        "at": 0.4,
+        "kind": "place",
+        "mark": "circle"
+      },
       "note": "'...do Haiti, do país em si, para que entendamos como ele chegou a este ponto...' Mapa do país inteiro (departamentos), sem alfinetes; rótulo HAITI quando ele diz 'Haiti'. O corte cai logo antes de 'do Haiti' (fala contínua, sem respiro)."
     },
     {
@@ -72,7 +106,10 @@
       "media": {
         "src": "media/intro/lider-gangue-mascarados.jpg",
         "kind": "image",
-        "focus": [0.4, 0.35],
+        "focus": [
+          0.4,
+          0.35
+        ],
         "grade": "warm",
         "credit": "intro-lider-gangue"
       },
@@ -89,20 +126,26 @@
           "name": "ONU",
           "at": 3.46,
           "media": {
-            "src": "media/intro/onu-bandeira.jpg",
+            "src": "media/intro/onu-bandeira-recorte.jpg",
             "kind": "image",
-            "focus": [0.25, 0.25],
-            "grade": "cold",
+            "focus": [
+              0.42,
+              0.45
+            ],
+            "grade": "none",
             "credit": "intro-onu"
           }
         },
         {
           "name": "EL SALVADOR",
-          "at": 3.96,
+          "at": 1.5,
           "media": {
             "src": "media/intro/el-salvador-bandeira-soldados.jpg",
             "kind": "image",
-            "focus": [0.27, 0.5],
+            "focus": [
+              0.27,
+              0.5
+            ],
             "grade": "cold",
             "credit": "intro-el-salvador"
           }
@@ -120,7 +163,10 @@
         "src": "media/intro/blindado-comboio-mss.mp4",
         "kind": "video",
         "trim": 0,
-        "focus": [0.55, 0.55],
+        "focus": [
+          0.55,
+          0.55
+        ],
         "grade": "cold",
         "credit": "intro-blindado-mss"
       },
@@ -140,7 +186,10 @@
           "media": {
             "src": "media/intro/carros-queimados-pap.jpg",
             "kind": "image",
-            "focus": [0.45, 0.5],
+            "focus": [
+              0.45,
+              0.5
+            ],
             "grade": "warm",
             "credit": "intro-carros-queimados"
           }
@@ -151,7 +200,10 @@
           "media": {
             "src": "media/intro/mosul-cidade-velha-2017.jpg",
             "kind": "image",
-            "focus": [0.35, 0.55],
+            "focus": [
+              0.35,
+              0.55
+            ],
             "grade": "warm",
             "credit": "intro-mosul"
           }
@@ -168,13 +220,25 @@
       "media": {
         "src": "media/intro/gangue-fuzis-erguidos.jpg",
         "kind": "image",
-        "focus": [0.5, 0.4],
+        "focus": [
+          0.5,
+          0.4
+        ],
         "grade": "cold",
         "credit": "intro-gangue-fuzis"
       },
       "move": "in",
-      "label": { "text": "¿TERRORISTAS?", "at": 4.98, "kind": "info" },
-      "sfx": [{ "name": "boom", "at": 4.98 }],
+      "label": {
+        "text": "¿TERRORISTAS?",
+        "at": 4.98,
+        "kind": "info"
+      },
+      "sfx": [
+        {
+          "name": "boom",
+          "at": 4.98
+        }
+      ],
       "note": "'E, bom, vendo como as gangues atuam, esses caras também podem ser chamados de terroristas?' Foto em tela cheia com aproximação lenta nos homens armados; a pergunta-chave aparece quando ele diz 'terroristas'."
     },
     {
@@ -189,11 +253,19 @@
       "media": {
         "src": "media/intro/porto-principe-aerea.jpg",
         "kind": "image",
-        "focus": [0.5, 0.5],
+        "focus": [
+          0.5,
+          0.5
+        ],
         "grade": "warm",
         "credit": "intro-pap-aerea"
       },
-      "sfx": [{ "name": "stamp", "at": 4.38 }],
+      "sfx": [
+        {
+          "name": "stamp",
+          "at": 4.38
+        }
+      ],
       "note": "'Espero que goste. Levei tempo investigando o tema e editando este vídeo. Sou KOOVOX, vamos ao vídeo.' Pasta de arquivo kraft 'HAITI' (a investigação do narrador) com foto clipada; o carimbo KOOVOX bate quando ele diz 'KOOVOX' (stampAt). Em seguida o código mostra o título do episódio."
     }
   ]

@@ -10,7 +10,8 @@ export type MediaRef = {
   grade?: Grade;
   credit?: string;
   want?: string;
-  cutout?: string; // PNG com fundo removido (Canva), para a cena de pessoa recortada
+  cutout?: string; // PNG com fundo removido, para a cena de pessoa recortada
+  rate?: number; // vídeo: velocidade (ex.: 0.7 = câmera lenta)
 };
 
 export type LabelKind = "place" | "name" | "date" | "number" | "info";
@@ -66,7 +67,7 @@ export type NetworkScene = Base & {
   items: BoardItem[];
   center?: string;
 };
-export type MapPin = { name: string; lon: number; lat: number; at?: number };
+export type MapPin = { name: string; lon: number; lat: number; at?: number; side?: "left" | "right" | "above" };
 export type MapView = "americas" | "caribbean" | "haiti" | "pap";
 export type MapScene = Base & {
   type: "map";

@@ -92,7 +92,7 @@ const sceneEvents = (s: Scene, from: number, prev: Scene | undefined, idx: numbe
       break;
     case "duo": {
       const a0 = Math.min(0.35, s.items[0]?.at ?? 0.07);
-      const a1 = Math.max(a0 + 0.27, s.items[1]?.at ?? a0 + 0.55);
+      const a1 = Math.max(a0 + 0.27, Math.min(s.items[1]?.at ?? a0 + 0.55, s.end - s.start - 1.8));
       out.push(ev(at(a0), "photo_slide", h));
       out.push(ev(at(a1), "photo_slide", h + 1, 0.8));
       out.push(ev(at(a1 + 0.47), "string_twang", h));

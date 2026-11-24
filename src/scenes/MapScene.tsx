@@ -59,11 +59,11 @@ const VIEWS: Record<MapView, [number, number, number, number]> = {
   pap: [-72.56, 18.43, -72.13, 18.67],
 };
 
-const COUNTRY_LABELS: Record<MapView, { t: string; lon: number; lat: number; big?: boolean; faint?: boolean }[]> = {
+const COUNTRY_LABELS: Record<MapView, { t: string; lon: number; lat: number; big?: boolean; faint?: boolean; small?: boolean }[]> = {
   americas: [
     { t: "EL SALVADOR", lon: -88.9, lat: 14.55 },
     { t: "HAITÍ", lon: -72.7, lat: 19.45, big: true },
-    { t: "MAR CARIBE", lon: -77.5, lat: 14.6, faint: true },
+    { t: "MAR CARIBE", lon: -79.5, lat: 13.4, faint: true },
     { t: "OCÉANO PACÍFICO", lon: -89.5, lat: 9.6, faint: true },
   ],
   caribbean: [
@@ -74,8 +74,8 @@ const COUNTRY_LABELS: Record<MapView, { t: string; lon: number; lat: number; big
     { t: "MAR CARIBE", lon: -74.5, lat: 16.3, faint: true },
   ],
   haiti: [
-    { t: "HAITÍ", lon: -73.25, lat: 19.62, big: true },
-    { t: "REP. DOMINICANA", lon: -71.62, lat: 19.2, faint: true },
+    { t: "HAITÍ", lon: -73.75, lat: 19.62, big: true },
+    { t: "REP. DOMINICANA", lon: -71.2, lat: 19.2, faint: true, small: true },
     { t: "MAR CARIBE", lon: -73.2, lat: 18.03, faint: true },
   ],
   pap: [{ t: "BAHÍA DE PUERTO PRÍNCIPE", lon: -72.47, lat: 18.6, faint: true }],
@@ -168,13 +168,14 @@ const prepare = (view: MapView): Prepared => {
   return prepared;
 };
 
-const MapPinMark: React.FC<{ x: number; y: number; at: number; name: string; sheetFrame: number }> = ({ x, y, at, name, sheetFrame }) => {
+const MapPinMark: React.FC<{ x: number; y: number; at: number; name: string; sheetFrame: number; side?: "left" | "right" | "above" }> = ({ x, y, at, name, sheetFrame, side }) => {
   const f = sheetFrame;
   if (f < at) return null;
   const p = prog(f, at, at + 9, EASE_OUT);
   const drop = interpolate(p, [0, 1], [-28, 0]);
   const ring = ((f - at) % 36) / 36;
-  const right = x < MW * 0.72;
+  const right = side ? side === "right" : x < MW * 0.72;
+  const above = side === "above";
   return (
     <g transform={`translate(${x} ${y})`}>
       <circle r={10 + ring * 34} fill="none" stroke={C.redBright} strokeWidth={2.2} opacity={(1 - ring) * 0.75} />
@@ -183,10 +184,10 @@ const MapPinMark: React.FC<{ x: number; y: number; at: number; name: string; she
         <circle r={11} fill={C.red} stroke="#f6efe2" strokeWidth={3} />
         <circle r={3.4} cx={-3} cy={-3} fill="rgba(255,255,255,0.6)" />
       </g>
-      <foreignObject x={right ? 22 : -622} y={-26} width={600} height={60} style={{ overflow: "visible" }}>
+      <foreignObject x={above ? -300 : right ? 22 : -622} y={above ? -86 : -26} width={600} height={60} style={{ overflow: "visible" }}>
         <div
           style={{
-            textAlign: right ? "left" : "right",
+            textAlign: above ? "center" : right ? "left" : "right",
             fontFamily: FONT.type,
             fontSize: 30,
             letterSpacing: "0.1em",
@@ -305,7 +306,17 @@ export const MapSceneView: React.FC<{ s: MapScene }> = ({ s }) => {
   const taken = new Set<string>([...(s.pins ?? []).map((p) => norm(p.name)), ...(s.label ? [norm(s.label.text)] : [])]);
   const labelSpec = s.label ?? (shade?.text ? { text: shade.text, kind: "number" as const, at: (s.shade?.at ?? 1) + 0.5 } : null);
   const lx = Math.min(W * 0.68, Math.max(W * 0.32, focusScreen[0]));
-  const ly = Math.min(H * 0.8, Math.max(H * 0.28, focusScreen[1] + 150));
+  const clampY = (y: number) => Math.min(H * 0.8, Math.max(H * 0.28, y));
+  const hitsPin = (y: number) => pins.some((p) => Math.abs(sheetY + p.xy[1] - y) < 110 && Math.abs(sheetX + p.xy[0] - lx) < 420);
+  const ly = [150, 0, -150].map((d) => clampY(focusScreen[1] + d)).find((y) => !hitsPin(y)) ?? clampY(focusScreen[1] + 150);
+  const labSub = labelSpec && "sub" in labelSpec ? (labelSpec.sub ?? "") : "";
+  const boxHW = labelSpec ? Math.min(450, 34 + Math.max(labelSpec.text.length * (labelSpec.kind === "number" ? 20.5 : 17), labSub.length * 10.6)) : 0;
+  const boxHH = labSub ? 86 : 66;
+  const underBox = (l: { t: string; lon: number; lat: number; faint?: boolean }) => {
+    if (!labelSpec || !l.faint) return false;
+    const [x, y] = m.project(l.lon, l.lat);
+    return Math.abs(sheetX + x - lx) < boxHW + l.t.length * 11 + 16 && Math.abs(sheetY + y - ly) < boxHH + 24;
+  };
 
   return (
     <AbsoluteFill>
@@ -334,7 +345,11 @@ export const MapSceneView: React.FC<{ s: MapScene }> = ({ s }) => {
                 <pattern id={`hatch-${uid}`} patternUnits="userSpaceOnUse" width="11" height="11" patternTransform="rotate(45)">
                   <line x1="0" y1="0" x2="0" y2="11" stroke={C.red} strokeWidth="3.2" />
                 </pattern>
+                <clipPath id={`land-${uid}`}>
+                  <path d={m.haiti} />
+                </clipPath>
               </defs>
+              <g clipPath={view === "pap" ? `url(#land-${uid})` : undefined}>
               {/* território dominado */}
               {shade
                 ? shade.parts.map((p, i) => {
@@ -357,8 +372,9 @@ export const MapSceneView: React.FC<{ s: MapScene }> = ({ s }) => {
                   </g>
                 );
               })}
+              </g>
               {/* rótulos dos países */}
-              {COUNTRY_LABELS[view].filter((l) => !taken.has(norm(l.t))).map((l, i) => {
+              {COUNTRY_LABELS[view].filter((l) => !taken.has(norm(l.t)) && !underBox(l)).map((l, i) => {
                 const [x, y] = m.project(l.lon, l.lat);
                 return (
                   <text
@@ -368,8 +384,11 @@ export const MapSceneView: React.FC<{ s: MapScene }> = ({ s }) => {
                     textAnchor="middle"
                     style={{
                       fontFamily: FONT.type,
-                      fontSize: l.big ? 40 : 24,
-                      letterSpacing: l.big ? "0.5em" : "0.3em",
+                      fontSize: l.big ? 40 : l.small ? 20 : 24,
+                      letterSpacing: l.big ? "0.5em" : l.small ? "0.15em" : "0.3em",
+                      paintOrder: "stroke",
+                      stroke: view === "americas" && l.big ? "rgba(226,219,201,0.9)" : "none",
+                      strokeWidth: 6,
                       fill: l.faint ? "rgba(40,36,30,0.42)" : "rgba(33,31,27,0.78)",
                       fontStyle: l.faint && !l.big ? "italic" : "normal",
                     }}
@@ -425,7 +444,7 @@ export const MapSceneView: React.FC<{ s: MapScene }> = ({ s }) => {
                 </g>
               ) : null}
               {pins.map((p, i) => (
-                <MapPinMark key={i} x={p.xy[0]} y={p.xy[1]} at={p.atF} name={p.name} sheetFrame={frame} />
+                <MapPinMark key={i} x={p.xy[0]} y={p.xy[1]} at={p.atF} name={p.name} sheetFrame={frame} side={p.side} />
               ))}
             </svg>
           </div>

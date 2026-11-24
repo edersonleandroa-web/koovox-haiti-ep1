@@ -75,7 +75,9 @@ export const Label: React.FC<{
   const on = neonOn(frame, at);
   const slam = prog(frame, at, at + 8, EASE_OUT);
   const typedEnd = at + sec(Math.min(1.4, spec.text.length / 26)) + 2;
-  const mark = spec.mark ?? (kind === "info" && !tag ? "marker" : "none");
+  const wanted = spec.mark ?? (kind === "info" && !tag ? "marker" : "none");
+  // círculo à mão só fecha bem em palavra curta; texto longo vira marca-texto
+  const mark = wanted === "circle" && spec.text.length > 8 ? "marker" : wanted;
   const subAt = at + sec(Math.min(1.2, 0.18 + spec.text.length / 26));
   const sub = spec.sub ? prog(frame, subAt, subAt + 10) : 0;
   return (

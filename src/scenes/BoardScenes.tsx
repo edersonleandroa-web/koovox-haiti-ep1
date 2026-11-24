@@ -28,14 +28,14 @@ export const PhotoView: React.FC<{ s: PhotoScene }> = ({ s }) => {
   if (ft === "polaroid") {
     obj = <Polaroid w={hasLabel ? 500 : 560} media={s.media} caption={s.caption} hold={r() < 0.6 ? "tape" : "pin"} seed={seed} kb={kb} />;
   } else if (ft === "print") {
-    cx = hasLabel ? W * 0.38 : W * 0.5;
-    obj = <Print w={hasLabel ? 840 : 1060} media={s.media} seed={seed} kb={kb} />;
+    cx = hasLabel ? W * 0.33 : W * 0.5;
+    obj = <Print w={hasLabel ? 760 : 1060} media={s.media} seed={seed} kb={kb} />;
   } else if (ft === "tv") {
-    cx = hasLabel ? W * 0.38 : W * 0.5;
-    obj = <Print w={hasLabel ? 860 : 1100} media={s.media} seed={seed} kb={kb} dark />;
+    cx = hasLabel ? W * 0.33 : W * 0.5;
+    obj = <Print w={hasLabel ? 780 : 1100} media={s.media} seed={seed} kb={kb} dark />;
   } else {
-    cx = hasLabel ? W * 0.38 : W * 0.5;
-    obj = <Clipping w={hasLabel ? 800 : 980} media={s.media} seed={seed} kb={kb} />;
+    cx = hasLabel ? W * 0.33 : W * 0.5;
+    obj = <Clipping w={hasLabel ? 720 : 980} media={s.media} seed={seed} kb={kb} />;
   }
   return (
     <AbsoluteFill>
@@ -45,7 +45,7 @@ export const PhotoView: React.FC<{ s: PhotoScene }> = ({ s }) => {
           {obj}
         </Placed>
       </Cam>
-      {s.label ? <Label spec={s.label} x={W * 0.6} y={H * 0.5} align="left" maxWidth={640} /> : null}
+      {s.label ? <Label spec={s.label} x={ft === "polaroid" ? W * 0.6 : W * 0.63} y={H * 0.5} align="left" maxWidth={620} /> : null}
     </AbsoluteFill>
   );
 };
@@ -171,7 +171,7 @@ export const DuoView: React.FC<{ s: DuoScene }> = ({ s }) => {
   const items = s.items.slice(0, 2);
   // o 1º objeto entra logo no começo (nunca mural vazio); o 2º na palavra que o motiva
   const at0 = Math.min(sec(0.35), items[0]?.at !== undefined ? sec(items[0].at as number) : 2);
-  const at1 = items[1]?.at !== undefined ? Math.max(at0 + 8, sec(items[1].at as number)) : at0 + sec(0.55);
+  const at1 = items[1]?.at !== undefined ? Math.max(at0 + 8, Math.min(sec(items[1].at as number), dur - sec(1.8))) : at0 + sec(0.55);
   const pos = [
     { x: W * 0.31, y: H * 0.44, rot: -4 - r() * 3, at: at0 },
     { x: W * 0.69, y: H * 0.44, rot: 3 + r() * 3, at: at1 },
@@ -219,9 +219,10 @@ export const DuoView: React.FC<{ s: DuoScene }> = ({ s }) => {
             left: sagX,
             top: sagY + 30,
             transform: "translateX(-50%)",
-            fontFamily: FONT.type,
-            fontSize: 28,
-            letterSpacing: "0.18em",
+            fontFamily: s.link.length <= 4 ? FONT.cond : FONT.type,
+            fontWeight: s.link.length <= 4 ? 700 : 400,
+            fontSize: s.link.length <= 4 ? 80 : s.link.length <= 11 ? 34 : 24,
+            letterSpacing: s.link.length <= 4 ? "0.04em" : s.link.length <= 11 ? "0.16em" : "0.08em",
             color: C.redNeon,
             textShadow: GLOW_RED,
             opacity: neonOn(frame, stringAt + 14),
@@ -256,10 +257,12 @@ export const NetworkView: React.FC<{ s: NetworkScene }> = ({ s }) => {
           const a = -Math.PI / 2 + (i / n) * Math.PI * 2 + (n % 2 === 0 ? Math.PI / n : 0);
           const x = cx + Math.cos(a) * rx;
           const y = cy + Math.sin(a) * ry;
-          const at = i === 0 ? Math.min(sec(0.35), it.at !== undefined ? sec(it.at) : 10) : it.at !== undefined ? sec(it.at) : sec(0.5 + i * 0.4);
+          const at = i === 0 ? Math.min(sec(0.35), it.at !== undefined ? sec(it.at) : 10) : Math.min(dur - sec(1.6), it.at !== undefined ? sec(it.at) : sec(0.5 + i * 0.4));
+          const overName = y < cy && Math.abs(x - cx) < pw / 2;
+          const y2 = overName ? y + (pw * 1.18) / 2 + 26 + 40 : y - (pw * 1.18) / 2 + 10;
           return (
             <React.Fragment key={i}>
-              <RedString x1={cx} y1={cy} x2={x} y2={y - (pw * 1.18) / 2 + 10} at={at + 8} sag={30} />
+              <RedString x1={cx} y1={cy} x2={x} y2={y2} at={at + 8} sag={30} />
               <Placed x={x} y={y} rot={((i * 37) % 9) - 4} at={at}>
                 <Polaroid w={pw} media={it.media} hold="pin" seed={seed + i * 11} kb={kb} />
               </Placed>

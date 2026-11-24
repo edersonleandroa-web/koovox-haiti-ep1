@@ -13,14 +13,15 @@ import { Cam, TextShade } from "./common";
 import { CircleMark, Highlight } from "../components/Emphasis";
 
 /** Fundo de cena gráfica: o mural, ou uma foto/vídeo real escurecida e em P&B. */
-const GraphicBg: React.FC<{ media?: MediaRef | null }> = ({ media }) => {
+const GraphicBg: React.FC<{ media?: MediaRef | null; at?: number }> = ({ media, at = 0 }) => {
   const frame = useCurrentFrame();
   const { dur } = useScene();
   if (media && media.src) {
     const t = Math.min(1.3, frame / Math.max(1, dur));
+    const b = interpolate(frame, [at - 6, at + 6], [0.8, 0.36], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
     return (
       <AbsoluteFill style={{ backgroundColor: "#000" }}>
-        <MediaView media={{ ...media, grade: media.grade ?? "bw" }} scale={1.06 + 0.06 * t} extraFilter="brightness(0.36) blur(1.5px)" />
+        <MediaView media={{ ...media, grade: media.grade ?? "bw" }} scale={1.06 + 0.06 * t} extraFilter={`brightness(${b}) blur(1.5px)`} />
         <AbsoluteFill style={{ background: "radial-gradient(ellipse 60% 55% at 50% 50%, rgba(0,0,0,0.25), rgba(0,0,0,0.65))" }} />
       </AbsoluteFill>
     );
@@ -55,7 +56,7 @@ export const FullView: React.FC<{ s: FullScene }> = ({ s }) => {
       <AbsoluteFill style={{ background: "radial-gradient(ellipse 75% 70% at 50% 48%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%)" }} />
       {s.label ? (
         <>
-          <TextShade x={W / 2} y={labelY} w={1100} h={300} strength={0.62} />
+          <TextShade x={W / 2} y={s.label.sub ? labelY + 20 : labelY} w={1100} h={s.label.sub ? 360 : 300} strength={s.label.sub ? 0.85 : 0.62} />
           <Label spec={s.label} x={W / 2} y={labelY} align="center" maxWidth={1100} />
         </>
       ) : null}
@@ -70,9 +71,18 @@ export const StatView: React.FC<{ s: StatScene }> = ({ s }) => {
   const textAt = at + 22;
   const full = `${s.prefix ?? ""}${fmtNum(s.value, s.decimals ?? 0)}${s.suffix ?? ""}`;
   const fontSize = Math.min(220, Math.floor(1500 / Math.max(1, full.length * 0.47)));
+  // números longos ("CASI 1.5 MILLONES", "+5,940,000"): marca-texto atrás, dígitos brancos;
+  // curtos ("137", "71"): círculo à mão, dígitos vermelhos
+  const long = full.length > 6;
+  const markAt = s.value >= 10 ? at + 38 : at + 12;
+  const num = s.value >= 10 ? (
+    <CountUp value={s.value} at={at} dur={34} decimals={s.decimals ?? 0} prefix={s.prefix ?? ""} suffix={s.suffix ?? ""} />
+  ) : (
+    full
+  );
   return (
     <AbsoluteFill>
-      <GraphicBg media={s.media} />
+      <GraphicBg media={s.media} at={at} />
       <Cam push={0.03} drift={10}>
         <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
           <div
@@ -83,19 +93,21 @@ export const StatView: React.FC<{ s: StatScene }> = ({ s }) => {
               lineHeight: 1,
               whiteSpace: "nowrap",
               letterSpacing: "0.01em",
-              color: C.redNeon,
-              textShadow: GLOW_RED,
+              color: long ? C.white : C.redNeon,
+              textShadow: long ? GLOW_WHITE : GLOW_RED,
               opacity: on,
               transform: `scale(${interpolate(prog(frame, at, at + 10, EASE_OUT), [0, 1], [1.1, 1])})`,
             }}
           >
-            <CircleMark at={s.value >= 10 ? at + 38 : at + 12} seed={Math.round(s.value) + 7} padX={full.length > 6 ? 6 : 14} padY={14} width={5}>
-              {s.value >= 10 ? (
-                <CountUp value={s.value} at={at} dur={34} decimals={s.decimals ?? 0} prefix={s.prefix ?? ""} suffix={s.suffix ?? ""} />
-              ) : (
-                full
-              )}
-            </CircleMark>
+            {long ? (
+              <Highlight at={markAt} dur={12}>
+                {num}
+              </Highlight>
+            ) : (
+              <CircleMark at={markAt} seed={Math.round(s.value) + 7} width={5}>
+                {num}
+              </CircleMark>
+            )}
           </div>
           {s.text ? (
             <div
@@ -128,7 +140,7 @@ export const DateView: React.FC<{ s: DateScene }> = ({ s }) => {
   const long = s.text.length > 8;
   return (
     <AbsoluteFill>
-      <GraphicBg media={s.media} />
+      <GraphicBg media={s.media} at={at} />
       <Cam push={0.03} drift={10}>
         <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column", transform: `translate(${shake}px, ${shake * 0.4}px)` }}>
           <div

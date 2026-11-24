@@ -46,7 +46,7 @@
       },
       "label": {
         "text": "EL PAÍS MÁS POBRE",
-        "sub": "AMÉRICA LATINA Y CARIBE",
+        "sub": "AMÉRICA LATINA Y EL CARIBE",
         "at": 3.16,
         "kind": "info"
       },
@@ -273,14 +273,14 @@
         },
         {
           "media": {
-            "src": "media/c3/g9-fuzis-2024.jpg",
+            "src": "media/intro/gangue-fuzis-erguidos.jpg",
             "kind": "image",
             "focus": [
               0.5,
-              0.5
+              0.4
             ],
             "grade": "warm",
-            "credit": "c3-g9-fuzis-2024"
+            "credit": "intro-gangue-fuzis"
           },
           "name": "PANDILLAS PODEROSAS",
           "at": 2.4
@@ -430,21 +430,10 @@
       "id": "c3-20",
       "start": 92.9,
       "end": 100.67,
-      "type": "duo",
+      "type": "doc",
       "transition": "zoom",
-      "items": [
-        {
-          "media": null,
-          "name": "PROPHANE VICTOR"
-        },
-        {
-          "media": null,
-          "name": "GRAN GRIF",
-          "at": 1.75
-        }
-      ],
-      "link": "JÓVENES ARMADOS",
-      "note": "'Alguns desses jovens formaram a Gran Grif. Mais adiante, Victor começou a apoiar grupos rivais. A Gran Grif continuou de pé.' [Sem imagens livres de Prophane Victor nem da Gran Grif/Luckson Elan: silhuetas.]"
+      "note": "'Alguns desses jovens formaram a Gran Grif. Mais adiante, Victor começou a apoiar grupos rivais. A Gran Grif continuou de pé.' [Sem imagens livres de Prophane Victor nem da Gran Grif/Luckson Elan: silhuetas.]",
+      "title": "GRAN GRIF"
     },
     {
       "id": "c3-21",
@@ -608,13 +597,13 @@
         "src": "media/c3/mudas-viveiro.jpg",
         "kind": "image",
         "focus": [
-          0.55,
-          0.72
+          0.6,
+          1.0
         ],
         "grade": "warm",
         "credit": "c3-mudas-viveiro"
       },
-      "move": "left",
+      "move": "in",
       "note": "'Quando um agricultor tem que fugir depois de semear, as mudas e o adubo já estão pagos. Esse dinheiro também se perde.' [Mídia: mudas num viveiro da SOIL no Haiti (sorgo), foto CC BY.]"
     },
     {
@@ -677,16 +666,6 @@
       "type": "doc",
       "transition": "whip",
       "title": "COMUNICADO DE ZANMI LASANTE",
-      "media": {
-        "src": "media/c3/mirebalais-aerea-2010.jpg",
-        "kind": "image",
-        "focus": [
-          0.55,
-          0.45
-        ],
-        "grade": "warm",
-        "credit": "c3-mirebalais-aerea-2010"
-      },
       "note": "'A equipe explicou num comunicado que, durante esses dias, o hospital tinha escapado de um ataque direto.' [Mídia: reutiliza a vista aérea de Mirebalais de c3-31.]"
     },
     {
@@ -853,7 +832,7 @@
       "id": "c3-42",
       "start": 215.73,
       "end": 222.589,
-      "type": "full",
+      "type": "photo",
       "transition": "whip",
       "media": {
         "src": "media/c3/porto-principe-aereo-2010.mp4",
@@ -866,7 +845,8 @@
         "grade": "warm",
         "credit": "c3-porto-principe-aereo-2010"
       },
-      "note": "Fecho do capítulo: 'Aí se vê a distância entre sancionar quem põe o dinheiro e tocar o patrimônio que lhe permite manter a sua influência.' [Mídia: voo de helicóptero sobre bairros nas encostas de Porto Príncipe (Exército dos EUA/DVIDS, mar/2010).]"
+      "note": "Fecho do capítulo: 'Aí se vê a distância entre sancionar quem põe o dinheiro e tocar o patrimônio que lhe permite manter a sua influência.' [Mídia: voo de helicóptero sobre bairros nas encostas de Porto Príncipe (Exército dos EUA/DVIDS, mar/2010).]",
+      "frame": "tv"
     }
   ]
 }
